@@ -104,7 +104,7 @@ class AddressBook(UserDict):
 
         return greetings
 
-def input_error(func):   # ✅ [ДОДАНО]
+def input_error(func):   
     def wrapper(*args, **kwargs):
         try:
             return func(*args, **kwargs)
@@ -146,7 +146,7 @@ def show_all(args, book):
     return '\n'.join(str(record) for record in book.data.values()) or "No contacts yet."
 
 @input_error
-def add_birthday(args, book):   # ✅ [ДОДАНО]
+def add_birthday(args, book):   
     name, date = args
     record = book.find(name)
     if record:
@@ -155,7 +155,7 @@ def add_birthday(args, book):   # ✅ [ДОДАНО]
     return "Contact not found."
 
 @input_error
-def show_birthday(args, book):  # ✅ [ДОДАНО]
+def show_birthday(args, book): 
     name = args[0]
     record = book.find(name)
     if record and record.birthday:
@@ -163,7 +163,7 @@ def show_birthday(args, book):  # ✅ [ДОДАНО]
     return "Birthday not found."
 
 @input_error
-def birthdays(args, book):      # ✅ [ДОДАНО]
+def birthdays(args, book):    
     return '\n'.join(f"{b['name']}: {b['congratulations_date']}" for b in book.get_upcoming_birthdays()) or "No birthdays next week."
 
 # ==== PARSER ====
@@ -192,11 +192,11 @@ def main():
             print(get_phones(args, book))
         elif command == "all":
             print(show_all(args, book))
-        elif command == "add-birthday":     # ✅ [ДОДАНО]
+        elif command == "add-birthday":     
             print(add_birthday(args, book))
-        elif command == "show-birthday":    # ✅ [ДОДАНО]
+        elif command == "show-birthday":    
             print(show_birthday(args, book))
-        elif command == "birthdays":        # ✅ [ДОДАНО]
+        elif command == "birthdays":        
             print(birthdays(args, book))
         else:
             print("Invalid command.")
