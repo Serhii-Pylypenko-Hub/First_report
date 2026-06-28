@@ -1,0 +1,3614 @@
+{
+  "database": "spotify",
+  "load": {
+    "csv_path": "C:\\Study\\NOSKL\\nosql_1\\dataset.csv",
+    "rows_in_csv": 114000,
+    "loaded_to_tracks_raw": 113999,
+    "sample": {
+      "Unnamed: 0": 0,
+      "track_id": "5SuOikwiRyPMVoIQDJUgSV",
+      "artists": "Gen Hoshino",
+      "album_name": "Comedy",
+      "track_name": "Comedy",
+      "popularity": 73,
+      "duration_ms": 230666,
+      "explicit": false,
+      "danceability": 0.676,
+      "energy": 0.461,
+      "key": 1,
+      "loudness": -6.746,
+      "mode": 0,
+      "speechiness": 0.143,
+      "acousticness": 0.0322,
+      "instrumentalness": 1.01e-06,
+      "liveness": 0.358,
+      "valence": 0.715,
+      "tempo": 87.917,
+      "time_signature": 4,
+      "track_genre": "acoustic"
+    }
+  },
+  "transform": {
+    "tracks_count": 113999,
+    "sample": {
+      "track_id": "5SuOikwiRyPMVoIQDJUgSV",
+      "album_name": "Comedy",
+      "track_name": "Comedy",
+      "popularity": 73,
+      "duration_ms": 230666,
+      "explicit": false,
+      "track_genre": "acoustic",
+      "audio_features": {
+        "danceability": 0.676,
+        "energy": 0.461,
+        "loudness": -6.746,
+        "speechiness": 0.143,
+        "acousticness": 0.0322,
+        "instrumentalness": 1.01e-06,
+        "liveness": 0.358,
+        "valence": 0.715,
+        "tempo": 87.917,
+        "key": 1,
+        "mode": 0,
+        "time_signature": 4
+      },
+      "duration_sec": 230.7,
+      "popularity_tier": "high",
+      "artists": [
+        "Gen Hoshino"
+      ]
+    }
+  },
+  "part2_queries": {
+    "party_tracks": [
+      {
+        "track_name": "Calm Down (with Selena Gomez)",
+        "popularity": 92,
+        "audio_features": {
+          "danceability": 0.801,
+          "energy": 0.806
+        },
+        "artists": [
+          "Rema",
+          "Selena Gomez"
+        ]
+      },
+      {
+        "track_name": "LOKERA",
+        "popularity": 91,
+        "audio_features": {
+          "danceability": 0.834,
+          "energy": 0.828
+        },
+        "artists": [
+          "Rauw Alejandro",
+          "Lyanno",
+          "Brray"
+        ]
+      },
+      {
+        "track_name": "LOKERA",
+        "popularity": 91,
+        "audio_features": {
+          "danceability": 0.834,
+          "energy": 0.828
+        },
+        "artists": [
+          "Rauw Alejandro",
+          "Lyanno",
+          "Brray"
+        ]
+      },
+      {
+        "track_name": "Party",
+        "popularity": 90,
+        "audio_features": {
+          "danceability": 0.829,
+          "energy": 0.799
+        },
+        "artists": [
+          "Bad Bunny",
+          "Rauw Alejandro"
+        ]
+      },
+      {
+        "track_name": "Party",
+        "popularity": 90,
+        "audio_features": {
+          "danceability": 0.829,
+          "energy": 0.799
+        },
+        "artists": [
+          "Bad Bunny",
+          "Rauw Alejandro"
+        ]
+      },
+      {
+        "track_name": "Party",
+        "popularity": 90,
+        "audio_features": {
+          "danceability": 0.829,
+          "energy": 0.799
+        },
+        "artists": [
+          "Bad Bunny",
+          "Rauw Alejandro"
+        ]
+      },
+      {
+        "track_name": "One Kiss (with Dua Lipa)",
+        "popularity": 89,
+        "audio_features": {
+          "danceability": 0.791,
+          "energy": 0.862
+        },
+        "artists": [
+          "Calvin Harris",
+          "Dua Lipa"
+        ]
+      },
+      {
+        "track_name": "About Damn Time",
+        "popularity": 89,
+        "audio_features": {
+          "danceability": 0.836,
+          "energy": 0.743
+        },
+        "artists": [
+          "Lizzo"
+        ]
+      },
+      {
+        "track_name": "One Kiss (with Dua Lipa)",
+        "popularity": 89,
+        "audio_features": {
+          "danceability": 0.791,
+          "energy": 0.862
+        },
+        "artists": [
+          "Calvin Harris",
+          "Dua Lipa"
+        ]
+      },
+      {
+        "track_name": "One Kiss (with Dua Lipa)",
+        "popularity": 89,
+        "audio_features": {
+          "danceability": 0.791,
+          "energy": 0.862
+        },
+        "artists": [
+          "Calvin Harris",
+          "Dua Lipa"
+        ]
+      }
+    ],
+    "popular_artists": [
+      {
+        "track_count": 3,
+        "min_popularity": 89,
+        "artist": "Harry Styles",
+        "avg_popularity": 92.0
+      },
+      {
+        "track_count": 4,
+        "min_popularity": 90,
+        "artist": "Luar La L",
+        "avg_popularity": 90.5
+      },
+      {
+        "track_count": 5,
+        "min_popularity": 86,
+        "artist": "Olivia Rodrigo",
+        "avg_popularity": 87.4
+      },
+      {
+        "track_count": 4,
+        "min_popularity": 87,
+        "artist": "BYOR",
+        "avg_popularity": 87.0
+      },
+      {
+        "track_count": 3,
+        "min_popularity": 79,
+        "artist": "IVE",
+        "avg_popularity": 84.0
+      },
+      {
+        "track_count": 12,
+        "min_popularity": 76,
+        "artist": "Måneskin",
+        "avg_popularity": 83.7
+      },
+      {
+        "track_count": 11,
+        "min_popularity": 77,
+        "artist": "Lil Nas X",
+        "avg_popularity": 83.5
+      },
+      {
+        "track_count": 3,
+        "min_popularity": 81,
+        "artist": "Morgan Wallen",
+        "avg_popularity": 83.3
+      },
+      {
+        "track_count": 5,
+        "min_popularity": 80,
+        "artist": "One Direction",
+        "avg_popularity": 83.0
+      },
+      {
+        "track_count": 5,
+        "min_popularity": 80,
+        "artist": "TV Girl",
+        "avg_popularity": 82.0
+      },
+      {
+        "track_count": 4,
+        "min_popularity": 81,
+        "artist": "Mac DeMarco",
+        "avg_popularity": 81.5
+      },
+      {
+        "track_count": 3,
+        "min_popularity": 81,
+        "artist": "Cults",
+        "avg_popularity": 81.3
+      },
+      {
+        "track_count": 4,
+        "min_popularity": 79,
+        "artist": "Ricky Montgomery",
+        "avg_popularity": 80.5
+      },
+      {
+        "track_count": 3,
+        "min_popularity": 79,
+        "artist": "Luke Combs",
+        "avg_popularity": 80.3
+      },
+      {
+        "track_count": 3,
+        "min_popularity": 80,
+        "artist": "Declan McKenna",
+        "avg_popularity": 80.0
+      },
+      {
+        "track_count": 3,
+        "min_popularity": 80,
+        "artist": "Joy Again",
+        "avg_popularity": 80.0
+      },
+      {
+        "track_count": 7,
+        "min_popularity": 69,
+        "artist": "Mora",
+        "avg_popularity": 79.7
+      },
+      {
+        "track_count": 3,
+        "min_popularity": 70,
+        "artist": "Maroon 5",
+        "avg_popularity": 79.7
+      },
+      {
+        "track_count": 7,
+        "min_popularity": 73,
+        "artist": "Beach Bunny",
+        "avg_popularity": 79.4
+      },
+      {
+        "track_count": 3,
+        "min_popularity": 79,
+        "artist": "Gigi D'Agostino",
+        "avg_popularity": 79.0
+      }
+    ],
+    "tempo_outliers_by_genre": [
+      {
+        "genre": "acoustic",
+        "avg_tempo": 119.0,
+        "outlier_threshold": 178.5,
+        "outlier_tracks": [
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87de9e"
+            },
+            "track_name": "Longest Night",
+            "popularity": 43,
+            "artists": [
+              "Howie Day"
+            ],
+            "audio_features": {
+              "tempo": 202.098
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87dee5"
+            },
+            "track_name": "Pirates of the Caribbean Theme",
+            "popularity": 30,
+            "artists": [
+              "Eddie van der Meer"
+            ],
+            "audio_features": {
+              "tempo": 188.325
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87def2"
+            },
+            "track_name": "V: Fair Trade Death March",
+            "popularity": 27,
+            "artists": [
+              "RENT STRIKE"
+            ],
+            "audio_features": {
+              "tempo": 181.81
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87de34"
+            },
+            "track_name": "Nickel Plated",
+            "popularity": 29,
+            "artists": [
+              "Get Dead"
+            ],
+            "audio_features": {
+              "tempo": 179.92
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87de39"
+            },
+            "track_name": "Somebody That I Used To Know",
+            "popularity": 49,
+            "artists": [
+              "Lúc"
+            ],
+            "audio_features": {
+              "tempo": 183.571
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87de40"
+            },
+            "track_name": "Wanted Man",
+            "popularity": 59,
+            "artists": [
+              "Mat Kearney"
+            ],
+            "audio_features": {
+              "tempo": 203.651
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87de16"
+            },
+            "track_name": "Running Up That Hill (A Deal With God) - Acoustic",
+            "popularity": 51,
+            "artists": [
+              "Jonah Baker"
+            ],
+            "audio_features": {
+              "tempo": 203.816
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87de66"
+            },
+            "track_name": "8 Track",
+            "popularity": 28,
+            "artists": [
+              "Get Dead"
+            ],
+            "audio_features": {
+              "tempo": 197.008
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87de50"
+            },
+            "track_name": "Don't Know What I Want",
+            "popularity": 24,
+            "artists": [
+              "Gabrielle Aplin"
+            ],
+            "audio_features": {
+              "tempo": 180.075
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87dfad"
+            },
+            "track_name": "Untainted Innocence",
+            "popularity": 26,
+            "artists": [
+              "Steve Pulvers"
+            ],
+            "audio_features": {
+              "tempo": 179.941
+            }
+          }
+        ]
+      },
+      {
+        "genre": "afrobeat",
+        "avg_tempo": 119.2,
+        "outlier_threshold": 171.8,
+        "outlier_tracks": [
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87e28f"
+            },
+            "track_name": "Playa Azul",
+            "popularity": 21,
+            "artists": [
+              "Los Amigos Invisibles"
+            ],
+            "audio_features": {
+              "tempo": 175.979
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87e28b"
+            },
+            "track_name": "Forgiveness",
+            "popularity": 18,
+            "artists": [
+              "Eddie Neblett"
+            ],
+            "audio_features": {
+              "tempo": 172.031
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87e27c"
+            },
+            "track_name": "Baile De Los Pobres",
+            "popularity": 21,
+            "artists": [
+              "Calle 13"
+            ],
+            "audio_features": {
+              "tempo": 179.996
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87e2c6"
+            },
+            "track_name": "Vai C Bom",
+            "popularity": 18,
+            "artists": [
+              "Zé Bigode Orquestra"
+            ],
+            "audio_features": {
+              "tempo": 189.944
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87e20f"
+            },
+            "track_name": "An Epic Story",
+            "popularity": 20,
+            "artists": [
+              "Mulatu Astatke",
+              "The Heliocentrics"
+            ],
+            "audio_features": {
+              "tempo": 173.954
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87e215"
+            },
+            "track_name": "Oxidados",
+            "popularity": 20,
+            "artists": [
+              "Plastilina Mosh"
+            ],
+            "audio_features": {
+              "tempo": 182.069
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87e25d"
+            },
+            "track_name": "Se Vale To-To",
+            "popularity": 21,
+            "artists": [
+              "Calle 13"
+            ],
+            "audio_features": {
+              "tempo": 175.979
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87e39d"
+            },
+            "track_name": "Freguês da Meia Noite (Instrumental)",
+            "popularity": 15,
+            "artists": [
+              "Criolo"
+            ],
+            "audio_features": {
+              "tempo": 175.949
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87e37e"
+            },
+            "track_name": "Who Am I (Psalm 8:4)",
+            "popularity": 16,
+            "artists": [
+              "Azarel",
+              "Leor"
+            ],
+            "audio_features": {
+              "tempo": 184.058
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87e3c8"
+            },
+            "track_name": "Me Voy Pa’ Porce",
+            "popularity": 16,
+            "artists": [
+              "La Misa Negra"
+            ],
+            "audio_features": {
+              "tempo": 178.022
+            }
+          }
+        ]
+      },
+      {
+        "genre": "alt-rock",
+        "avg_tempo": 124.6,
+        "outlier_threshold": 183.1,
+        "outlier_tracks": [
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87e688"
+            },
+            "track_name": "Primavera",
+            "popularity": 47,
+            "artists": [
+              "Los Hermanos"
+            ],
+            "audio_features": {
+              "tempo": 200.332
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87e5f7"
+            },
+            "track_name": "El Ojo Blindado",
+            "popularity": 50,
+            "artists": [
+              "Sumo"
+            ],
+            "audio_features": {
+              "tempo": 194.458
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87e5dc"
+            },
+            "track_name": "Never Tear Us Apart",
+            "popularity": 59,
+            "artists": [
+              "Bishop Briggs"
+            ],
+            "audio_features": {
+              "tempo": 188.96
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87e5df"
+            },
+            "track_name": "Stronger",
+            "popularity": 61,
+            "artists": [
+              "The Score"
+            ],
+            "audio_features": {
+              "tempo": 191.883
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87e617"
+            },
+            "track_name": "Ella Debe Estar Tan Linda",
+            "popularity": 48,
+            "artists": [
+              "Patricio Rey y sus Redonditos de Ricota"
+            ],
+            "audio_features": {
+              "tempo": 205.911
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87e769"
+            },
+            "track_name": "Time of Dying",
+            "popularity": 66,
+            "artists": [
+              "Three Days Grace"
+            ],
+            "audio_features": {
+              "tempo": 198.387
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87e74c"
+            },
+            "track_name": "Laberintos",
+            "popularity": 46,
+            "artists": [
+              "División Minúscula"
+            ],
+            "audio_features": {
+              "tempo": 215.513
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87e6fb"
+            },
+            "track_name": "Eliza Mi Hortaliza",
+            "popularity": 46,
+            "artists": [
+              "Enjambre"
+            ],
+            "audio_features": {
+              "tempo": 193.04
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87e72c"
+            },
+            "track_name": "Escombro En La Ciudad",
+            "popularity": 45,
+            "artists": [
+              "La 25"
+            ],
+            "audio_features": {
+              "tempo": 190.073
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87e71e"
+            },
+            "track_name": "Camaleón - Remasterizado 2007",
+            "popularity": 46,
+            "artists": [
+              "Soda Stereo"
+            ],
+            "audio_features": {
+              "tempo": 195.93
+            }
+          }
+        ]
+      },
+      {
+        "genre": "alternative",
+        "avg_tempo": 122.2,
+        "outlier_threshold": 183.3,
+        "outlier_tracks": [
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87eaa7"
+            },
+            "track_name": "そういえば今日から化け物になった",
+            "popularity": 0,
+            "artists": [
+              "Creep Hyp"
+            ],
+            "audio_features": {
+              "tempo": 203.997
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87ea78"
+            },
+            "track_name": "All Around You",
+            "popularity": 0,
+            "artists": [
+              "Sturgill Simpson"
+            ],
+            "audio_features": {
+              "tempo": 185.718
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87ea79"
+            },
+            "track_name": "All Around You",
+            "popularity": 0,
+            "artists": [
+              "Sturgill Simpson"
+            ],
+            "audio_features": {
+              "tempo": 185.718
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87ea1f"
+            },
+            "track_name": "Unfair",
+            "popularity": 72,
+            "artists": [
+              "The Neighbourhood"
+            ],
+            "audio_features": {
+              "tempo": 194.033
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87eb53"
+            },
+            "track_name": "Prisoner",
+            "popularity": 7,
+            "artists": [
+              "Moliy",
+              "P.Priime"
+            ],
+            "audio_features": {
+              "tempo": 186.504
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87ebaa"
+            },
+            "track_name": "El Ojo Blindado",
+            "popularity": 50,
+            "artists": [
+              "Sumo"
+            ],
+            "audio_features": {
+              "tempo": 194.458
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87ead7"
+            },
+            "track_name": "Natural Born Killer",
+            "popularity": 5,
+            "artists": [
+              "Highly Suspect"
+            ],
+            "audio_features": {
+              "tempo": 194.876
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87eaee"
+            },
+            "track_name": "Never Tear Us Apart",
+            "popularity": 59,
+            "artists": [
+              "Bishop Briggs"
+            ],
+            "audio_features": {
+              "tempo": 188.96
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87eaf0"
+            },
+            "track_name": "Stronger",
+            "popularity": 61,
+            "artists": [
+              "The Score"
+            ],
+            "audio_features": {
+              "tempo": 191.883
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87e853"
+            },
+            "track_name": "My Name Is Jonas",
+            "popularity": 1,
+            "artists": [
+              "Weezer"
+            ],
+            "audio_features": {
+              "tempo": 185.942
+            }
+          }
+        ]
+      },
+      {
+        "genre": "ambient",
+        "avg_tempo": 111.1,
+        "outlier_threshold": 175.2,
+        "outlier_tracks": [
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87ee80"
+            },
+            "track_name": "All Through the Night",
+            "popularity": 49,
+            "artists": [
+              "Sleeping At Last"
+            ],
+            "audio_features": {
+              "tempo": 185.309
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87ee7d"
+            },
+            "track_name": "Solitude I",
+            "popularity": 50,
+            "artists": [
+              "Tom Ashbrook"
+            ],
+            "audio_features": {
+              "tempo": 179.997
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87ee63"
+            },
+            "track_name": "A Catalogue of Afternoons",
+            "popularity": 56,
+            "artists": [
+              "Max Richter"
+            ],
+            "audio_features": {
+              "tempo": 205.971
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87edcf"
+            },
+            "track_name": "The Heart Asks Pleasure First",
+            "popularity": 57,
+            "artists": [
+              "Michael Nyman"
+            ],
+            "audio_features": {
+              "tempo": 177.408
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87edda"
+            },
+            "track_name": "Damascus - Solo Piano",
+            "popularity": 51,
+            "artists": [
+              "Oskar Schuster"
+            ],
+            "audio_features": {
+              "tempo": 177.267
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87ee07"
+            },
+            "track_name": "Offering at Dawn",
+            "popularity": 18,
+            "artists": [
+              "Eashwar Subramanian"
+            ],
+            "audio_features": {
+              "tempo": 180.003
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87ede8"
+            },
+            "track_name": "Them",
+            "popularity": 54,
+            "artists": [
+              "Nils Frahm"
+            ],
+            "audio_features": {
+              "tempo": 199.617
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87ede9"
+            },
+            "track_name": "Nightsky",
+            "popularity": 38,
+            "artists": [
+              "Tracey Chattaway"
+            ],
+            "audio_features": {
+              "tempo": 177.119
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87edfa"
+            },
+            "track_name": "Jazz Suite No. 2: 6. Waltz II",
+            "popularity": 53,
+            "artists": [
+              "Dmitri Shostakovich",
+              "Royal Concertgebouw Orchestra",
+              "Riccardo Chailly"
+            ],
+            "audio_features": {
+              "tempo": 185.851
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87ef3d"
+            },
+            "track_name": "The Winter",
+            "popularity": 48,
+            "artists": [
+              "Balmorhea"
+            ],
+            "audio_features": {
+              "tempo": 201.608
+            }
+          }
+        ]
+      },
+      {
+        "genre": "anime",
+        "avg_tempo": 123.5,
+        "outlier_threshold": 189.5,
+        "outlier_tracks": [
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87f221"
+            },
+            "track_name": "アフターダーク",
+            "popularity": 57,
+            "artists": [
+              "ASIAN KUNG-FU GENERATION"
+            ],
+            "audio_features": {
+              "tempo": 191.006
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87f225"
+            },
+            "track_name": "平行線",
+            "popularity": 51,
+            "artists": [
+              "Sayuri"
+            ],
+            "audio_features": {
+              "tempo": 191.027
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87f199"
+            },
+            "track_name": "No title",
+            "popularity": 57,
+            "artists": [
+              "Reol"
+            ],
+            "audio_features": {
+              "tempo": 199.751
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87f1ed"
+            },
+            "track_name": "Rap de Buda",
+            "popularity": 37,
+            "artists": [
+              "Doblecero"
+            ],
+            "audio_features": {
+              "tempo": 200.119
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87f31d"
+            },
+            "track_name": "red swan but it's lofi (attack on titan)",
+            "popularity": 41,
+            "artists": [
+              "kurochuu."
+            ],
+            "audio_features": {
+              "tempo": 191.969
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87f28b"
+            },
+            "track_name": "アイム・ア・ビリーバー",
+            "popularity": 53,
+            "artists": [
+              "SPYAIR"
+            ],
+            "audio_features": {
+              "tempo": 194.091
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87efbb"
+            },
+            "track_name": "Cry Baby",
+            "popularity": 63,
+            "artists": [
+              "Official HIGE DANdism"
+            ],
+            "audio_features": {
+              "tempo": 199.934
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87efa8"
+            },
+            "track_name": "Cry Baby",
+            "popularity": 66,
+            "artists": [
+              "Official HIGE DANdism"
+            ],
+            "audio_features": {
+              "tempo": 199.844
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87f189"
+            },
+            "track_name": "Catch the Moment",
+            "popularity": 58,
+            "artists": [
+              "LiSA"
+            ],
+            "audio_features": {
+              "tempo": 190.083
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87eff0"
+            },
+            "track_name": "Not For Sale",
+            "popularity": 66,
+            "artists": [
+              "ENHYPEN"
+            ],
+            "audio_features": {
+              "tempo": 192.13
+            }
+          }
+        ]
+      },
+      {
+        "genre": "black-metal",
+        "avg_tempo": 128.6,
+        "outlier_threshold": 188.3,
+        "outlier_tracks": [
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87f662"
+            },
+            "track_name": "Intro",
+            "popularity": 19,
+            "artists": [
+              "Toxic Holocaust"
+            ],
+            "audio_features": {
+              "tempo": 190.151
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87f649"
+            },
+            "track_name": "My Northern Heart",
+            "popularity": 17,
+            "artists": [
+              "Wormwood"
+            ],
+            "audio_features": {
+              "tempo": 196.059
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87f704"
+            },
+            "track_name": "The Great Hunter",
+            "popularity": 34,
+            "artists": [
+              "Yoth Iria"
+            ],
+            "audio_features": {
+              "tempo": 199.903
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87f705"
+            },
+            "track_name": "Rain as Cure",
+            "popularity": 38,
+            "artists": [
+              "White Ward"
+            ],
+            "audio_features": {
+              "tempo": 200.081
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87f6c4"
+            },
+            "track_name": "Death Camp",
+            "popularity": 18,
+            "artists": [
+              "Toxic Holocaust"
+            ],
+            "audio_features": {
+              "tempo": 200.779
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87f437"
+            },
+            "track_name": "Abyssos Antithesis",
+            "popularity": 20,
+            "artists": [
+              "1349"
+            ],
+            "audio_features": {
+              "tempo": 195.039
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87f402"
+            },
+            "track_name": "Drop the Match",
+            "popularity": 22,
+            "artists": [
+              "Winds of Plague"
+            ],
+            "audio_features": {
+              "tempo": 199.794
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87f467"
+            },
+            "track_name": "Satã, Apareça!",
+            "popularity": 21,
+            "artists": [
+              "Velho"
+            ],
+            "audio_features": {
+              "tempo": 193.872
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87f453"
+            },
+            "track_name": "Naufrage Contemporain",
+            "popularity": 20,
+            "artists": [
+              "Akitsa"
+            ],
+            "audio_features": {
+              "tempo": 194.789
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87f3ea"
+            },
+            "track_name": "Obsidian Spires",
+            "popularity": 22,
+            "artists": [
+              "De Profundis"
+            ],
+            "audio_features": {
+              "tempo": 200.661
+            }
+          }
+        ]
+      },
+      {
+        "genre": "bluegrass",
+        "avg_tempo": 126.6,
+        "outlier_threshold": 179.7,
+        "outlier_tracks": [
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87fa16"
+            },
+            "track_name": "Keep Your Eyes On Jesus",
+            "popularity": 21,
+            "artists": [
+              "Doyle Lawson & Quicksilver"
+            ],
+            "audio_features": {
+              "tempo": 187.859
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87fa46"
+            },
+            "track_name": "Pain Of A Troubled Life",
+            "popularity": 22,
+            "artists": [
+              "Alison Krauss & Union Station"
+            ],
+            "audio_features": {
+              "tempo": 190.145
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87f985"
+            },
+            "track_name": "Single Beds Are Made for One",
+            "popularity": 25,
+            "artists": [
+              "Elephant Revival"
+            ],
+            "audio_features": {
+              "tempo": 183.389
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87f9bd"
+            },
+            "track_name": "All I Want Is Mary for Christmas",
+            "popularity": 0,
+            "artists": [
+              "Lonesome River Band"
+            ],
+            "audio_features": {
+              "tempo": 184.041
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87f9a0"
+            },
+            "track_name": "Asheville City Skyline",
+            "popularity": 23,
+            "artists": [
+              "The Lonesome Trio"
+            ],
+            "audio_features": {
+              "tempo": 179.846
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87f9b2"
+            },
+            "track_name": "Heart up in the Sky",
+            "popularity": 24,
+            "artists": [
+              "Old Crow Medicine Show"
+            ],
+            "audio_features": {
+              "tempo": 182.906
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87fad5"
+            },
+            "track_name": "Life To My Days",
+            "popularity": 20,
+            "artists": [
+              "Doyle Lawson & Quicksilver"
+            ],
+            "audio_features": {
+              "tempo": 180.095
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87fae1"
+            },
+            "track_name": "This Side",
+            "popularity": 20,
+            "artists": [
+              "Nickel Creek"
+            ],
+            "audio_features": {
+              "tempo": 179.991
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87fa78"
+            },
+            "track_name": "Waitsfield",
+            "popularity": 22,
+            "artists": [
+              "I'm With Her",
+              "Sara Watkins",
+              "Sarah Jarosz",
+              "Aoife O'Donovan"
+            ],
+            "audio_features": {
+              "tempo": 200.071
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87fa66"
+            },
+            "track_name": "Summertime",
+            "popularity": 24,
+            "artists": [
+              "The Wailin' Jennys"
+            ],
+            "audio_features": {
+              "tempo": 180.082
+            }
+          }
+        ]
+      },
+      {
+        "genre": "blues",
+        "avg_tempo": 116.6,
+        "outlier_threshold": 177.9,
+        "outlier_tracks": [
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87fde6"
+            },
+            "track_name": "Death Grip",
+            "popularity": 58,
+            "artists": [
+              "Watt White"
+            ],
+            "audio_features": {
+              "tempo": 177.987
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87fe30"
+            },
+            "track_name": "I'll Be Home For Christmas",
+            "popularity": 0,
+            "artists": [
+              "The Miracles"
+            ],
+            "audio_features": {
+              "tempo": 183.438
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87fe39"
+            },
+            "track_name": "I'll Be Home For Christmas",
+            "popularity": 0,
+            "artists": [
+              "The Miracles"
+            ],
+            "audio_features": {
+              "tempo": 183.438
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87fe04"
+            },
+            "track_name": "Mr. Lee",
+            "popularity": 36,
+            "artists": [
+              "The Bobbettes"
+            ],
+            "audio_features": {
+              "tempo": 203.334
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87fe15"
+            },
+            "track_name": "I've Got a Woman",
+            "popularity": 66,
+            "artists": [
+              "Ray Charles"
+            ],
+            "audio_features": {
+              "tempo": 199.373
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87fd69"
+            },
+            "track_name": "If I Back It Up",
+            "popularity": 38,
+            "artists": [
+              "Nellie Tiger Travis"
+            ],
+            "audio_features": {
+              "tempo": 203.151
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87fd46"
+            },
+            "track_name": "Far From Home (The Raven)",
+            "popularity": 52,
+            "artists": [
+              "Sam Tinnesz"
+            ],
+            "audio_features": {
+              "tempo": 187.15
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87fdba"
+            },
+            "track_name": "Call The Doctor",
+            "popularity": 59,
+            "artists": [
+              "J.J. Cale"
+            ],
+            "audio_features": {
+              "tempo": 243.372
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87fd91"
+            },
+            "track_name": "Lay Down Sally",
+            "popularity": 62,
+            "artists": [
+              "Eric Clapton"
+            ],
+            "audio_features": {
+              "tempo": 191.539
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d87fdc0"
+            },
+            "track_name": "Move Something",
+            "popularity": 36,
+            "artists": [
+              "Lacee"
+            ],
+            "audio_features": {
+              "tempo": 190.046
+            }
+          }
+        ]
+      },
+      {
+        "genre": "brazil",
+        "avg_tempo": 121.9,
+        "outlier_threshold": 177.8,
+        "outlier_tracks": [
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d8801b1"
+            },
+            "track_name": "O Chamado - Ao Vivo",
+            "popularity": 44,
+            "artists": [
+              "Leandro Borges"
+            ],
+            "audio_features": {
+              "tempo": 178.798
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d880213"
+            },
+            "track_name": "Teorema",
+            "popularity": 45,
+            "artists": [
+              "Legião Urbana"
+            ],
+            "audio_features": {
+              "tempo": 206.641
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d880215"
+            },
+            "track_name": "Recomeçar",
+            "popularity": 43,
+            "artists": [
+              "Aline Barros"
+            ],
+            "audio_features": {
+              "tempo": 192.297
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d88021e"
+            },
+            "track_name": "A Arte do Insulto",
+            "popularity": 44,
+            "artists": [
+              "Matanza"
+            ],
+            "audio_features": {
+              "tempo": 178.374
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d8801f4"
+            },
+            "track_name": "Já Sei",
+            "popularity": 45,
+            "artists": [
+              "Zimbra"
+            ],
+            "audio_features": {
+              "tempo": 178.935
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d88014c"
+            },
+            "track_name": "Fronteira (D.U.C.A.)",
+            "popularity": 44,
+            "artists": [
+              "O Rappa"
+            ],
+            "audio_features": {
+              "tempo": 177.986
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d880156"
+            },
+            "track_name": "Primavera",
+            "popularity": 47,
+            "artists": [
+              "Los Hermanos"
+            ],
+            "audio_features": {
+              "tempo": 200.332
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d88013b"
+            },
+            "track_name": "Hidropônica",
+            "popularity": 45,
+            "artists": [
+              "Forfun"
+            ],
+            "audio_features": {
+              "tempo": 186.002
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d88017c"
+            },
+            "track_name": "Halellujah - Ao Vivo",
+            "popularity": 45,
+            "artists": [
+              "Adriana Arydes"
+            ],
+            "audio_features": {
+              "tempo": 179.555
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d88017e"
+            },
+            "track_name": "Cenáculo de Amor",
+            "popularity": 44,
+            "artists": [
+              "Walmir Alencar"
+            ],
+            "audio_features": {
+              "tempo": 184.181
+            }
+          }
+        ]
+      },
+      {
+        "genre": "breakbeat",
+        "avg_tempo": 133.0,
+        "outlier_threshold": 183.3,
+        "outlier_tracks": [
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d880591"
+            },
+            "track_name": "The Diamond Sky",
+            "popularity": 12,
+            "artists": [
+              "The Chemical Brothers"
+            ],
+            "audio_features": {
+              "tempo": 190.342
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d8805d2"
+            },
+            "track_name": "Straight At Yer Head",
+            "popularity": 12,
+            "artists": [
+              "Lionrock"
+            ],
+            "audio_features": {
+              "tempo": 195.999
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d880514"
+            },
+            "track_name": "The Boxer",
+            "popularity": 44,
+            "artists": [
+              "The Chemical Brothers"
+            ],
+            "audio_features": {
+              "tempo": 193.93
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d8806fc"
+            },
+            "track_name": "Calm Down (feat. Icp)",
+            "popularity": 11,
+            "artists": [
+              "Amb"
+            ],
+            "audio_features": {
+              "tempo": 200.161
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d880614"
+            },
+            "track_name": "Better?",
+            "popularity": 12,
+            "artists": [
+              "Propellerheads"
+            ],
+            "audio_features": {
+              "tempo": 183.761
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d8803c8"
+            },
+            "track_name": "Carried Away",
+            "popularity": 18,
+            "artists": [
+              "Bassnectar"
+            ],
+            "audio_features": {
+              "tempo": 183.941
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d8803b5"
+            },
+            "track_name": "Shut 'Em Up",
+            "popularity": 19,
+            "artists": [
+              "The Prodigy",
+              "Manfred Mann",
+              "Public Enemy"
+            ],
+            "audio_features": {
+              "tempo": 199.942
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d8803e2"
+            },
+            "track_name": "Feel Like Jumpin - Krossbow Remix",
+            "popularity": 17,
+            "artists": [
+              "Krafty Kuts",
+              "Krossbow"
+            ],
+            "audio_features": {
+              "tempo": 219.693
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d8803e8"
+            },
+            "track_name": "Need Some1",
+            "popularity": 7,
+            "artists": [
+              "The Prodigy"
+            ],
+            "audio_features": {
+              "tempo": 184.076
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d8804bb"
+            },
+            "track_name": "The Boxer - Radio Edit",
+            "popularity": 15,
+            "artists": [
+              "The Chemical Brothers"
+            ],
+            "audio_features": {
+              "tempo": 193.914
+            }
+          }
+        ]
+      },
+      {
+        "genre": "british",
+        "avg_tempo": 118.8,
+        "outlier_threshold": 177.9,
+        "outlier_tracks": [
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d8809b6"
+            },
+            "track_name": "Bad Penny",
+            "popularity": 60,
+            "artists": [
+              "Rory Gallagher"
+            ],
+            "audio_features": {
+              "tempo": 199.738
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d880986"
+            },
+            "track_name": "Super Duper Love",
+            "popularity": 31,
+            "artists": [
+              "Joss Stone"
+            ],
+            "audio_features": {
+              "tempo": 187.923
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d880987"
+            },
+            "track_name": "Where Do You Go To (My Lovely) - Re-Recorded",
+            "popularity": 56,
+            "artists": [
+              "Peter Sarstedt"
+            ],
+            "audio_features": {
+              "tempo": 182.583
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d8809e0"
+            },
+            "track_name": "Soldiers Of The Wastelands",
+            "popularity": 52,
+            "artists": [
+              "DragonForce"
+            ],
+            "audio_features": {
+              "tempo": 199.955
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d8809c8"
+            },
+            "track_name": "Tin Pan Boy",
+            "popularity": 33,
+            "artists": [
+              "YUNGBLUD"
+            ],
+            "audio_features": {
+              "tempo": 184.092
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d8809ca"
+            },
+            "track_name": "Stop",
+            "popularity": 39,
+            "artists": [
+              "Sam Brown",
+              "Pete Brown"
+            ],
+            "audio_features": {
+              "tempo": 185.63
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d880907"
+            },
+            "track_name": "Memories (with WILLOW)",
+            "popularity": 58,
+            "artists": [
+              "YUNGBLUD",
+              "WILLOW"
+            ],
+            "audio_features": {
+              "tempo": 181.996
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d880912"
+            },
+            "track_name": "Fury Of The Storm",
+            "popularity": 56,
+            "artists": [
+              "DragonForce"
+            ],
+            "audio_features": {
+              "tempo": 199.798
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d880949"
+            },
+            "track_name": "The Funeral",
+            "popularity": 58,
+            "artists": [
+              "YUNGBLUD"
+            ],
+            "audio_features": {
+              "tempo": 185.004
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d88094e"
+            },
+            "track_name": "Cry Thunder",
+            "popularity": 52,
+            "artists": [
+              "DragonForce"
+            ],
+            "audio_features": {
+              "tempo": 195.089
+            }
+          }
+        ]
+      },
+      {
+        "genre": "cantopop",
+        "avg_tempo": 124.3,
+        "outlier_threshold": 181.5,
+        "outlier_tracks": [
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d880d66"
+            },
+            "track_name": "戀愛頻率",
+            "popularity": 50,
+            "artists": [
+              "Andy Hui",
+              "許慧欣"
+            ],
+            "audio_features": {
+              "tempo": 202.016
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d880db7"
+            },
+            "track_name": "Don't Text Him",
+            "popularity": 41,
+            "artists": [
+              "Serrini"
+            ],
+            "audio_features": {
+              "tempo": 207.521
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d880d12"
+            },
+            "track_name": "大雄",
+            "popularity": 22,
+            "artists": [
+              "Leo Ku"
+            ],
+            "audio_features": {
+              "tempo": 204.931
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d880d15"
+            },
+            "track_name": "一路上有你",
+            "popularity": 49,
+            "artists": [
+              "Jacky Cheung"
+            ],
+            "audio_features": {
+              "tempo": 184.592
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d880e9e"
+            },
+            "track_name": "天真",
+            "popularity": 19,
+            "artists": [
+              "Louis Koo"
+            ],
+            "audio_features": {
+              "tempo": 203.988
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d880eb0"
+            },
+            "track_name": "今天只做一件事",
+            "popularity": 41,
+            "artists": [
+              "Eason Chan"
+            ],
+            "audio_features": {
+              "tempo": 203.94
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d880e47"
+            },
+            "track_name": "王菲,關於你的眉",
+            "popularity": 29,
+            "artists": [
+              "my little airport"
+            ],
+            "audio_features": {
+              "tempo": 181.486
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d880e55"
+            },
+            "track_name": "二人行一日後",
+            "popularity": 18,
+            "artists": [
+              "Andy Hui"
+            ],
+            "audio_features": {
+              "tempo": 181.986
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d880ba2"
+            },
+            "track_name": "小傳奇",
+            "popularity": 51,
+            "artists": [
+              "Mr."
+            ],
+            "audio_features": {
+              "tempo": 197.943
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d880b6f"
+            },
+            "track_name": "苦瓜",
+            "popularity": 49,
+            "artists": [
+              "Eason Chan"
+            ],
+            "audio_features": {
+              "tempo": 185.952
+            }
+          }
+        ]
+      },
+      {
+        "genre": "chicago-house",
+        "avg_tempo": 123.9,
+        "outlier_threshold": 145.7,
+        "outlier_tracks": [
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d881168"
+            },
+            "track_name": "Making Hits",
+            "popularity": 5,
+            "artists": [
+              "Pal Joey"
+            ],
+            "audio_features": {
+              "tempo": 186.461
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d88117f"
+            },
+            "track_name": "The Core",
+            "popularity": 8,
+            "artists": [
+              "Robert Hood"
+            ],
+            "audio_features": {
+              "tempo": 147.898
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d881167"
+            },
+            "track_name": "Come On",
+            "popularity": 6,
+            "artists": [
+              "Pal Joey"
+            ],
+            "audio_features": {
+              "tempo": 189.895
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d88118a"
+            },
+            "track_name": "Nitelife Funworld",
+            "popularity": 9,
+            "artists": [
+              "Felix Da Housecat"
+            ],
+            "audio_features": {
+              "tempo": 145.946
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d88119a"
+            },
+            "track_name": "Brothers Theme",
+            "popularity": 7,
+            "artists": [
+              "Pal Joey"
+            ],
+            "audio_features": {
+              "tempo": 190.148
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d8812bc"
+            },
+            "track_name": "WARM - Mixed",
+            "popularity": 5,
+            "artists": [
+              "Ron Trent"
+            ],
+            "audio_features": {
+              "tempo": 169.964
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d88128b"
+            },
+            "track_name": "Endless Love (Bonus) - Mixed",
+            "popularity": 6,
+            "artists": [
+              "Ron Trent"
+            ],
+            "audio_features": {
+              "tempo": 173.984
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d8811e9"
+            },
+            "track_name": "Cali Spaces - Julius Papp Mix",
+            "popularity": 5,
+            "artists": [
+              "Mark Farina"
+            ],
+            "audio_features": {
+              "tempo": 198.713
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d8811ce"
+            },
+            "track_name": "Alive - Instrumental",
+            "popularity": 26,
+            "artists": [
+              "Mark Farina"
+            ],
+            "audio_features": {
+              "tempo": 190.051
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d8811d2"
+            },
+            "track_name": "The 187 Skillz",
+            "popularity": 6,
+            "artists": [
+              "DJ Skull"
+            ],
+            "audio_features": {
+              "tempo": 151.049
+            }
+          }
+        ]
+      },
+      {
+        "genre": "children",
+        "avg_tempo": 123.3,
+        "outlier_threshold": 183.3,
+        "outlier_tracks": [
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d881563"
+            },
+            "track_name": "Big Strong John",
+            "popularity": 30,
+            "artists": [
+              "The Wiggles"
+            ],
+            "audio_features": {
+              "tempo": 187.891
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d88153e"
+            },
+            "track_name": "Wags the Dog",
+            "popularity": 30,
+            "artists": [
+              "The Wiggles"
+            ],
+            "audio_features": {
+              "tempo": 189.534
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d88154b"
+            },
+            "track_name": "Polly Put The Kettle On",
+            "popularity": 19,
+            "artists": [
+              "The Countdown Kids"
+            ],
+            "audio_features": {
+              "tempo": 210.025
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d881570"
+            },
+            "track_name": "Bananas in Pyjamas",
+            "popularity": 50,
+            "artists": [
+              "Bananas In Pyjamas"
+            ],
+            "audio_features": {
+              "tempo": 202.58
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d881580"
+            },
+            "track_name": "Every Move I Make",
+            "popularity": 47,
+            "artists": [
+              "Shout Praises Kids"
+            ],
+            "audio_features": {
+              "tempo": 200.104
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d8814d4"
+            },
+            "track_name": "Teeny Tiny Spider",
+            "popularity": 32,
+            "artists": [
+              "The Beanies"
+            ],
+            "audio_features": {
+              "tempo": 207.818
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d8814bb"
+            },
+            "track_name": "Chandaa Mama Aao Na",
+            "popularity": 21,
+            "artists": [
+              "WowKidz"
+            ],
+            "audio_features": {
+              "tempo": 200.405
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d88152d"
+            },
+            "track_name": "The Truck Song",
+            "popularity": 41,
+            "artists": [
+              "CoComelon"
+            ],
+            "audio_features": {
+              "tempo": 200.083
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d88150a"
+            },
+            "track_name": "Cours, papa!",
+            "popularity": 31,
+            "artists": [
+              "Caillou"
+            ],
+            "audio_features": {
+              "tempo": 201.051
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d88150e"
+            },
+            "track_name": "En avion",
+            "popularity": 31,
+            "artists": [
+              "Caillou"
+            ],
+            "audio_features": {
+              "tempo": 183.803
+            }
+          }
+        ]
+      },
+      {
+        "genre": "chill",
+        "avg_tempo": 115.5,
+        "outlier_threshold": 173.3,
+        "outlier_tracks": [
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d881941"
+            },
+            "track_name": "serene//rewind",
+            "popularity": 54,
+            "artists": [
+              "demxntia",
+              "Dion Dugas"
+            ],
+            "audio_features": {
+              "tempo": 175.994
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d881921"
+            },
+            "track_name": "Feather (feat. Cise Starr & Akin from CYNE)",
+            "popularity": 63,
+            "artists": [
+              "Nujabes",
+              "Cise Star",
+              "Akin Yai"
+            ],
+            "audio_features": {
+              "tempo": 180.598
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d881922"
+            },
+            "track_name": "We Won't Be Alone",
+            "popularity": 58,
+            "artists": [
+              "Feint",
+              "Laura Brehm"
+            ],
+            "audio_features": {
+              "tempo": 174.751
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d881934"
+            },
+            "track_name": "Flower",
+            "popularity": 56,
+            "artists": [
+              "Johnny Stimson"
+            ],
+            "audio_features": {
+              "tempo": 196.813
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d88195c"
+            },
+            "track_name": "Dear Depression,",
+            "popularity": 57,
+            "artists": [
+              "Presence"
+            ],
+            "audio_features": {
+              "tempo": 182.104
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d88196b"
+            },
+            "track_name": "Next to You",
+            "popularity": 59,
+            "artists": [
+              "JYLPO",
+              "Oscar Welsh",
+              "Do Do"
+            ],
+            "audio_features": {
+              "tempo": 179.75
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d8818be"
+            },
+            "track_name": "Love Drunk",
+            "popularity": 44,
+            "artists": [
+              "Faime"
+            ],
+            "audio_features": {
+              "tempo": 180.069
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d8818f0"
+            },
+            "track_name": "About Me",
+            "popularity": 53,
+            "artists": [
+              "Koven",
+              "ROY KNOX"
+            ],
+            "audio_features": {
+              "tempo": 180.201
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d881a45"
+            },
+            "track_name": "Frame of Mind",
+            "popularity": 58,
+            "artists": [
+              "Tristam",
+              "Braken"
+            ],
+            "audio_features": {
+              "tempo": 174.989
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d881a14"
+            },
+            "track_name": "In My Heart",
+            "popularity": 47,
+            "artists": [
+              "Kochetkovv"
+            ],
+            "audio_features": {
+              "tempo": 186.131
+            }
+          }
+        ]
+      },
+      {
+        "genre": "classical",
+        "avg_tempo": 107.9,
+        "outlier_threshold": 170.0,
+        "outlier_tracks": [
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d881d22"
+            },
+            "track_name": "Piano Sonata No. 18 in D Major, K. 576 \"Hunt\": II. Adagio",
+            "popularity": 41,
+            "artists": [
+              "Wolfgang Amadeus Mozart",
+              "Mao Fujita"
+            ],
+            "audio_features": {
+              "tempo": 173.798
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d881d0a"
+            },
+            "track_name": "Aanai Mugathaan Revival",
+            "popularity": 29,
+            "artists": [
+              "Sirkazhi Govindarajan"
+            ],
+            "audio_features": {
+              "tempo": 171.774
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d881d0d"
+            },
+            "track_name": "Moonlight Sonata (First Movement from Piano Sonata No. 14, Op. 27 No. 2)",
+            "popularity": 59,
+            "artists": [
+              "Ludwig van Beethoven",
+              "Luke Woodapple"
+            ],
+            "audio_features": {
+              "tempo": 178.876
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d881d5f"
+            },
+            "track_name": "6 Variations in G minor for Piano & Violin on \"Hélas, j'ai perdu mon amant\" K.360: Var. I",
+            "popularity": 6,
+            "artists": [
+              "Wolfgang Amadeus Mozart",
+              "Arthur Grumiaux",
+              "Walter Klien"
+            ],
+            "audio_features": {
+              "tempo": 179.916
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d881d40"
+            },
+            "track_name": "12 Variations on ‘La belle Françoise’ in E flat, K.353: 2. Variation I",
+            "popularity": 20,
+            "artists": [
+              "Wolfgang Amadeus Mozart",
+              "Danielle Laval"
+            ],
+            "audio_features": {
+              "tempo": 194.515
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d881cba"
+            },
+            "track_name": "The Best For You",
+            "popularity": 54,
+            "artists": [
+              "Nana Ou-Yang"
+            ],
+            "audio_features": {
+              "tempo": 184.143
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d881ce3"
+            },
+            "track_name": "The Fairy Queen, Z. 629: See, even Night herself is here",
+            "popularity": 0,
+            "artists": [
+              "Henry Purcell",
+              "Eugénie Lefebvre",
+              "Ensemble Leviathan",
+              "Lucile Tessier"
+            ],
+            "audio_features": {
+              "tempo": 172.772
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d881ced"
+            },
+            "track_name": "Bol Ke Lab Azaad Hain",
+            "popularity": 29,
+            "artists": [
+              "Rashid Khan",
+              "Vidya Shah"
+            ],
+            "audio_features": {
+              "tempo": 172.377
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d881ccb"
+            },
+            "track_name": "Hold My Hand",
+            "popularity": 46,
+            "artists": [
+              "The Piano Lover"
+            ],
+            "audio_features": {
+              "tempo": 175.971
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d881cda"
+            },
+            "track_name": "Piano Concerto No. 21 in C Major, K. 467: II. Andante",
+            "popularity": 64,
+            "artists": [
+              "Wolfgang Amadeus Mozart",
+              "London Mozart Players",
+              "Howard Shelley"
+            ],
+            "audio_features": {
+              "tempo": 179.223
+            }
+          }
+        ]
+      },
+      {
+        "genre": "club",
+        "avg_tempo": 123.3,
+        "outlier_threshold": 175.5,
+        "outlier_tracks": [
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d882113"
+            },
+            "track_name": "Just Like That",
+            "popularity": 16,
+            "artists": [
+              "KilSoSouth"
+            ],
+            "audio_features": {
+              "tempo": 180.037
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d8820ee"
+            },
+            "track_name": "SINGULARITY",
+            "popularity": 16,
+            "artists": [
+              "N O W A V E"
+            ],
+            "audio_features": {
+              "tempo": 179.962
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d882131"
+            },
+            "track_name": "Candles",
+            "popularity": 17,
+            "artists": [
+              "Glee Cast"
+            ],
+            "audio_features": {
+              "tempo": 176.165
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d8820a6"
+            },
+            "track_name": "Nxwxrk",
+            "popularity": 17,
+            "artists": [
+              "Nadus"
+            ],
+            "audio_features": {
+              "tempo": 177.018
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d882075"
+            },
+            "track_name": "Solid Liquid Gas",
+            "popularity": 45,
+            "artists": [
+              "Eartheater"
+            ],
+            "audio_features": {
+              "tempo": 179.989
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d8820cb"
+            },
+            "track_name": "Halo / Walking On Sunshine",
+            "popularity": 49,
+            "artists": [
+              "Glee Cast"
+            ],
+            "audio_features": {
+              "tempo": 193.95
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d8820b0"
+            },
+            "track_name": "A New Horizon",
+            "popularity": 17,
+            "artists": [
+              "Starfarer"
+            ],
+            "audio_features": {
+              "tempo": 198.031
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d8820c1"
+            },
+            "track_name": "It's All Coming Back To Me Now (Glee Cast Version)",
+            "popularity": 47,
+            "artists": [
+              "Glee Cast"
+            ],
+            "audio_features": {
+              "tempo": 178.174
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d8821e4"
+            },
+            "track_name": "You Can't Outrun the Devil",
+            "popularity": 15,
+            "artists": [
+              "King Stephen"
+            ],
+            "audio_features": {
+              "tempo": 185.036
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d8821e8"
+            },
+            "track_name": "Bonjour Travelers",
+            "popularity": 15,
+            "artists": [
+              "Gabber Eleganza"
+            ],
+            "audio_features": {
+              "tempo": 178.046
+            }
+          }
+        ]
+      },
+      {
+        "genre": "comedy",
+        "avg_tempo": 101.0,
+        "outlier_threshold": 158.0,
+        "outlier_tracks": [
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d882501"
+            },
+            "track_name": "Morning Tom",
+            "popularity": 21,
+            "artists": [
+              "Tom Papa"
+            ],
+            "audio_features": {
+              "tempo": 171.074
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d8824e2"
+            },
+            "track_name": "The Circus Is in Town",
+            "popularity": 22,
+            "artists": [
+              "Patton Oswalt"
+            ],
+            "audio_features": {
+              "tempo": 168.161
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d882532"
+            },
+            "track_name": "Real Life Is Rubbish",
+            "popularity": 22,
+            "artists": [
+              "Rhod Gilbert"
+            ],
+            "audio_features": {
+              "tempo": 171.267
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d88251a"
+            },
+            "track_name": "If It Flies, Floats or Fucks",
+            "popularity": 22,
+            "artists": [
+              "Kevin Bloody Wilson"
+            ],
+            "audio_features": {
+              "tempo": 170.004
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d882522"
+            },
+            "track_name": "It's Nice To Meet Ya",
+            "popularity": 22,
+            "artists": [
+              "Muck Sticky"
+            ],
+            "audio_features": {
+              "tempo": 159.986
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d882488"
+            },
+            "track_name": "Classico",
+            "popularity": 55,
+            "artists": [
+              "Tenacious D"
+            ],
+            "audio_features": {
+              "tempo": 170.007
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d882454"
+            },
+            "track_name": "Show Me Your Genitals 2: E=MC Vagina",
+            "popularity": 38,
+            "artists": [
+              "Jon Lajoie"
+            ],
+            "audio_features": {
+              "tempo": 160.014
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d882457"
+            },
+            "track_name": "The Real World",
+            "popularity": 22,
+            "artists": [
+              "Tom Papa"
+            ],
+            "audio_features": {
+              "tempo": 179.403
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d8824b7"
+            },
+            "track_name": "F**K Everything",
+            "popularity": 38,
+            "artists": [
+              "Jon Lajoie"
+            ],
+            "audio_features": {
+              "tempo": 170.185
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d8824c0"
+            },
+            "track_name": "Brooklyn",
+            "popularity": 22,
+            "artists": [
+              "Tracy Morgan"
+            ],
+            "audio_features": {
+              "tempo": 178.79
+            }
+          }
+        ]
+      },
+      {
+        "genre": "country",
+        "avg_tempo": 124.0,
+        "outlier_threshold": 187.5,
+        "outlier_tracks": [
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d8828d2"
+            },
+            "track_name": "Islands in the Stream",
+            "popularity": 64,
+            "artists": [
+              "Dolly Parton",
+              "Kenny Rogers"
+            ],
+            "audio_features": {
+              "tempo": 203.787
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d882907"
+            },
+            "track_name": "Wasted On You",
+            "popularity": 83,
+            "artists": [
+              "Morgan Wallen"
+            ],
+            "audio_features": {
+              "tempo": 196.0
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d8828f8"
+            },
+            "track_name": "Livin' It Up",
+            "popularity": 0,
+            "artists": [
+              "Michael Ray"
+            ],
+            "audio_features": {
+              "tempo": 197.856
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d8828fc"
+            },
+            "track_name": "Midnight Rider",
+            "popularity": 1,
+            "artists": [
+              "Allman Brothers Band"
+            ],
+            "audio_features": {
+              "tempo": 189.486
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d88286a"
+            },
+            "track_name": "Long Live Cowgirls",
+            "popularity": 0,
+            "artists": [
+              "Ian Munsick",
+              "Cody Johnson"
+            ],
+            "audio_features": {
+              "tempo": 195.663
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d882865"
+            },
+            "track_name": "Long Live Cowgirls",
+            "popularity": 0,
+            "artists": [
+              "Ian Munsick",
+              "Cody Johnson"
+            ],
+            "audio_features": {
+              "tempo": 195.663
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d882877"
+            },
+            "track_name": "Tattoo - UK Pop Mix",
+            "popularity": 0,
+            "artists": [
+              "Hunter Hayes"
+            ],
+            "audio_features": {
+              "tempo": 194.038
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d882853"
+            },
+            "track_name": "Long Live Cowgirls",
+            "popularity": 0,
+            "artists": [
+              "Ian Munsick",
+              "Cody Johnson"
+            ],
+            "audio_features": {
+              "tempo": 195.663
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d8829f4"
+            },
+            "track_name": "Hands On You",
+            "popularity": 0,
+            "artists": [
+              "Ashley Monroe"
+            ],
+            "audio_features": {
+              "tempo": 190.414
+            }
+          },
+          {
+            "_id": {
+              "$oid": "6a415542b5f68fa43d882943"
+            },
+            "track_name": "Country Outta My Girl",
+            "popularity": 0,
+            "artists": [
+              "Morgan Evans"
+            ],
+            "audio_features": {
+              "tempo": 187.813
+            }
+          }
+        ]
+      }
+    ],
+    "background_work_tracks": [
+      {
+        "track_name": "And I Love Her",
+        "track_genre": "acoustic",
+        "audio_features": {
+          "danceability": 0.616,
+          "energy": 0.282,
+          "loudness": -15.317,
+          "speechiness": 0.0331,
+          "acousticness": 0.983,
+          "instrumentalness": 0.833,
+          "liveness": 0.13,
+          "valence": 0.435,
+          "tempo": 96.638,
+          "key": 1,
+          "mode": 1,
+          "time_signature": 4
+        },
+        "artists": [
+          "Kurt Cobain"
+        ]
+      },
+      {
+        "track_name": "Chi Mai",
+        "track_genre": "acoustic",
+        "audio_features": {
+          "danceability": 0.739,
+          "energy": 0.287,
+          "loudness": -14.007,
+          "speechiness": 0.059,
+          "acousticness": 0.969,
+          "instrumentalness": 0.961,
+          "liveness": 0.111,
+          "valence": 0.557,
+          "tempo": 80.64,
+          "key": 6,
+          "mode": 0,
+          "time_signature": 4
+        },
+        "artists": [
+          "Joseph Sullinger"
+        ]
+      },
+      {
+        "track_name": "Mujer con Abanico",
+        "track_genre": "acoustic",
+        "audio_features": {
+          "danceability": 0.769,
+          "energy": 0.135,
+          "loudness": -12.049,
+          "speechiness": 0.061,
+          "acousticness": 0.986,
+          "instrumentalness": 0.905,
+          "liveness": 0.106,
+          "valence": 0.471,
+          "tempo": 103.939,
+          "key": 5,
+          "mode": 0,
+          "time_signature": 4
+        },
+        "artists": [
+          "Agustín Amigó",
+          "Nylonwings"
+        ]
+      },
+      {
+        "track_name": "Love Nwantiti",
+        "track_genre": "acoustic",
+        "audio_features": {
+          "danceability": 0.48,
+          "energy": 0.158,
+          "loudness": -15.239,
+          "speechiness": 0.0807,
+          "acousticness": 0.809,
+          "instrumentalness": 0.886,
+          "liveness": 0.117,
+          "valence": 0.498,
+          "tempo": 86.107,
+          "key": 8,
+          "mode": 1,
+          "time_signature": 4
+        },
+        "artists": [
+          "Andrew Foy"
+        ]
+      },
+      {
+        "track_name": "River Flows In You",
+        "track_genre": "acoustic",
+        "audio_features": {
+          "danceability": 0.356,
+          "energy": 0.23,
+          "loudness": -16.957,
+          "speechiness": 0.0519,
+          "acousticness": 0.923,
+          "instrumentalness": 0.801,
+          "liveness": 0.112,
+          "valence": 0.11,
+          "tempo": 129.532,
+          "key": 6,
+          "mode": 0,
+          "time_signature": 4
+        },
+        "artists": [
+          "Sungha Jung"
+        ]
+      },
+      {
+        "track_name": "Guaranteed - Humming Version",
+        "track_genre": "acoustic",
+        "audio_features": {
+          "danceability": 0.292,
+          "energy": 0.339,
+          "loudness": -13.153,
+          "speechiness": 0.032,
+          "acousticness": 0.923,
+          "instrumentalness": 0.879,
+          "liveness": 0.111,
+          "valence": 0.343,
+          "tempo": 100.69,
+          "key": 7,
+          "mode": 1,
+          "time_signature": 4
+        },
+        "artists": [
+          "Eddie Vedder"
+        ]
+      },
+      {
+        "track_name": "Paradise",
+        "track_genre": "acoustic",
+        "audio_features": {
+          "danceability": 0.507,
+          "energy": 0.191,
+          "loudness": -16.342,
+          "speechiness": 0.0408,
+          "acousticness": 0.99,
+          "instrumentalness": 0.933,
+          "liveness": 0.108,
+          "valence": 0.221,
+          "tempo": 132.131,
+          "key": 5,
+          "mode": 1,
+          "time_signature": 4
+        },
+        "artists": [
+          "AcousticTrench"
+        ]
+      },
+      {
+        "track_name": "Photographs",
+        "track_genre": "acoustic",
+        "audio_features": {
+          "danceability": 0.539,
+          "energy": 0.353,
+          "loudness": -10.191,
+          "speechiness": 0.0464,
+          "acousticness": 0.571,
+          "instrumentalness": 0.626,
+          "liveness": 0.0877,
+          "valence": 0.321,
+          "tempo": 54.571,
+          "key": 3,
+          "mode": 1,
+          "time_signature": 4
+        },
+        "artists": [
+          "Eddie Vedder"
+        ]
+      },
+      {
+        "track_name": "Poison's Gone",
+        "track_genre": "acoustic",
+        "audio_features": {
+          "danceability": 0.429,
+          "energy": 0.258,
+          "loudness": -12.408,
+          "speechiness": 0.0317,
+          "acousticness": 0.868,
+          "instrumentalness": 0.888,
+          "liveness": 0.108,
+          "valence": 0.0897,
+          "tempo": 108.796,
+          "key": 5,
+          "mode": 1,
+          "time_signature": 4
+        },
+        "artists": [
+          "Kurt Cobain"
+        ]
+      },
+      {
+        "track_name": "Game of Thrones",
+        "track_genre": "acoustic",
+        "audio_features": {
+          "danceability": 0.34,
+          "energy": 0.309,
+          "loudness": -12.98,
+          "speechiness": 0.05,
+          "acousticness": 0.855,
+          "instrumentalness": 0.903,
+          "liveness": 0.168,
+          "valence": 0.153,
+          "tempo": 176.899,
+          "key": 11,
+          "mode": 0,
+          "time_signature": 3
+        },
+        "artists": [
+          "Edy Hafler"
+        ]
+      }
+    ]
+  },
+  "part3_aggregations": {
+    "top_artists": [
+      {
+        "_id": "Olivia Rodrigo",
+        "tracks": 5,
+        "avg_popularity": 87.4
+      },
+      {
+        "_id": "Måneskin",
+        "tracks": 12,
+        "avg_popularity": 83.66666666666667
+      },
+      {
+        "_id": "Lil Nas X",
+        "tracks": 11,
+        "avg_popularity": 83.45454545454545
+      },
+      {
+        "_id": "One Direction",
+        "tracks": 5,
+        "avg_popularity": 83.0
+      },
+      {
+        "_id": "TV Girl",
+        "tracks": 5,
+        "avg_popularity": 82.0
+      },
+      {
+        "_id": "Bomba Estéreo",
+        "tracks": 6,
+        "avg_popularity": 81.5
+      },
+      {
+        "_id": "Mora",
+        "tracks": 7,
+        "avg_popularity": 79.71428571428571
+      },
+      {
+        "_id": "Beach Bunny",
+        "tracks": 7,
+        "avg_popularity": 79.42857142857143
+      },
+      {
+        "_id": "Mitski",
+        "tracks": 9,
+        "avg_popularity": 78.88888888888889
+      },
+      {
+        "_id": "Jhay Cortez",
+        "tracks": 7,
+        "avg_popularity": 78.71428571428571
+      }
+    ],
+    "mood_distribution": [
+      {
+        "_id": "happy",
+        "tracks": 43404,
+        "avg_popularity": 32.48769698645286
+      },
+      {
+        "_id": "angry",
+        "tracks": 38761,
+        "avg_popularity": 34.503985965274374
+      },
+      {
+        "_id": "sad",
+        "tracks": 23086,
+        "avg_popularity": 33.722775708221434
+      },
+      {
+        "_id": "calm",
+        "tracks": 8748,
+        "avg_popularity": 30.0827617741198
+      }
+    ],
+    "danceable_genres": [
+      {
+        "_id": "party",
+        "tracks": 1000,
+        "avg_danceability": 0.667191,
+        "avg_energy": 0.8712369999999999,
+        "avg_valence": 0.6812349000000001,
+        "dance_score": 0.74
+      },
+      {
+        "_id": "salsa",
+        "tracks": 1000,
+        "avg_danceability": 0.668288,
+        "avg_energy": 0.724518,
+        "avg_valence": 0.814838,
+        "dance_score": 0.736
+      },
+      {
+        "_id": "forro",
+        "tracks": 1000,
+        "avg_danceability": 0.6497759999999999,
+        "avg_energy": 0.789526,
+        "avg_valence": 0.7606934,
+        "dance_score": 0.733
+      },
+      {
+        "_id": "reggaeton",
+        "tracks": 1000,
+        "avg_danceability": 0.758521,
+        "avg_energy": 0.7387279999999999,
+        "avg_valence": 0.6427535,
+        "dance_score": 0.713
+      },
+      {
+        "_id": "latino",
+        "tracks": 1000,
+        "avg_danceability": 0.757057,
+        "avg_energy": 0.7317965000000001,
+        "avg_valence": 0.6302008,
+        "dance_score": 0.706
+      },
+      {
+        "_id": "reggae",
+        "tracks": 1000,
+        "avg_danceability": 0.745331,
+        "avg_energy": 0.7257910000000001,
+        "avg_valence": 0.647529,
+        "dance_score": 0.706
+      },
+      {
+        "_id": "disco",
+        "tracks": 1000,
+        "avg_danceability": 0.676692,
+        "avg_energy": 0.737565,
+        "avg_valence": 0.6707538,
+        "dance_score": 0.695
+      },
+      {
+        "_id": "chicago-house",
+        "tracks": 1000,
+        "avg_danceability": 0.7661760000000001,
+        "avg_energy": 0.7332150000000001,
+        "avg_valence": 0.5865412,
+        "dance_score": 0.695
+      },
+      {
+        "_id": "latin",
+        "tracks": 1000,
+        "avg_danceability": 0.721902,
+        "avg_energy": 0.7270800000000001,
+        "avg_valence": 0.631149,
+        "dance_score": 0.693
+      },
+      {
+        "_id": "kids",
+        "tracks": 1000,
+        "avg_danceability": 0.778906,
+        "avg_energy": 0.6131286,
+        "avg_valence": 0.6808638,
+        "dance_score": 0.691
+      }
+    ],
+    "lookup_demo": [
+      {
+        "track_name": "Unholy (feat. Kim Petras)",
+        "popularity": 100,
+        "artists": "Kim Petras",
+        "artist_info": {
+          "_id": "Kim Petras",
+          "artist_track_count": 16,
+          "artist_avg_popularity": 19.125
+        }
+      },
+      {
+        "track_name": "Unholy (feat. Kim Petras)",
+        "popularity": 100,
+        "artists": "Kim Petras",
+        "artist_info": {
+          "_id": "Kim Petras",
+          "artist_track_count": 16,
+          "artist_avg_popularity": 19.125
+        }
+      },
+      {
+        "track_name": "Unholy (feat. Kim Petras)",
+        "popularity": 100,
+        "artists": "Sam Smith",
+        "artist_info": {
+          "_id": "Sam Smith",
+          "artist_track_count": 64,
+          "artist_avg_popularity": 15.46875
+        }
+      },
+      {
+        "track_name": "Unholy (feat. Kim Petras)",
+        "popularity": 100,
+        "artists": "Sam Smith",
+        "artist_info": {
+          "_id": "Sam Smith",
+          "artist_track_count": 64,
+          "artist_avg_popularity": 15.46875
+        }
+      },
+      {
+        "track_name": "Quevedo: Bzrp Music Sessions, Vol. 52",
+        "popularity": 99,
+        "artists": "Bizarrap",
+        "artist_info": {
+          "_id": "Bizarrap",
+          "artist_track_count": 1,
+          "artist_avg_popularity": 99.0
+        }
+      },
+      {
+        "track_name": "Quevedo: Bzrp Music Sessions, Vol. 52",
+        "popularity": 99,
+        "artists": "Quevedo",
+        "artist_info": {
+          "_id": "Quevedo",
+          "artist_track_count": 1,
+          "artist_avg_popularity": 99.0
+        }
+      },
+      {
+        "track_name": "I'm Good (Blue)",
+        "popularity": 98,
+        "artists": "Bebe Rexha",
+        "artist_info": {
+          "_id": "Bebe Rexha",
+          "artist_track_count": 83,
+          "artist_avg_popularity": 25.156626506024097
+        }
+      },
+      {
+        "track_name": "I'm Good (Blue)",
+        "popularity": 98,
+        "artists": "Bebe Rexha",
+        "artist_info": {
+          "_id": "Bebe Rexha",
+          "artist_track_count": 83,
+          "artist_avg_popularity": 25.156626506024097
+        }
+      },
+      {
+        "track_name": "I'm Good (Blue)",
+        "popularity": 98,
+        "artists": "David Guetta",
+        "artist_info": {
+          "_id": "David Guetta",
+          "artist_track_count": 250,
+          "artist_avg_popularity": 20.292
+        }
+      },
+      {
+        "track_name": "La Bachata",
+        "popularity": 98,
+        "artists": "Manuel Turizo",
+        "artist_info": {
+          "_id": "Manuel Turizo",
+          "artist_track_count": 27,
+          "artist_avg_popularity": 29.814814814814813
+        }
+      }
+    ]
+  },
+  "part4_indexes": {
+    "pop_danceability_before_index": {
+      "executionTimeMillis": 87,
+      "totalKeysExamined": 0,
+      "totalDocsExamined": 113999,
+      "nReturned": 354
+    },
+    "pop_danceability_after_index": {
+      "executionTimeMillis": 2,
+      "totalKeysExamined": 412,
+      "totalDocsExamined": 354,
+      "nReturned": 354
+    },
+    "work_music_with_index": {
+      "executionTimeMillis": 38,
+      "totalKeysExamined": 16602,
+      "totalDocsExamined": 16141,
+      "nReturned": 16141
+    },
+    "covered_query_variant": {
+      "executionTimeMillis": 0,
+      "totalKeysExamined": 317,
+      "totalDocsExamined": 0,
+      "nReturned": 317
+    },
+    "indexes": [
+      {
+        "v": 2,
+        "key": {
+          "_id": 1
+        },
+        "name": "_id_"
+      },
+      {
+        "v": 2,
+        "key": {
+          "track_genre": 1,
+          "popularity": -1,
+          "audio_features.danceability": 1
+        },
+        "name": "idx_genre_popularity_danceability"
+      },
+      {
+        "v": 2,
+        "key": {
+          "explicit": 1,
+          "audio_features.instrumentalness": 1,
+          "audio_features.speechiness": 1
+        },
+        "name": "idx_work_music"
+      }
+    ]
+  }
+}
