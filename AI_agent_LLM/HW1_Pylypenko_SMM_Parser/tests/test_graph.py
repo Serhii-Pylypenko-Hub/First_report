@@ -18,7 +18,10 @@ def test_react_graph_returns_structured_report() -> None:
     result = agent.run("Знайди тренди про AI agents за останні 7 днів")
     assert result["report"]["status"] == "success"
     assert result["report"]["mode"] == "thematic"
-    assert result["report"]["top_by_views"]
+    assert result["report"]["candidates_found"] == 14
+    assert len(result["report"]["top_by_views"]) == 14
+    assert "всі 14 доступні результати" in result["report"]["summary"]
+    assert "лише 14 релевантних відео" in result["report"]["limitations"][-1]
     assert result["tool_calls"] == [
         "search_recent_videos",
         "enrich_video_statistics",

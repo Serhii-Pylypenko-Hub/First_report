@@ -13,7 +13,7 @@
       "rank_trending_videos",
       "analyze_topic_signals"
     ],
-    "elapsed_ms": 15,
+    "elapsed_ms": 31,
     "complexity": "medium",
     "llm_provider": "scripted_test_double",
     "data_mode": "fixture",
@@ -35,7 +35,7 @@
       "rank_trending_videos",
       "analyze_topic_signals"
     ],
-    "elapsed_ms": 16,
+    "elapsed_ms": 15,
     "complexity": "complex",
     "llm_provider": "scripted_test_double",
     "data_mode": "fixture",
@@ -54,7 +54,7 @@
     "tool_calls": [
       "search_recent_videos"
     ],
-    "elapsed_ms": 0,
+    "elapsed_ms": 15,
     "complexity": "guardrail",
     "llm_provider": "scripted_guardrail_demo",
     "data_mode": "fixture",
@@ -92,7 +92,7 @@
       "search_recent_videos",
       "search_recent_videos"
     ],
-    "elapsed_ms": 15,
+    "elapsed_ms": 14,
     "complexity": "guardrail",
     "llm_provider": "scripted_loop_demo",
     "data_mode": "fixture",
