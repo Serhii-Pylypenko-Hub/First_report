@@ -1,0 +1,663 @@
+{
+  "runs": [
+    {
+      "run_id": "run-6fa6361961",
+      "started_at": "2026-08-29T14:43:14.335666+00:00",
+      "total_steps": 10,
+      "total_time_ms": 31,
+      "stop_reason": "completed",
+      "trajectory": [
+        {
+          "step_number": 1,
+          "node_name": "agent",
+          "input": "{\"last_message\": \"\\\"Знайди загальні тренди YouTube за останні 7 днів в Україні та сформуй топ-20\\\"\"}",
+          "output": "{\"content\": \"\\\"\\\"\", \"tool_calls\": [{\"name\": \"search_recent_videos\", \"args\": {\"topic\": \"\", \"days\": 7, \"region_code\": \"UA\", \"max_candidates\": 50}, \"id\": \"call-search\"}]}",
+          "tool_calls": [
+            {
+              "name": "search_recent_videos",
+              "args": {
+                "topic": "",
+                "days": 7,
+                "region_code": "UA",
+                "max_candidates": 50
+              },
+              "id": "call-search"
+            }
+          ],
+          "timestamp": "2026-08-29T14:43:14.338447+00:00",
+          "duration_ms": 0,
+          "elapsed_ms": 16
+        },
+        {
+          "step_number": 2,
+          "node_name": "tools",
+          "input": "{\"tool_calls\": [{\"name\": \"search_recent_videos\", \"args\": {\"topic\": \"\", \"days\": 7, \"region_code\": \"UA\", \"max_candidates\": 50}, \"id\": \"call-search\"}]}",
+          "output": "[\"\\\"{\\\\\\\"result_type\\\\\\\": \\\\\\\"search\\\\\\\", \\\\\\\"dataset_id\\\\\\\": \\\\\\\"dataset-20c62f06d6\\\\\\\", \\\\\\\"mode\\\\\\\": \\\\\\\"general\\\\\\\", \\\\\\\"topic\\\\\\\": \\\\\\\"\\\\\\\", \\\\\\\"candidates_found\\\\\\\": 30, \\\\\\\"sample\\\\\\\": [{\\\\\\\"video_id\\\\\\\": \\\\\\\"filmtrail01\\\\\\\", \\\\\\\"title\\\\\\\": \\\\\\\"ORBIT — Official Trailer\\\\\\\"}, {\\\\\\\"video_id\\\\\\\": \\\\\\\"musictrend1\\\\\\\", \\\\\\\"title\\\\\\\": \\\\\\\"Summer Sound 2026 — Official Video\\\\\\\"}, {\\\\\\\"video_id\\\\\\\": \\\\\\\"football001\\\\\\\", \\\\\\\"title\\\\\\\": \\\\\\\"Top Goals of the Week\\\\\\\"}, {\\\\\\\"video_id\\\\\\\": \\\\\\\"foodviral01\\\\\\\", \\\\\\\"title\\\\\\\": \\\\\\\"The 10-Minute Dessert Everyone Is Making\\\\\\\"}, {\\\\\\\"video_id\\\\\\\": \\\\\\\"newsworld01\\\\\\\", \\\\\\\"title\\\\\\\": \\\\\\\"The Week Explained in 12 Minutes\\\\\\\"}], \\\\\\\"next_action\\\\\\\": \\\\\\\"Call enrich_video_statistics with this dataset_id.\\\\\\\"}\\\"\"]",
+          "tool_calls": [
+            {
+              "name": "search_recent_videos",
+              "args": {
+                "topic": "",
+                "days": 7,
+                "region_code": "UA",
+                "max_candidates": 50
+              },
+              "id": "call-search"
+            }
+          ],
+          "timestamp": "2026-08-29T14:43:14.352307+00:00",
+          "duration_ms": 0,
+          "elapsed_ms": 16
+        },
+        {
+          "step_number": 3,
+          "node_name": "agent",
+          "input": "{\"last_message\": \"\\\"{\\\\\\\"result_type\\\\\\\": \\\\\\\"search\\\\\\\", \\\\\\\"dataset_id\\\\\\\": \\\\\\\"dataset-20c62f06d6\\\\\\\", \\\\\\\"mode\\\\\\\": \\\\\\\"general\\\\\\\", \\\\\\\"topic\\\\\\\": \\\\\\\"\\\\\\\", \\\\\\\"candidates_found\\\\\\\": 30, \\\\\\\"sample\\\\\\\": [{\\\\\\\"video_id\\\\\\\": \\\\\\\"filmtrail01\\\\\\\", \\\\\\\"title\\\\\\\": \\\\\\\"ORBIT — Official Trailer\\\\\\\"}, {\\\\\\\"video_id\\\\\\\": \\\\\\\"musictrend1\\\\\\\", \\\\\\\"title\\\\\\\": \\\\\\\"Summer Sound 2026 — Official Video\\\\\\\"}, {\\\\\\\"video_id\\\\\\\": \\\\\\\"football001\\\\\\\", \\\\\\\"title\\\\\\\": \\\\\\\"Top Goals of the Week\\\\\\\"}, {\\\\\\\"video_id\\\\\\\": \\\\\\\"foodviral01\\\\\\\", \\\\\\\"title\\\\\\\": \\\\\\\"The 10-Minute Dessert Everyone Is Making\\\\\\\"}, {\\\\\\\"video_id\\\\\\\": \\\\\\\"newsworld01\\\\\\\", \\\\\\\"title\\\\\\\": \\\\\\\"The Week Explained in 12 Minutes\\\\\\\"}], \\\\\\\"next_action\\\\\\\": \\\\\\\"Call enrich_video_statistics with this dataset_id.\\\\\\\"}\\\"\"}",
+          "output": "{\"content\": \"\\\"\\\"\", \"tool_calls\": [{\"name\": \"enrich_video_statistics\", \"args\": {\"dataset_id\": \"dataset-20c62f06d6\"}, \"id\": \"call-statistics\"}]}",
+          "tool_calls": [
+            {
+              "name": "enrich_video_statistics",
+              "args": {
+                "dataset_id": "dataset-20c62f06d6"
+              },
+              "id": "call-statistics"
+            }
+          ],
+          "timestamp": "2026-08-29T14:43:14.353305+00:00",
+          "duration_ms": 0,
+          "elapsed_ms": 16
+        },
+        {
+          "step_number": 4,
+          "node_name": "tools",
+          "input": "{\"tool_calls\": [{\"name\": \"enrich_video_statistics\", \"args\": {\"dataset_id\": \"dataset-20c62f06d6\"}, \"id\": \"call-statistics\"}]}",
+          "output": "[\"\\\"{\\\\\\\"result_type\\\\\\\": \\\\\\\"statistics\\\\\\\", \\\\\\\"dataset_id\\\\\\\": \\\\\\\"dataset-20c62f06d6\\\\\\\", \\\\\\\"videos_enriched\\\\\\\": 30, \\\\\\\"metrics\\\\\\\": [\\\\\\\"views\\\\\\\", \\\\\\\"duration_seconds\\\\\\\", \\\\\\\"trend_score\\\\\\\"], \\\\\\\"next_action\\\\\\\": \\\\\\\"Call rank_trending_videos for trend_score and views.\\\\\\\"}\\\"\"]",
+          "tool_calls": [
+            {
+              "name": "enrich_video_statistics",
+              "args": {
+                "dataset_id": "dataset-20c62f06d6"
+              },
+              "id": "call-statistics"
+            }
+          ],
+          "timestamp": "2026-08-29T14:43:14.357307+00:00",
+          "duration_ms": 0,
+          "elapsed_ms": 16
+        },
+        {
+          "step_number": 5,
+          "node_name": "agent",
+          "input": "{\"last_message\": \"\\\"{\\\\\\\"result_type\\\\\\\": \\\\\\\"statistics\\\\\\\", \\\\\\\"dataset_id\\\\\\\": \\\\\\\"dataset-20c62f06d6\\\\\\\", \\\\\\\"videos_enriched\\\\\\\": 30, \\\\\\\"metrics\\\\\\\": [\\\\\\\"views\\\\\\\", \\\\\\\"duration_seconds\\\\\\\", \\\\\\\"trend_score\\\\\\\"], \\\\\\\"next_action\\\\\\\": \\\\\\\"Call rank_trending_videos for trend_score and views.\\\\\\\"}\\\"\"}",
+          "output": "{\"content\": \"\\\"\\\"\", \"tool_calls\": [{\"name\": \"rank_trending_videos\", \"args\": {\"dataset_id\": \"dataset-20c62f06d6\", \"metrics\": [\"trend_score\", \"views\"], \"top_n\": 20}, \"id\": \"call-ranking\"}]}",
+          "tool_calls": [
+            {
+              "name": "rank_trending_videos",
+              "args": {
+                "dataset_id": "dataset-20c62f06d6",
+                "metrics": [
+                  "trend_score",
+                  "views"
+                ],
+                "top_n": 20
+              },
+              "id": "call-ranking"
+            }
+          ],
+          "timestamp": "2026-08-29T14:43:14.358305+00:00",
+          "duration_ms": 0,
+          "elapsed_ms": 16
+        },
+        {
+          "step_number": 6,
+          "node_name": "tools",
+          "input": "{\"tool_calls\": [{\"name\": \"rank_trending_videos\", \"args\": {\"dataset_id\": \"dataset-20c62f06d6\", \"metrics\": [\"trend_score\", \"views\"], \"top_n\": 20}, \"id\": \"call-ranking\"}]}",
+          "output": "[\"\\\"{\\\\\\\"result_type\\\\\\\": \\\\\\\"rankings\\\\\\\", \\\\\\\"dataset_id\\\\\\\": \\\\\\\"dataset-20c62f06d6\\\\\\\", \\\\\\\"top_n\\\\\\\": 20, \\\\\\\"rankings\\\\\\\": {\\\\\\\"trend_score\\\\\\\": [{\\\\\\\"rank\\\\\\\": 1, \\\\\\\"video_id\\\\\\\": \\\\\\\"filmtrail01\\\\\\\", \\\\\\\"title\\\\\\\": \\\\\\\"ORBIT — Official Trailer\\\\\\\", \\\\\\\"channel_title\\\\\\\": \\\\\\\"North Star Pictures\\\\\\\", \\\\\\\"published_at\\\\\\\": \\\\\\\"2026-08-28T17:07:14.334667Z\\\\\\\", \\\\\\\"url\\\\\\\": \\\\\\\"https://www.youtube.com/watch?v=filmtrail01\\\\\\\", \\\\\\\"views\\\\\\\": 5420000, \\\\\\\"trend_score\\\\\\\": 0.9807}, {\\\\\\\"rank\\\\\\\": 2, \\\\\\\"video_id\\\\\\\": \\\\\\\"musictrend1\\\\\\\", \\\\\\\"title\\\\\\\": \\\\\\\"Summer Sound 2026 — Official Video\\\\\\\", \\\\\\\"channel_title\\\\\\\": \\\\\\\"Nova Music\\\\\\\", \\\\\\\"published_at\\\\\\\": \\\\\\\"2026-08-28T09:55:14.334667Z\\\\\\\", \\\\\\\"url\\\\\\\": \\\\\\\"https://www.youtube.com/watch?v=musictrend1\\\\\\\", \\\\\\\"views\\\\\\\": 4920000, \\\\\\",
+          "tool_calls": [
+            {
+              "name": "rank_trending_videos",
+              "args": {
+                "dataset_id": "dataset-20c62f06d6",
+                "metrics": [
+                  "trend_score",
+                  "views"
+                ],
+                "top_n": 20
+              },
+              "id": "call-ranking"
+            }
+          ],
+          "timestamp": "2026-08-29T14:43:14.363300+00:00",
+          "duration_ms": 15,
+          "elapsed_ms": 31
+        },
+        {
+          "step_number": 7,
+          "node_name": "agent",
+          "input": "{\"last_message\": \"\\\"{\\\\\\\"result_type\\\\\\\": \\\\\\\"rankings\\\\\\\", \\\\\\\"dataset_id\\\\\\\": \\\\\\\"dataset-20c62f06d6\\\\\\\", \\\\\\\"top_n\\\\\\\": 20, \\\\\\\"rankings\\\\\\\": {\\\\\\\"trend_score\\\\\\\": [{\\\\\\\"rank\\\\\\\": 1, \\\\\\\"video_id\\\\\\\": \\\\\\\"filmtrail01\\\\\\\", \\\\\\\"title\\\\\\\": \\\\\\\"ORBIT — Official Trailer\\\\\\\", \\\\\\\"channel_title\\\\\\\": \\\\\\\"North Star Pictures\\\\\\\", \\\\\\\"published_at\\\\\\\": \\\\\\\"2026-08-28T17:07:14.334667Z\\\\\\\", \\\\\\\"url\\\\\\\": \\\\\\\"https://www.youtube.com/watch?v=filmtrail01\\\\\\\", \\\\\\\"views\\\\\\\": 5420000, \\\\\\\"trend_score\\\\\\\": 0.9807}, {\\\\\\\"rank\\\\\\\": 2, \\\\\\\"video_id\\\\\\\": \\\\\\\"musictrend1\\\\\\\", \\\\\\\"title\\\\\\\": \\\\\\\"Summer Sound 2026 — Official Video\\\\\\\", \\\\\\\"channel_title\\\\\\\": \\\\\\\"Nova Music\\\\\\\", \\\\\\\"published_at\\\\\\\": \\\\\\\"2026-08-28T09:55:14.334667Z\\\\\\\", \\\\\\\"url\\\\\\\": \\\\\\\"https://www.youtube.com/watch?v=musictrend1\\\\\\\", \\\\\\\"views\\\\",
+          "output": "{\"content\": \"\\\"\\\"\", \"tool_calls\": [{\"name\": \"analyze_topic_signals\", \"args\": {\"dataset_id\": \"dataset-20c62f06d6\", \"top_n\": 10}, \"id\": \"call-signals\"}]}",
+          "tool_calls": [
+            {
+              "name": "analyze_topic_signals",
+              "args": {
+                "dataset_id": "dataset-20c62f06d6",
+                "top_n": 10
+              },
+              "id": "call-signals"
+            }
+          ],
+          "timestamp": "2026-08-29T14:43:14.364029+00:00",
+          "duration_ms": 0,
+          "elapsed_ms": 31
+        },
+        {
+          "step_number": 8,
+          "node_name": "tools",
+          "input": "{\"tool_calls\": [{\"name\": \"analyze_topic_signals\", \"args\": {\"dataset_id\": \"dataset-20c62f06d6\", \"top_n\": 10}, \"id\": \"call-signals\"}]}",
+          "output": "[\"\\\"{\\\\\\\"result_type\\\\\\\": \\\\\\\"signals\\\\\\\", \\\\\\\"dataset_id\\\\\\\": \\\\\\\"dataset-20c62f06d6\\\\\\\", \\\\\\\"trend_terms\\\\\\\": [\\\\\\\"agent\\\\\\\", \\\\\\\"for\\\\\\\", \\\\\\\"week\\\\\\\", \\\\\\\"research\\\\\\\", \\\\\\\"tools\\\\\\\", \\\\\\\"langgraph\\\\\\\", \\\\\\\"official\\\\\\\", \\\\\\\"new\\\\\\\", \\\\\\\"workflow\\\\\\\", \\\\\\\"one\\\\\\\"], \\\\\\\"leading_channels\\\\\\\": [\\\\\\\"North Star Pictures\\\\\\\", \\\\\\\"Nova Music\\\\\\\", \\\\\\\"World Football\\\\\\\", \\\\\\\"Easy Kitchen\\\\\\\", \\\\\\\"World Context\\\\\\\", \\\\\\\"Game Scope\\\\\\\", \\\\\\\"Robotics Now\\\\\\\", \\\\\\\"Science Window\\\\\\\", \\\\\\\"Future Stack\\\\\\\", \\\\\\\"Open Roads\\\\\\\"]}\\\"\"]",
+          "tool_calls": [
+            {
+              "name": "analyze_topic_signals",
+              "args": {
+                "dataset_id": "dataset-20c62f06d6",
+                "top_n": 10
+              },
+              "id": "call-signals"
+            }
+          ],
+          "timestamp": "2026-08-29T14:43:14.369010+00:00",
+          "duration_ms": 0,
+          "elapsed_ms": 31
+        },
+        {
+          "step_number": 9,
+          "node_name": "agent",
+          "input": "{\"last_message\": \"\\\"{\\\\\\\"result_type\\\\\\\": \\\\\\\"signals\\\\\\\", \\\\\\\"dataset_id\\\\\\\": \\\\\\\"dataset-20c62f06d6\\\\\\\", \\\\\\\"trend_terms\\\\\\\": [\\\\\\\"agent\\\\\\\", \\\\\\\"for\\\\\\\", \\\\\\\"week\\\\\\\", \\\\\\\"research\\\\\\\", \\\\\\\"tools\\\\\\\", \\\\\\\"langgraph\\\\\\\", \\\\\\\"official\\\\\\\", \\\\\\\"new\\\\\\\", \\\\\\\"workflow\\\\\\\", \\\\\\\"one\\\\\\\"], \\\\\\\"leading_channels\\\\\\\": [\\\\\\\"North Star Pictures\\\\\\\", \\\\\\\"Nova Music\\\\\\\", \\\\\\\"World Football\\\\\\\", \\\\\\\"Easy Kitchen\\\\\\\", \\\\\\\"World Context\\\\\\\", \\\\\\\"Game Scope\\\\\\\", \\\\\\\"Robotics Now\\\\\\\", \\\\\\\"Science Window\\\\\\\", \\\\\\\"Future Stack\\\\\\\", \\\\\\\"Open Roads\\\\\\\"]}\\\"\"}",
+          "output": "{\"content\": \"\\\"Аналіз трендів завершено на основі результатів інструментів.\\\"\", \"tool_calls\": []}",
+          "tool_calls": [],
+          "timestamp": "2026-08-29T14:43:14.370012+00:00",
+          "duration_ms": 0,
+          "elapsed_ms": 31
+        },
+        {
+          "step_number": 10,
+          "node_name": "formatter",
+          "input": "{\"dataset_id\": \"dataset-20c62f06d6\"}",
+          "output": "{\"status\": \"success\", \"mode\": \"general\", \"topic\": \"\", \"period_days\": 7, \"region_code\": \"UA\", \"source_mode\": \"fixture\", \"generated_at\": \"2026-08-29T14:43:14.371014Z\", \"candidates_found\": 30, \"videos_analyzed\": 30, \"top_overall\": [{\"rank\": 1, \"video_id\": \"filmtrail01\", \"title\": \"ORBIT — Official Trailer\", \"channel_title\": \"North Star Pictures\", \"published_at\": \"2026-08-28T17:07:14.334667Z\", \"url\": \"https://www.youtube.com/watch?v=filmtrail01\", \"views\": 5420000, \"trend_score\": 0.9807}, {\"rank\": 2, \"video_id\": \"musictrend1\", \"title\": \"Summer Sound 2026 — Official Video\", \"channel_title\": \"Nova Music\", \"published_at\": \"2026-08-28T09:55:14.334667Z\", \"url\": \"https://www.youtube.com/watch?v=musictrend1\", \"views\": 4920000, \"trend_score\": 0.969}, {\"rank\": 3, \"video_id\": \"newsworld01\", \"title\": \"The ",
+          "tool_calls": [],
+          "timestamp": "2026-08-29T14:43:14.371014+00:00",
+          "duration_ms": 0,
+          "elapsed_ms": 31
+        }
+      ]
+    },
+    {
+      "run_id": "run-9e594d8367",
+      "started_at": "2026-08-29T14:43:14.373016+00:00",
+      "total_steps": 10,
+      "total_time_ms": 31,
+      "stop_reason": "completed",
+      "trajectory": [
+        {
+          "step_number": 1,
+          "node_name": "agent",
+          "input": "{\"last_message\": \"\\\"Знайди тренди YouTube про AI agents за останні 7 днів і сформуй топ-20\\\"\"}",
+          "output": "{\"content\": \"\\\"\\\"\", \"tool_calls\": [{\"name\": \"search_recent_videos\", \"args\": {\"topic\": \"AI agents\", \"days\": 7, \"region_code\": \"UA\", \"max_candidates\": 50}, \"id\": \"call-search\"}]}",
+          "tool_calls": [
+            {
+              "name": "search_recent_videos",
+              "args": {
+                "topic": "AI agents",
+                "days": 7,
+                "region_code": "UA",
+                "max_candidates": 50
+              },
+              "id": "call-search"
+            }
+          ],
+          "timestamp": "2026-08-29T14:43:14.383010+00:00",
+          "duration_ms": 0,
+          "elapsed_ms": 15
+        },
+        {
+          "step_number": 2,
+          "node_name": "tools",
+          "input": "{\"tool_calls\": [{\"name\": \"search_recent_videos\", \"args\": {\"topic\": \"AI agents\", \"days\": 7, \"region_code\": \"UA\", \"max_candidates\": 50}, \"id\": \"call-search\"}]}",
+          "output": "[\"\\\"{\\\\\\\"result_type\\\\\\\": \\\\\\\"search\\\\\\\", \\\\\\\"dataset_id\\\\\\\": \\\\\\\"dataset-de8cdb09c1\\\\\\\", \\\\\\\"mode\\\\\\\": \\\\\\\"thematic\\\\\\\", \\\\\\\"topic\\\\\\\": \\\\\\\"AI agents\\\\\\\", \\\\\\\"candidates_found\\\\\\\": 14, \\\\\\\"sample\\\\\\\": [{\\\\\\\"video_id\\\\\\\": \\\\\\\"robot000001\\\\\\\", \\\\\\\"title\\\\\\\": \\\\\\\"This Humanoid Robot Learned a New Task\\\\\\\"}, {\\\\\\\"video_id\\\\\\\": \\\\\\\"aiagent001\\\\\\\", \\\\\\\"title\\\\\\\": \\\\\\\"AI Agents Build a Business in 24 Hours\\\\\\\"}, {\\\\\\\"video_id\\\\\\\": \\\\\\\"aicode0001\\\\\\\", \\\\\\\"title\\\\\\\": \\\\\\\"I Replaced My Workflow with Five AI Agents\\\\\\\"}, {\\\\\\\"video_id\\\\\\\": \\\\\\\"shortsai001\\\\\\\", \\\\\\\"title\\\\\\\": \\\\\\\"AI Agent vs Traditional Automation #Shorts\\\\\\\"}, {\\\\\\\"video_id\\\\\\\": \\\\\\\"aitools0001\\\\\\\", \\\\\\\"title\\\\\\\": \\\\\\\"7 AI Tools That Actually Save Time\\\\\\\"}], \\\\\\\"next_action\\\\\\\": \\\\\\\"Call enrich_video_statistics with this dataset_id",
+          "tool_calls": [
+            {
+              "name": "search_recent_videos",
+              "args": {
+                "topic": "AI agents",
+                "days": 7,
+                "region_code": "UA",
+                "max_candidates": 50
+              },
+              "id": "call-search"
+            }
+          ],
+          "timestamp": "2026-08-29T14:43:14.383010+00:00",
+          "duration_ms": 0,
+          "elapsed_ms": 15
+        },
+        {
+          "step_number": 3,
+          "node_name": "agent",
+          "input": "{\"last_message\": \"\\\"{\\\\\\\"result_type\\\\\\\": \\\\\\\"search\\\\\\\", \\\\\\\"dataset_id\\\\\\\": \\\\\\\"dataset-de8cdb09c1\\\\\\\", \\\\\\\"mode\\\\\\\": \\\\\\\"thematic\\\\\\\", \\\\\\\"topic\\\\\\\": \\\\\\\"AI agents\\\\\\\", \\\\\\\"candidates_found\\\\\\\": 14, \\\\\\\"sample\\\\\\\": [{\\\\\\\"video_id\\\\\\\": \\\\\\\"robot000001\\\\\\\", \\\\\\\"title\\\\\\\": \\\\\\\"This Humanoid Robot Learned a New Task\\\\\\\"}, {\\\\\\\"video_id\\\\\\\": \\\\\\\"aiagent001\\\\\\\", \\\\\\\"title\\\\\\\": \\\\\\\"AI Agents Build a Business in 24 Hours\\\\\\\"}, {\\\\\\\"video_id\\\\\\\": \\\\\\\"aicode0001\\\\\\\", \\\\\\\"title\\\\\\\": \\\\\\\"I Replaced My Workflow with Five AI Agents\\\\\\\"}, {\\\\\\\"video_id\\\\\\\": \\\\\\\"shortsai001\\\\\\\", \\\\\\\"title\\\\\\\": \\\\\\\"AI Agent vs Traditional Automation #Shorts\\\\\\\"}, {\\\\\\\"video_id\\\\\\\": \\\\\\\"aitools0001\\\\\\\", \\\\\\\"title\\\\\\\": \\\\\\\"7 AI Tools That Actually Save Time\\\\\\\"}], \\\\\\\"next_action\\\\\\\": \\\\\\\"Call enrich_video_statistics with",
+          "output": "{\"content\": \"\\\"\\\"\", \"tool_calls\": [{\"name\": \"enrich_video_statistics\", \"args\": {\"dataset_id\": \"dataset-de8cdb09c1\"}, \"id\": \"call-statistics\"}]}",
+          "tool_calls": [
+            {
+              "name": "enrich_video_statistics",
+              "args": {
+                "dataset_id": "dataset-de8cdb09c1"
+              },
+              "id": "call-statistics"
+            }
+          ],
+          "timestamp": "2026-08-29T14:43:14.383010+00:00",
+          "duration_ms": 0,
+          "elapsed_ms": 15
+        },
+        {
+          "step_number": 4,
+          "node_name": "tools",
+          "input": "{\"tool_calls\": [{\"name\": \"enrich_video_statistics\", \"args\": {\"dataset_id\": \"dataset-de8cdb09c1\"}, \"id\": \"call-statistics\"}]}",
+          "output": "[\"\\\"{\\\\\\\"result_type\\\\\\\": \\\\\\\"statistics\\\\\\\", \\\\\\\"dataset_id\\\\\\\": \\\\\\\"dataset-de8cdb09c1\\\\\\\", \\\\\\\"videos_enriched\\\\\\\": 14, \\\\\\\"metrics\\\\\\\": [\\\\\\\"views\\\\\\\", \\\\\\\"duration_seconds\\\\\\\", \\\\\\\"trend_score\\\\\\\"], \\\\\\\"next_action\\\\\\\": \\\\\\\"Call rank_trending_videos for trend_score and views.\\\\\\\"}\\\"\"]",
+          "tool_calls": [
+            {
+              "name": "enrich_video_statistics",
+              "args": {
+                "dataset_id": "dataset-de8cdb09c1"
+              },
+              "id": "call-statistics"
+            }
+          ],
+          "timestamp": "2026-08-29T14:43:14.389211+00:00",
+          "duration_ms": 0,
+          "elapsed_ms": 15
+        },
+        {
+          "step_number": 5,
+          "node_name": "agent",
+          "input": "{\"last_message\": \"\\\"{\\\\\\\"result_type\\\\\\\": \\\\\\\"statistics\\\\\\\", \\\\\\\"dataset_id\\\\\\\": \\\\\\\"dataset-de8cdb09c1\\\\\\\", \\\\\\\"videos_enriched\\\\\\\": 14, \\\\\\\"metrics\\\\\\\": [\\\\\\\"views\\\\\\\", \\\\\\\"duration_seconds\\\\\\\", \\\\\\\"trend_score\\\\\\\"], \\\\\\\"next_action\\\\\\\": \\\\\\\"Call rank_trending_videos for trend_score and views.\\\\\\\"}\\\"\"}",
+          "output": "{\"content\": \"\\\"\\\"\", \"tool_calls\": [{\"name\": \"rank_trending_videos\", \"args\": {\"dataset_id\": \"dataset-de8cdb09c1\", \"metrics\": [\"trend_score\", \"views\"], \"top_n\": 20}, \"id\": \"call-ranking\"}]}",
+          "tool_calls": [
+            {
+              "name": "rank_trending_videos",
+              "args": {
+                "dataset_id": "dataset-de8cdb09c1",
+                "metrics": [
+                  "trend_score",
+                  "views"
+                ],
+                "top_n": 20
+              },
+              "id": "call-ranking"
+            }
+          ],
+          "timestamp": "2026-08-29T14:43:14.389211+00:00",
+          "duration_ms": 0,
+          "elapsed_ms": 15
+        },
+        {
+          "step_number": 6,
+          "node_name": "tools",
+          "input": "{\"tool_calls\": [{\"name\": \"rank_trending_videos\", \"args\": {\"dataset_id\": \"dataset-de8cdb09c1\", \"metrics\": [\"trend_score\", \"views\"], \"top_n\": 20}, \"id\": \"call-ranking\"}]}",
+          "output": "[\"\\\"{\\\\\\\"result_type\\\\\\\": \\\\\\\"rankings\\\\\\\", \\\\\\\"dataset_id\\\\\\\": \\\\\\\"dataset-de8cdb09c1\\\\\\\", \\\\\\\"top_n\\\\\\\": 20, \\\\\\\"rankings\\\\\\\": {\\\\\\\"trend_score\\\\\\\": [{\\\\\\\"rank\\\\\\\": 1, \\\\\\\"video_id\\\\\\\": \\\\\\\"aiagent001\\\\\\\", \\\\\\\"title\\\\\\\": \\\\\\\"AI Agents Build a Business in 24 Hours\\\\\\\", \\\\\\\"channel_title\\\\\\\": \\\\\\\"Future Stack\\\\\\\", \\\\\\\"published_at\\\\\\\": \\\\\\\"2026-08-29T05:07:14.372011Z\\\\\\\", \\\\\\\"url\\\\\\\": \\\\\\\"https://www.youtube.com/watch?v=aiagent001\\\\\\\", \\\\\\\"views\\\\\\\": 1850000, \\\\\\\"trend_score\\\\\\\": 0.9843}, {\\\\\\\"rank\\\\\\\": 2, \\\\\\\"video_id\\\\\\\": \\\\\\\"shortsai001\\\\\\\", \\\\\\\"title\\\\\\\": \\\\\\\"AI Agent vs Traditional Automation #Shorts\\\\\\\", \\\\\\\"channel_title\\\\\\\": \\\\\\\"Tech in a Minute\\\\\\\", \\\\\\\"published_at\\\\\\\": \\\\\\\"2026-08-29T09:55:14.372011Z\\\\\\\", \\\\\\\"url\\\\\\\": \\\\\\\"https://www.youtube.com/watch?v=shortsai001\\\\\\\", \\\\\\\"view",
+          "tool_calls": [
+            {
+              "name": "rank_trending_videos",
+              "args": {
+                "dataset_id": "dataset-de8cdb09c1",
+                "metrics": [
+                  "trend_score",
+                  "views"
+                ],
+                "top_n": 20
+              },
+              "id": "call-ranking"
+            }
+          ],
+          "timestamp": "2026-08-29T14:43:14.389211+00:00",
+          "duration_ms": 0,
+          "elapsed_ms": 15
+        },
+        {
+          "step_number": 7,
+          "node_name": "agent",
+          "input": "{\"last_message\": \"\\\"{\\\\\\\"result_type\\\\\\\": \\\\\\\"rankings\\\\\\\", \\\\\\\"dataset_id\\\\\\\": \\\\\\\"dataset-de8cdb09c1\\\\\\\", \\\\\\\"top_n\\\\\\\": 20, \\\\\\\"rankings\\\\\\\": {\\\\\\\"trend_score\\\\\\\": [{\\\\\\\"rank\\\\\\\": 1, \\\\\\\"video_id\\\\\\\": \\\\\\\"aiagent001\\\\\\\", \\\\\\\"title\\\\\\\": \\\\\\\"AI Agents Build a Business in 24 Hours\\\\\\\", \\\\\\\"channel_title\\\\\\\": \\\\\\\"Future Stack\\\\\\\", \\\\\\\"published_at\\\\\\\": \\\\\\\"2026-08-29T05:07:14.372011Z\\\\\\\", \\\\\\\"url\\\\\\\": \\\\\\\"https://www.youtube.com/watch?v=aiagent001\\\\\\\", \\\\\\\"views\\\\\\\": 1850000, \\\\\\\"trend_score\\\\\\\": 0.9843}, {\\\\\\\"rank\\\\\\\": 2, \\\\\\\"video_id\\\\\\\": \\\\\\\"shortsai001\\\\\\\", \\\\\\\"title\\\\\\\": \\\\\\\"AI Agent vs Traditional Automation #Shorts\\\\\\\", \\\\\\\"channel_title\\\\\\\": \\\\\\\"Tech in a Minute\\\\\\\", \\\\\\\"published_at\\\\\\\": \\\\\\\"2026-08-29T09:55:14.372011Z\\\\\\\", \\\\\\\"url\\\\\\\": \\\\\\\"https://www.youtube.com/watch?v=shortsai0",
+          "output": "{\"content\": \"\\\"\\\"\", \"tool_calls\": [{\"name\": \"analyze_topic_signals\", \"args\": {\"dataset_id\": \"dataset-de8cdb09c1\", \"top_n\": 10}, \"id\": \"call-signals\"}]}",
+          "tool_calls": [
+            {
+              "name": "analyze_topic_signals",
+              "args": {
+                "dataset_id": "dataset-de8cdb09c1",
+                "top_n": 10
+              },
+              "id": "call-signals"
+            }
+          ],
+          "timestamp": "2026-08-29T14:43:14.389211+00:00",
+          "duration_ms": 0,
+          "elapsed_ms": 15
+        },
+        {
+          "step_number": 8,
+          "node_name": "tools",
+          "input": "{\"tool_calls\": [{\"name\": \"analyze_topic_signals\", \"args\": {\"dataset_id\": \"dataset-de8cdb09c1\", \"top_n\": 10}, \"id\": \"call-signals\"}]}",
+          "output": "[\"\\\"{\\\\\\\"result_type\\\\\\\": \\\\\\\"signals\\\\\\\", \\\\\\\"dataset_id\\\\\\\": \\\\\\\"dataset-de8cdb09c1\\\\\\\", \\\\\\\"trend_terms\\\\\\\": [\\\\\\\"agent\\\\\\\", \\\\\\\"tools\\\\\\\", \\\\\\\"research\\\\\\\", \\\\\\\"for\\\\\\\", \\\\\\\"langgraph\\\\\\\", \\\\\\\"python\\\\\\\", \\\\\\\"tool\\\\\\\", \\\\\\\"calling\\\\\\\", \\\\\\\"vision\\\\\\\", \\\\\\\"agentic\\\\\\\"], \\\\\\\"leading_channels\\\\\\\": [\\\\\\\"Robotics Now\\\\\\\", \\\\\\\"Future Stack\\\\\\\", \\\\\\\"Code Frontier\\\\\\\", \\\\\\\"Tech in a Minute\\\\\\\", \\\\\\\"Productive AI\\\\\\\", \\\\\\\"AI Briefing\\\\\\\", \\\\\\\"AI Research Notes\\\\\\\", \\\\\\\"Growth Lab\\\\\\\", \\\\\\\"LLM Engineering\\\\\\\", \\\\\\\"Open Model Lab\\\\\\\"]}\\\"\"]",
+          "tool_calls": [
+            {
+              "name": "analyze_topic_signals",
+              "args": {
+                "dataset_id": "dataset-de8cdb09c1",
+                "top_n": 10
+              },
+              "id": "call-signals"
+            }
+          ],
+          "timestamp": "2026-08-29T14:43:14.399436+00:00",
+          "duration_ms": 16,
+          "elapsed_ms": 31
+        },
+        {
+          "step_number": 9,
+          "node_name": "agent",
+          "input": "{\"last_message\": \"\\\"{\\\\\\\"result_type\\\\\\\": \\\\\\\"signals\\\\\\\", \\\\\\\"dataset_id\\\\\\\": \\\\\\\"dataset-de8cdb09c1\\\\\\\", \\\\\\\"trend_terms\\\\\\\": [\\\\\\\"agent\\\\\\\", \\\\\\\"tools\\\\\\\", \\\\\\\"research\\\\\\\", \\\\\\\"for\\\\\\\", \\\\\\\"langgraph\\\\\\\", \\\\\\\"python\\\\\\\", \\\\\\\"tool\\\\\\\", \\\\\\\"calling\\\\\\\", \\\\\\\"vision\\\\\\\", \\\\\\\"agentic\\\\\\\"], \\\\\\\"leading_channels\\\\\\\": [\\\\\\\"Robotics Now\\\\\\\", \\\\\\\"Future Stack\\\\\\\", \\\\\\\"Code Frontier\\\\\\\", \\\\\\\"Tech in a Minute\\\\\\\", \\\\\\\"Productive AI\\\\\\\", \\\\\\\"AI Briefing\\\\\\\", \\\\\\\"AI Research Notes\\\\\\\", \\\\\\\"Growth Lab\\\\\\\", \\\\\\\"LLM Engineering\\\\\\\", \\\\\\\"Open Model Lab\\\\\\\"]}\\\"\"}",
+          "output": "{\"content\": \"\\\"Аналіз трендів завершено на основі результатів інструментів.\\\"\", \"tool_calls\": []}",
+          "tool_calls": [],
+          "timestamp": "2026-08-29T14:43:14.399436+00:00",
+          "duration_ms": 0,
+          "elapsed_ms": 31
+        },
+        {
+          "step_number": 10,
+          "node_name": "formatter",
+          "input": "{\"dataset_id\": \"dataset-de8cdb09c1\"}",
+          "output": "{\"status\": \"success\", \"mode\": \"thematic\", \"topic\": \"AI agents\", \"period_days\": 7, \"region_code\": \"UA\", \"source_mode\": \"fixture\", \"generated_at\": \"2026-08-29T14:43:14.399436Z\", \"candidates_found\": 14, \"videos_analyzed\": 14, \"top_overall\": [{\"rank\": 1, \"video_id\": \"aiagent001\", \"title\": \"AI Agents Build a Business in 24 Hours\", \"channel_title\": \"Future Stack\", \"published_at\": \"2026-08-29T05:07:14.372011Z\", \"url\": \"https://www.youtube.com/watch?v=aiagent001\", \"views\": 1850000, \"trend_score\": 0.9843}, {\"rank\": 2, \"video_id\": \"shortsai001\", \"title\": \"AI Agent vs Traditional Automation #Shorts\", \"channel_title\": \"Tech in a Minute\", \"published_at\": \"2026-08-29T09:55:14.372011Z\", \"url\": \"https://www.youtube.com/watch?v=shortsai001\", \"views\": 1290000, \"trend_score\": 0.9675}, {\"rank\": 3, \"video_id\":",
+          "tool_calls": [],
+          "timestamp": "2026-08-29T14:43:14.399436+00:00",
+          "duration_ms": 0,
+          "elapsed_ms": 31
+        }
+      ]
+    },
+    {
+      "run_id": "run-354c1449f0",
+      "started_at": "2026-08-29T14:43:14.404234+00:00",
+      "total_steps": 4,
+      "total_time_ms": 15,
+      "stop_reason": "max_steps",
+      "trajectory": [
+        {
+          "step_number": 1,
+          "node_name": "agent",
+          "input": "{\"last_message\": \"\\\"Знайди тренди про маркетинг за останні 7 днів\\\"\"}",
+          "output": "{\"content\": \"\\\"\\\"\", \"tool_calls\": [{\"name\": \"search_recent_videos\", \"args\": {\"topic\": \"маркетинг\", \"days\": 7, \"region_code\": \"UA\", \"max_candidates\": 50}, \"id\": \"call-search\"}]}",
+          "tool_calls": [
+            {
+              "name": "search_recent_videos",
+              "args": {
+                "topic": "маркетинг",
+                "days": 7,
+                "region_code": "UA",
+                "max_candidates": 50
+              },
+              "id": "call-search"
+            }
+          ],
+          "timestamp": "2026-08-29T14:43:14.404234+00:00",
+          "duration_ms": 0,
+          "elapsed_ms": 0
+        },
+        {
+          "step_number": 2,
+          "node_name": "tools",
+          "input": "{\"tool_calls\": [{\"name\": \"search_recent_videos\", \"args\": {\"topic\": \"маркетинг\", \"days\": 7, \"region_code\": \"UA\", \"max_candidates\": 50}, \"id\": \"call-search\"}]}",
+          "output": "[\"\\\"{\\\\\\\"result_type\\\\\\\": \\\\\\\"search\\\\\\\", \\\\\\\"dataset_id\\\\\\\": \\\\\\\"dataset-ad96573c0a\\\\\\\", \\\\\\\"mode\\\\\\\": \\\\\\\"thematic\\\\\\\", \\\\\\\"topic\\\\\\\": \\\\\\\"маркетинг\\\\\\\", \\\\\\\"candidates_found\\\\\\\": 0, \\\\\\\"sample\\\\\\\": [], \\\\\\\"next_action\\\\\\\": \\\\\\\"Call enrich_video_statistics with this dataset_id.\\\\\\\"}\\\"\"]",
+          "tool_calls": [
+            {
+              "name": "search_recent_videos",
+              "args": {
+                "topic": "маркетинг",
+                "days": 7,
+                "region_code": "UA",
+                "max_candidates": 50
+              },
+              "id": "call-search"
+            }
+          ],
+          "timestamp": "2026-08-29T14:43:14.416112+00:00",
+          "duration_ms": 15,
+          "elapsed_ms": 15
+        },
+        {
+          "step_number": 3,
+          "node_name": "agent",
+          "input": "{\"step_count\": 2}",
+          "output": "{\"messages\": [\"content='Виконання зупинено: max_steps. Повертаю частковий результат.' additional_kwargs={} response_metadata={} tool_calls=[] invalid_tool_calls=[]\"], \"step_count\": 2, \"stop_reason\": \"max_steps\"}",
+          "tool_calls": [],
+          "timestamp": "2026-08-29T14:43:14.416112+00:00",
+          "duration_ms": 0,
+          "elapsed_ms": 15
+        },
+        {
+          "step_number": 4,
+          "node_name": "formatter",
+          "input": "{\"dataset_id\": \"dataset-ad96573c0a\"}",
+          "output": "{\"status\": \"partial\", \"mode\": \"thematic\", \"topic\": \"маркетинг\", \"period_days\": 7, \"region_code\": \"UA\", \"source_mode\": \"fixture\", \"generated_at\": \"2026-08-29T14:43:14.416112Z\", \"candidates_found\": 0, \"videos_analyzed\": 0, \"top_overall\": [], \"top_by_views\": [], \"trend_terms\": [], \"leading_channels\": [], \"summary\": \"Проаналізовано 0 відео за останні 7 днів; сформовано 0 позицій загального рейтингу за темою «маркетинг».\", \"confidence\": 0.45, \"limitations\": [\"Коментарі та тексти коментарів не збираються у версії 1.0.\", \"Рейтинг формується лише з кандидатів, повернених YouTube API або fixture-набором.\", \"Fixture-режим використовує синтетичні відтворювані дані, а не поточний YouTube.\", \"Доступно лише 0 позицій для загального топу.\", \"Виконання примусово завершено: max_steps.\"], \"stop_reason\": \"ma",
+          "tool_calls": [],
+          "timestamp": "2026-08-29T14:43:14.416112+00:00",
+          "duration_ms": 0,
+          "elapsed_ms": 15
+        }
+      ]
+    },
+    {
+      "run_id": "run-605e124d9f",
+      "started_at": "2026-08-29T14:43:14.416112+00:00",
+      "total_steps": 3,
+      "total_time_ms": 31,
+      "stop_reason": "timeout",
+      "trajectory": [
+        {
+          "step_number": 1,
+          "node_name": "agent",
+          "input": "{\"last_message\": \"\\\"Знайди загальні тренди за тиждень\\\"\"}",
+          "output": "{\"content\": \"\\\"\\\"\", \"tool_calls\": [{\"name\": \"search_recent_videos\", \"args\": {\"topic\": \"\", \"days\": 7, \"region_code\": \"UA\", \"max_candidates\": 50}, \"id\": \"call-search\"}]}",
+          "tool_calls": [
+            {
+              "name": "search_recent_videos",
+              "args": {
+                "topic": "",
+                "days": 7,
+                "region_code": "UA",
+                "max_candidates": 50
+              },
+              "id": "call-search"
+            }
+          ],
+          "timestamp": "2026-08-29T14:43:14.439933+00:00",
+          "duration_ms": 31,
+          "elapsed_ms": 31
+        },
+        {
+          "step_number": 2,
+          "node_name": "tools",
+          "input": "{\"tool_calls\": [{\"name\": \"search_recent_videos\", \"args\": {\"topic\": \"\", \"days\": 7, \"region_code\": \"UA\", \"max_candidates\": 50}, \"id\": \"call-search\"}]}",
+          "output": "[\"\\\"{\\\\\\\"error\\\\\\\": \\\\\\\"timeout\\\\\\\", \\\\\\\"status\\\\\\\": \\\\\\\"stopped\\\\\\\"}\\\"\"]",
+          "tool_calls": [
+            {
+              "name": "search_recent_videos",
+              "args": {
+                "topic": "",
+                "days": 7,
+                "region_code": "UA",
+                "max_candidates": 50
+              },
+              "id": "call-search"
+            }
+          ],
+          "timestamp": "2026-08-29T14:43:14.439933+00:00",
+          "duration_ms": 0,
+          "elapsed_ms": 31
+        },
+        {
+          "step_number": 3,
+          "node_name": "formatter",
+          "input": "{\"dataset_id\": null}",
+          "output": "{\"status\": \"partial\", \"mode\": \"general\", \"topic\": \"\", \"period_days\": 7, \"region_code\": \"UA\", \"source_mode\": \"fixture\", \"generated_at\": \"2026-08-29T14:43:14.439933Z\", \"candidates_found\": 0, \"videos_analyzed\": 0, \"top_overall\": [], \"top_by_views\": [], \"trend_terms\": [], \"leading_channels\": [], \"summary\": \"Аналіз завершився до створення набору даних.\", \"confidence\": 0.0, \"limitations\": [\"Немає результатів пошуку для формування рейтингу.\"], \"stop_reason\": \"timeout\"}",
+          "tool_calls": [],
+          "timestamp": "2026-08-29T14:43:14.439933+00:00",
+          "duration_ms": 0,
+          "elapsed_ms": 31
+        }
+      ]
+    },
+    {
+      "run_id": "run-e8f9c72ec7",
+      "started_at": "2026-08-29T14:43:14.439933+00:00",
+      "total_steps": 7,
+      "total_time_ms": 14,
+      "stop_reason": "loop_detected",
+      "trajectory": [
+        {
+          "step_number": 1,
+          "node_name": "agent",
+          "input": "{\"last_message\": \"\\\"Знайди тренди про AI\\\"\"}",
+          "output": "{\"content\": \"\\\"\\\"\", \"tool_calls\": [{\"name\": \"search_recent_videos\", \"args\": {\"topic\": \"AI\", \"days\": 7, \"region_code\": \"UA\", \"max_candidates\": 20}, \"id\": \"loop-call-2\"}]}",
+          "tool_calls": [
+            {
+              "name": "search_recent_videos",
+              "args": {
+                "topic": "AI",
+                "days": 7,
+                "region_code": "UA",
+                "max_candidates": 20
+              },
+              "id": "loop-call-2"
+            }
+          ],
+          "timestamp": "2026-08-29T14:43:14.448517+00:00",
+          "duration_ms": 0,
+          "elapsed_ms": 0
+        },
+        {
+          "step_number": 2,
+          "node_name": "tools",
+          "input": "{\"tool_calls\": [{\"name\": \"search_recent_videos\", \"args\": {\"topic\": \"AI\", \"days\": 7, \"region_code\": \"UA\", \"max_candidates\": 20}, \"id\": \"loop-call-2\"}]}",
+          "output": "[\"\\\"{\\\\\\\"result_type\\\\\\\": \\\\\\\"search\\\\\\\", \\\\\\\"dataset_id\\\\\\\": \\\\\\\"dataset-6f00f04eba\\\\\\\", \\\\\\\"mode\\\\\\\": \\\\\\\"thematic\\\\\\\", \\\\\\\"topic\\\\\\\": \\\\\\\"AI\\\\\\\", \\\\\\\"candidates_found\\\\\\\": 14, \\\\\\\"sample\\\\\\\": [{\\\\\\\"video_id\\\\\\\": \\\\\\\"robot000001\\\\\\\", \\\\\\\"title\\\\\\\": \\\\\\\"This Humanoid Robot Learned a New Task\\\\\\\"}, {\\\\\\\"video_id\\\\\\\": \\\\\\\"aiagent001\\\\\\\", \\\\\\\"title\\\\\\\": \\\\\\\"AI Agents Build a Business in 24 Hours\\\\\\\"}, {\\\\\\\"video_id\\\\\\\": \\\\\\\"aicode0001\\\\\\\", \\\\\\\"title\\\\\\\": \\\\\\\"I Replaced My Workflow with Five AI Agents\\\\\\\"}, {\\\\\\\"video_id\\\\\\\": \\\\\\\"shortsai001\\\\\\\", \\\\\\\"title\\\\\\\": \\\\\\\"AI Agent vs Traditional Automation #Shorts\\\\\\\"}, {\\\\\\\"video_id\\\\\\\": \\\\\\\"aitools0001\\\\\\\", \\\\\\\"title\\\\\\\": \\\\\\\"7 AI Tools That Actually Save Time\\\\\\\"}], \\\\\\\"next_action\\\\\\\": \\\\\\\"Call enrich_video_statistics with this dataset_id.\\\\\\\"}\\",
+          "tool_calls": [
+            {
+              "name": "search_recent_videos",
+              "args": {
+                "topic": "AI",
+                "days": 7,
+                "region_code": "UA",
+                "max_candidates": 20
+              },
+              "id": "loop-call-2"
+            }
+          ],
+          "timestamp": "2026-08-29T14:43:14.448517+00:00",
+          "duration_ms": 0,
+          "elapsed_ms": 0
+        },
+        {
+          "step_number": 3,
+          "node_name": "agent",
+          "input": "{\"last_message\": \"\\\"{\\\\\\\"result_type\\\\\\\": \\\\\\\"search\\\\\\\", \\\\\\\"dataset_id\\\\\\\": \\\\\\\"dataset-6f00f04eba\\\\\\\", \\\\\\\"mode\\\\\\\": \\\\\\\"thematic\\\\\\\", \\\\\\\"topic\\\\\\\": \\\\\\\"AI\\\\\\\", \\\\\\\"candidates_found\\\\\\\": 14, \\\\\\\"sample\\\\\\\": [{\\\\\\\"video_id\\\\\\\": \\\\\\\"robot000001\\\\\\\", \\\\\\\"title\\\\\\\": \\\\\\\"This Humanoid Robot Learned a New Task\\\\\\\"}, {\\\\\\\"video_id\\\\\\\": \\\\\\\"aiagent001\\\\\\\", \\\\\\\"title\\\\\\\": \\\\\\\"AI Agents Build a Business in 24 Hours\\\\\\\"}, {\\\\\\\"video_id\\\\\\\": \\\\\\\"aicode0001\\\\\\\", \\\\\\\"title\\\\\\\": \\\\\\\"I Replaced My Workflow with Five AI Agents\\\\\\\"}, {\\\\\\\"video_id\\\\\\\": \\\\\\\"shortsai001\\\\\\\", \\\\\\\"title\\\\\\\": \\\\\\\"AI Agent vs Traditional Automation #Shorts\\\\\\\"}, {\\\\\\\"video_id\\\\\\\": \\\\\\\"aitools0001\\\\\\\", \\\\\\\"title\\\\\\\": \\\\\\\"7 AI Tools That Actually Save Time\\\\\\\"}], \\\\\\\"next_action\\\\\\\": \\\\\\\"Call enrich_video_statistics with this d",
+          "output": "{\"content\": \"\\\"\\\"\", \"tool_calls\": [{\"name\": \"search_recent_videos\", \"args\": {\"topic\": \"AI\", \"days\": 7, \"region_code\": \"UA\", \"max_candidates\": 20}, \"id\": \"loop-call-4\"}]}",
+          "tool_calls": [
+            {
+              "name": "search_recent_videos",
+              "args": {
+                "topic": "AI",
+                "days": 7,
+                "region_code": "UA",
+                "max_candidates": 20
+              },
+              "id": "loop-call-4"
+            }
+          ],
+          "timestamp": "2026-08-29T14:43:14.448517+00:00",
+          "duration_ms": 0,
+          "elapsed_ms": 0
+        },
+        {
+          "step_number": 4,
+          "node_name": "tools",
+          "input": "{\"tool_calls\": [{\"name\": \"search_recent_videos\", \"args\": {\"topic\": \"AI\", \"days\": 7, \"region_code\": \"UA\", \"max_candidates\": 20}, \"id\": \"loop-call-4\"}]}",
+          "output": "[\"\\\"{\\\\\\\"result_type\\\\\\\": \\\\\\\"search\\\\\\\", \\\\\\\"dataset_id\\\\\\\": \\\\\\\"dataset-89c09dc997\\\\\\\", \\\\\\\"mode\\\\\\\": \\\\\\\"thematic\\\\\\\", \\\\\\\"topic\\\\\\\": \\\\\\\"AI\\\\\\\", \\\\\\\"candidates_found\\\\\\\": 14, \\\\\\\"sample\\\\\\\": [{\\\\\\\"video_id\\\\\\\": \\\\\\\"robot000001\\\\\\\", \\\\\\\"title\\\\\\\": \\\\\\\"This Humanoid Robot Learned a New Task\\\\\\\"}, {\\\\\\\"video_id\\\\\\\": \\\\\\\"aiagent001\\\\\\\", \\\\\\\"title\\\\\\\": \\\\\\\"AI Agents Build a Business in 24 Hours\\\\\\\"}, {\\\\\\\"video_id\\\\\\\": \\\\\\\"aicode0001\\\\\\\", \\\\\\\"title\\\\\\\": \\\\\\\"I Replaced My Workflow with Five AI Agents\\\\\\\"}, {\\\\\\\"video_id\\\\\\\": \\\\\\\"shortsai001\\\\\\\", \\\\\\\"title\\\\\\\": \\\\\\\"AI Agent vs Traditional Automation #Shorts\\\\\\\"}, {\\\\\\\"video_id\\\\\\\": \\\\\\\"aitools0001\\\\\\\", \\\\\\\"title\\\\\\\": \\\\\\\"7 AI Tools That Actually Save Time\\\\\\\"}], \\\\\\\"next_action\\\\\\\": \\\\\\\"Call enrich_video_statistics with this dataset_id.\\\\\\\"}\\",
+          "tool_calls": [
+            {
+              "name": "search_recent_videos",
+              "args": {
+                "topic": "AI",
+                "days": 7,
+                "region_code": "UA",
+                "max_candidates": 20
+              },
+              "id": "loop-call-4"
+            }
+          ],
+          "timestamp": "2026-08-29T14:43:14.458995+00:00",
+          "duration_ms": 14,
+          "elapsed_ms": 14
+        },
+        {
+          "step_number": 5,
+          "node_name": "agent",
+          "input": "{\"last_message\": \"\\\"{\\\\\\\"result_type\\\\\\\": \\\\\\\"search\\\\\\\", \\\\\\\"dataset_id\\\\\\\": \\\\\\\"dataset-89c09dc997\\\\\\\", \\\\\\\"mode\\\\\\\": \\\\\\\"thematic\\\\\\\", \\\\\\\"topic\\\\\\\": \\\\\\\"AI\\\\\\\", \\\\\\\"candidates_found\\\\\\\": 14, \\\\\\\"sample\\\\\\\": [{\\\\\\\"video_id\\\\\\\": \\\\\\\"robot000001\\\\\\\", \\\\\\\"title\\\\\\\": \\\\\\\"This Humanoid Robot Learned a New Task\\\\\\\"}, {\\\\\\\"video_id\\\\\\\": \\\\\\\"aiagent001\\\\\\\", \\\\\\\"title\\\\\\\": \\\\\\\"AI Agents Build a Business in 24 Hours\\\\\\\"}, {\\\\\\\"video_id\\\\\\\": \\\\\\\"aicode0001\\\\\\\", \\\\\\\"title\\\\\\\": \\\\\\\"I Replaced My Workflow with Five AI Agents\\\\\\\"}, {\\\\\\\"video_id\\\\\\\": \\\\\\\"shortsai001\\\\\\\", \\\\\\\"title\\\\\\\": \\\\\\\"AI Agent vs Traditional Automation #Shorts\\\\\\\"}, {\\\\\\\"video_id\\\\\\\": \\\\\\\"aitools0001\\\\\\\", \\\\\\\"title\\\\\\\": \\\\\\\"7 AI Tools That Actually Save Time\\\\\\\"}], \\\\\\\"next_action\\\\\\\": \\\\\\\"Call enrich_video_statistics with this d",
+          "output": "{\"content\": \"\\\"\\\"\", \"tool_calls\": [{\"name\": \"search_recent_videos\", \"args\": {\"topic\": \"AI\", \"days\": 7, \"region_code\": \"UA\", \"max_candidates\": 20}, \"id\": \"loop-call-6\"}]}",
+          "tool_calls": [
+            {
+              "name": "search_recent_videos",
+              "args": {
+                "topic": "AI",
+                "days": 7,
+                "region_code": "UA",
+                "max_candidates": 20
+              },
+              "id": "loop-call-6"
+            }
+          ],
+          "timestamp": "2026-08-29T14:43:14.458995+00:00",
+          "duration_ms": 0,
+          "elapsed_ms": 14
+        },
+        {
+          "step_number": 6,
+          "node_name": "tools",
+          "input": "{\"tool_calls\": [{\"name\": \"search_recent_videos\", \"args\": {\"topic\": \"AI\", \"days\": 7, \"region_code\": \"UA\", \"max_candidates\": 20}, \"id\": \"loop-call-6\"}]}",
+          "output": "[\"\\\"{\\\\\\\"error\\\\\\\": \\\\\\\"loop_detected\\\\\\\", \\\\\\\"status\\\\\\\": \\\\\\\"stopped\\\\\\\"}\\\"\"]",
+          "tool_calls": [
+            {
+              "name": "search_recent_videos",
+              "args": {
+                "topic": "AI",
+                "days": 7,
+                "region_code": "UA",
+                "max_candidates": 20
+              },
+              "id": "loop-call-6"
+            }
+          ],
+          "timestamp": "2026-08-29T14:43:14.458995+00:00",
+          "duration_ms": 0,
+          "elapsed_ms": 14
+        },
+        {
+          "step_number": 7,
+          "node_name": "formatter",
+          "input": "{\"dataset_id\": \"dataset-89c09dc997\"}",
+          "output": "{\"status\": \"partial\", \"mode\": \"thematic\", \"topic\": \"AI\", \"period_days\": 7, \"region_code\": \"UA\", \"source_mode\": \"fixture\", \"generated_at\": \"2026-08-29T14:43:14.462651Z\", \"candidates_found\": 14, \"videos_analyzed\": 0, \"top_overall\": [], \"top_by_views\": [], \"trend_terms\": [], \"leading_channels\": [], \"summary\": \"Проаналізовано 14 відео за останні 7 днів; сформовано 0 позицій загального рейтингу за темою «AI».\", \"confidence\": 0.45, \"limitations\": [\"Коментарі та тексти коментарів не збираються у версії 1.0.\", \"Рейтинг формується лише з кандидатів, повернених YouTube API або fixture-набором.\", \"Fixture-режим використовує синтетичні відтворювані дані, а не поточний YouTube.\", \"Доступно лише 0 позицій для загального топу.\", \"Виконання примусово завершено: loop_detected.\"], \"stop_reason\": \"loop_detec",
+          "tool_calls": [],
+          "timestamp": "2026-08-29T14:43:14.462651+00:00",
+          "duration_ms": 0,
+          "elapsed_ms": 14
+        }
+      ]
+    }
+  ]
+}

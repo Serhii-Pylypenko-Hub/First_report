@@ -1,0 +1,105 @@
+[
+  {
+    "test_id": "TC-001",
+    "query": "Знайди загальні тренди YouTube за останні 7 днів в Україні та сформуй топ-20",
+    "expected": "Загальний рейтинг за переглядами та trend score з посиланнями",
+    "actual": "Проаналізовано 30 відео за останні 7 днів; сформовано 20 позицій загального рейтингу для регіону UA.",
+    "status": "success",
+    "stop_reason": "completed",
+    "steps": 10,
+    "tool_calls": [
+      "search_recent_videos",
+      "enrich_video_statistics",
+      "rank_trending_videos",
+      "analyze_topic_signals"
+    ],
+    "elapsed_ms": 31,
+    "complexity": "medium",
+    "llm_provider": "scripted_test_double",
+    "data_mode": "fixture",
+    "max_steps_reached": false,
+    "timeout_reached": false,
+    "loop_detected": false
+  },
+  {
+    "test_id": "TC-002",
+    "query": "Знайди тренди YouTube про AI agents за останні 7 днів і сформуй топ-20",
+    "expected": "Тематичний рейтинг відео про AI agents",
+    "actual": "Проаналізовано 14 відео за останні 7 днів; сформовано 14 позицій загального рейтингу за темою «AI agents».",
+    "status": "success",
+    "stop_reason": "completed",
+    "steps": 10,
+    "tool_calls": [
+      "search_recent_videos",
+      "enrich_video_statistics",
+      "rank_trending_videos",
+      "analyze_topic_signals"
+    ],
+    "elapsed_ms": 31,
+    "complexity": "complex",
+    "llm_provider": "scripted_test_double",
+    "data_mode": "fixture",
+    "max_steps_reached": false,
+    "timeout_reached": false,
+    "loop_detected": false
+  },
+  {
+    "test_id": "TC-003",
+    "query": "Знайди тренди про маркетинг за останні 7 днів",
+    "expected": "Контрольована часткова відповідь через max_steps",
+    "actual": "Проаналізовано 0 відео за останні 7 днів; сформовано 0 позицій загального рейтингу за темою «маркетинг».",
+    "status": "partial",
+    "stop_reason": "max_steps",
+    "steps": 4,
+    "tool_calls": [
+      "search_recent_videos"
+    ],
+    "elapsed_ms": 15,
+    "complexity": "guardrail",
+    "llm_provider": "scripted_guardrail_demo",
+    "data_mode": "fixture",
+    "max_steps_reached": true,
+    "timeout_reached": false,
+    "loop_detected": false
+  },
+  {
+    "test_id": "TC-004",
+    "query": "Знайди загальні тренди за тиждень",
+    "expected": "Контрольована часткова відповідь через timeout",
+    "actual": "Аналіз завершився до створення набору даних.",
+    "status": "partial",
+    "stop_reason": "timeout",
+    "steps": 3,
+    "tool_calls": [
+      "search_recent_videos"
+    ],
+    "elapsed_ms": 31,
+    "complexity": "guardrail",
+    "llm_provider": "scripted_guardrail_demo",
+    "data_mode": "fixture",
+    "max_steps_reached": false,
+    "timeout_reached": true,
+    "loop_detected": false
+  },
+  {
+    "test_id": "TC-005",
+    "query": "Знайди тренди про AI",
+    "expected": "Зупинка після трьох однакових tool calls",
+    "actual": "Проаналізовано 14 відео за останні 7 днів; сформовано 0 позицій загального рейтингу за темою «AI».",
+    "status": "partial",
+    "stop_reason": "loop_detected",
+    "steps": 7,
+    "tool_calls": [
+      "search_recent_videos",
+      "search_recent_videos",
+      "search_recent_videos"
+    ],
+    "elapsed_ms": 14,
+    "complexity": "guardrail",
+    "llm_provider": "scripted_loop_demo",
+    "data_mode": "fixture",
+    "max_steps_reached": false,
+    "timeout_reached": false,
+    "loop_detected": true
+  }
+]
