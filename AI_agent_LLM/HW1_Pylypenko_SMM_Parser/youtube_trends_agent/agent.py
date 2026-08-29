@@ -278,6 +278,8 @@ class YouTubeTrendsAgent:
         videos = dataset.get("videos") or []
         complete = bool(rankings.get("trend_score")) and stop_reason == "completed"
         available = len(rankings.get("trend_score") or [])
+        requested_top = 20
+        topic = str(query.get("topic") or "")
         limitations = [
             "Коментарі та тексти коментарів не збираються у версії 1.0.",
             "Рейтинг формується лише з кандидатів, отриманих із публічного HTML YouTube або fixture-набору.",
@@ -289,15 +291,26 @@ class YouTubeTrendsAgent:
                 "Без YouTube API загальний топ є broad-category approximation: trending/home з fallback на music, news, sports і technology."
             )
         if available < 20:
-            limitations.append(f"Доступно лише {available} позицій для загального топу.")
+            if topic:
+                limitations.append(
+                    f"За темою «{topic}» знайдено лише {available} релевантних відео; "
+                    "до рейтингу включено всі доступні результати."
+                )
+            else:
+                limitations.append(f"Доступно лише {available} позицій для загального топу.")
         if stop_reason != "completed":
             limitations.append(f"Виконання примусово завершено: {stop_reason}.")
-        topic = str(query.get("topic") or "")
-        summary = (
-            f"Проаналізовано {len(videos)} відео за останні {query['days']} днів; "
-            f"сформовано {available} позицій загального рейтингу"
-            + (f" за темою «{topic}»." if topic else f" для регіону {query['region_code']}.")
-        )
+        if topic:
+            summary = (
+                f"За темою «{topic}» за останні {query['days']} днів знайдено "
+                f"{len(videos)} релевантних відео із запитаного максимуму {requested_top}; "
+                f"до рейтингу включено всі {available} доступні результати."
+            )
+        else:
+            summary = (
+                f"Проаналізовано {len(videos)} відео за останні {query['days']} днів; "
+                f"сформовано {available} позицій загального рейтингу для регіону {query['region_code']}."
+            )
         confidence = 0.7 if self.client.source_mode == "html" else 0.75
         if not complete:
             confidence = min(confidence, 0.45)

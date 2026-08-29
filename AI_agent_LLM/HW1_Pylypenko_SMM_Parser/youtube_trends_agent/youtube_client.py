@@ -269,7 +269,7 @@ class YouTubeHTMLClient:
 
 
 class FixtureYouTubeClient:
-    """Локальне джерело, яке імітує API без мережі та квоти."""
+    """Локальне джерело, яке імітує отримання даних без мережі та квоти."""
 
     source_mode = "fixture"
 

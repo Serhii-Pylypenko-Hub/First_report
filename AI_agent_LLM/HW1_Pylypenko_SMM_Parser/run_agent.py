@@ -8,6 +8,7 @@ from pathlib import Path
 
 from youtube_trends_agent import YouTubeTrendsAgent
 from youtube_trends_agent.factory import create_youtube_client
+from youtube_trends_agent.reporting import write_html_report
 from youtube_trends_agent.testing import ScriptedReActLLM
 
 
@@ -21,6 +22,17 @@ def main() -> None:
         default="scripted",
         help="scripted працює без API-ключа; gemini та ollama запускають реальну LLM",
     )
+    parser.add_argument(
+        "--format",
+        choices=["json", "html", "both"],
+        default="both",
+        help="Формат результату: JSON у консолі, HTML-файл або обидва",
+    )
+    parser.add_argument(
+        "--output",
+        default="youtube_trends_report.html",
+        help="Шлях для HTML-звіту",
+    )
     args = parser.parse_args()
 
     project_root = Path(__file__).resolve().parent
@@ -32,7 +44,11 @@ def main() -> None:
         llm_provider=provider,
     )
     result = agent.run(args.query, trajectory_path=project_root / "trajectory.json")
-    print(json.dumps(result["report"], ensure_ascii=False, indent=2, default=str))
+    if args.format in {"json", "both"}:
+        print(json.dumps(result["report"], ensure_ascii=False, indent=2, default=str))
+    if args.format in {"html", "both"}:
+        output_path = write_html_report(result["report"], args.output)
+        print(f"\nHTML-звіт збережено: {output_path}")
 
 
 if __name__ == "__main__":

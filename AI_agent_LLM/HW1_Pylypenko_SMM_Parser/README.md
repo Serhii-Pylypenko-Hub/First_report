@@ -118,6 +118,10 @@ Notebook уже містить виконані fixture-outputs, дві візу
 python run_agent.py "Знайди тренди YouTube про AI agents за останні 7 днів" --mode fixture --llm scripted
 ```
 
+За замовчуванням CLI одночасно друкує JSON і створює `youtube_trends_report.html`.
+HTML-файл використовує той самий renderer, що й Notebook, тому підсумок, картки,
+таблиця, рейтинг і посилання в обох інтерфейсах однакові.
+
 Live HTML YouTube без YouTube API та без LLM API (детермінований tool-routing):
 
 ```powershell
@@ -132,6 +136,14 @@ python run_agent.py "Знайди тренди YouTube про AI agents за о�
 
 `scripted` призначений для локальної перевірки графа й інструментів. Режими `gemini` та `ollama`
 використовують справжню мовну модель для вибору наступної дії.
+
+Лише HTML без великого JSON у консолі:
+
+```powershell
+python run_agent.py "Знайди тренди YouTube про AI agents за останні 7 днів" --mode fixture --llm scripted --format html
+```
+
+Власне ім'я вихідного файлу задається через `--output report.html`.
 
 ### 4.5 Тести
 
