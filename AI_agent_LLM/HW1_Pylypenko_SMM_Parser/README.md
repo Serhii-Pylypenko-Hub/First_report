@@ -112,9 +112,26 @@ Notebook уже містить виконані fixture-outputs, дві візу
 
 ### 4.4 CLI
 
+Відтворюваний запуск без API-ключів:
+
+```powershell
+python run_agent.py "Знайди тренди YouTube про AI agents за останні 7 днів" --mode fixture --llm scripted
+```
+
+Live HTML YouTube без YouTube API та без LLM API (детермінований tool-routing):
+
+```powershell
+python run_agent.py "Знайди тренди YouTube про AI agents за останні 7 днів" --mode html --llm scripted
+```
+
+Повний запуск із Gemini:
+
 ```powershell
 python run_agent.py "Знайди тренди YouTube про AI agents за останні 7 днів" --mode html --llm gemini
 ```
+
+`scripted` призначений для локальної перевірки графа й інструментів. Режими `gemini` та `ollama`
+використовують справжню мовну модель для вибору наступної дії.
 
 ### 4.5 Тести
 

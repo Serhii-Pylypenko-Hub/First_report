@@ -280,7 +280,7 @@ class YouTubeTrendsAgent:
         available = len(rankings.get("trend_score") or [])
         limitations = [
             "Коментарі та тексти коментарів не збираються у версії 1.0.",
-            "Рейтинг формується лише з кандидатів, повернених YouTube API або fixture-набором.",
+            "Рейтинг формується лише з кандидатів, отриманих із публічного HTML YouTube або fixture-набору.",
         ]
         if self.client.source_mode == "fixture":
             limitations.append("Fixture-режим використовує синтетичні відтворювані дані, а не поточний YouTube.")
