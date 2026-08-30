@@ -1,0 +1,764 @@
+{
+  "thread_id": "submission-reject",
+  "saved_at": "2026-08-30T15:30:23.560969+00:00",
+  "events": [
+    {
+      "timestamp": "2026-08-30T15:30:23.321897+00:00",
+      "event": "plan_created",
+      "goal": "Проаналізуй контент-маркетинг ROZETKA в Instagram, Facebook, Threads і Telegram за 30 днів: частоту, формати, перегляди, лайки, коментарі, funnel, inferred-аудиторію та 5 найсильніших патернів.",
+      "steps": [
+        "COLLECT_PLATFORMS: зібрати Instagram, Facebook, Threads і Telegram через ReAct з fallback.",
+        "SEARCH_KNOWLEDGE: отримати правила метрик, funnel і нормалізації через Agentic RAG.",
+        "ANALYZE_PATTERNS: побудувати platform-звіти, топи, inferred-аудиторію і 5 патернів.",
+        "EXPORT_REPORT: підготувати ризиковий файловий експорт після HITL."
+      ]
+    },
+    {
+      "timestamp": "2026-08-30T15:30:23.322649+00:00",
+      "event": "react_started",
+      "operation": "collect"
+    },
+    {
+      "timestamp": "2026-08-30T15:30:23.330635+00:00",
+      "event": "agent_decision",
+      "step": 1,
+      "tool_calls": [
+        {
+          "name": "collect_public_posts",
+          "args": {
+            "brand": "ROZETKA",
+            "platform": "instagram",
+            "profile_url": "https://www.instagram.com/rozetkaua/",
+            "period_days": 30
+          }
+        }
+      ],
+      "final": false
+    },
+    {
+      "timestamp": "2026-08-30T15:30:23.333053+00:00",
+      "event": "tool_observation",
+      "tool": "collect_public_posts",
+      "status": "error",
+      "error_code": "LIVE_MODE_DISABLED"
+    },
+    {
+      "timestamp": "2026-08-30T15:30:23.334074+00:00",
+      "event": "agent_decision",
+      "step": 2,
+      "tool_calls": [
+        {
+          "name": "load_fixture_posts",
+          "args": {
+            "brand": "ROZETKA",
+            "platform": "instagram",
+            "period_days": 30
+          }
+        }
+      ],
+      "final": false
+    },
+    {
+      "timestamp": "2026-08-30T15:30:23.337066+00:00",
+      "event": "tool_observation",
+      "tool": "load_fixture_posts",
+      "status": "ok",
+      "error_code": null
+    },
+    {
+      "timestamp": "2026-08-30T15:30:23.338063+00:00",
+      "event": "agent_decision",
+      "step": 3,
+      "tool_calls": [
+        {
+          "name": "collect_public_posts",
+          "args": {
+            "brand": "ROZETKA",
+            "platform": "facebook",
+            "profile_url": "https://www.facebook.com/rozetka.ua",
+            "period_days": 30
+          }
+        }
+      ],
+      "final": false
+    },
+    {
+      "timestamp": "2026-08-30T15:30:23.341180+00:00",
+      "event": "tool_observation",
+      "tool": "collect_public_posts",
+      "status": "error",
+      "error_code": "LIVE_MODE_DISABLED"
+    },
+    {
+      "timestamp": "2026-08-30T15:30:23.342171+00:00",
+      "event": "agent_decision",
+      "step": 4,
+      "tool_calls": [
+        {
+          "name": "load_fixture_posts",
+          "args": {
+            "brand": "ROZETKA",
+            "platform": "facebook",
+            "period_days": 30
+          }
+        }
+      ],
+      "final": false
+    },
+    {
+      "timestamp": "2026-08-30T15:30:23.343182+00:00",
+      "event": "tool_observation",
+      "tool": "load_fixture_posts",
+      "status": "ok",
+      "error_code": null
+    },
+    {
+      "timestamp": "2026-08-30T15:30:23.344181+00:00",
+      "event": "agent_decision",
+      "step": 5,
+      "tool_calls": [
+        {
+          "name": "collect_public_posts",
+          "args": {
+            "brand": "ROZETKA",
+            "platform": "threads",
+            "profile_url": "https://www.threads.net/@rozetkaua",
+            "period_days": 30
+          }
+        }
+      ],
+      "final": false
+    },
+    {
+      "timestamp": "2026-08-30T15:30:23.345182+00:00",
+      "event": "tool_observation",
+      "tool": "collect_public_posts",
+      "status": "error",
+      "error_code": "LIVE_MODE_DISABLED"
+    },
+    {
+      "timestamp": "2026-08-30T15:30:23.346172+00:00",
+      "event": "agent_decision",
+      "step": 6,
+      "tool_calls": [
+        {
+          "name": "load_fixture_posts",
+          "args": {
+            "brand": "ROZETKA",
+            "platform": "threads",
+            "period_days": 30
+          }
+        }
+      ],
+      "final": false
+    },
+    {
+      "timestamp": "2026-08-30T15:30:23.347322+00:00",
+      "event": "tool_observation",
+      "tool": "load_fixture_posts",
+      "status": "ok",
+      "error_code": null
+    },
+    {
+      "timestamp": "2026-08-30T15:30:23.348298+00:00",
+      "event": "agent_decision",
+      "step": 7,
+      "tool_calls": [
+        {
+          "name": "collect_public_posts",
+          "args": {
+            "brand": "ROZETKA",
+            "platform": "telegram",
+            "profile_url": "https://t.me/s/rrozetka",
+            "period_days": 30
+          }
+        }
+      ],
+      "final": false
+    },
+    {
+      "timestamp": "2026-08-30T15:30:23.349313+00:00",
+      "event": "tool_observation",
+      "tool": "collect_public_posts",
+      "status": "error",
+      "error_code": "LIVE_MODE_DISABLED"
+    },
+    {
+      "timestamp": "2026-08-30T15:30:23.350301+00:00",
+      "event": "agent_decision",
+      "step": 8,
+      "tool_calls": [
+        {
+          "name": "load_fixture_posts",
+          "args": {
+            "brand": "ROZETKA",
+            "platform": "telegram",
+            "period_days": 30
+          }
+        }
+      ],
+      "final": false
+    },
+    {
+      "timestamp": "2026-08-30T15:30:23.351513+00:00",
+      "event": "tool_observation",
+      "tool": "load_fixture_posts",
+      "status": "ok",
+      "error_code": null
+    },
+    {
+      "timestamp": "2026-08-30T15:30:23.352373+00:00",
+      "event": "agent_decision",
+      "step": 9,
+      "tool_calls": [],
+      "final": true
+    },
+    {
+      "timestamp": "2026-08-30T15:30:23.418607+00:00",
+      "event": "plan_step_completed",
+      "step": "COLLECT_PLATFORMS: зібрати Instagram, Facebook, Threads і Telegram через ReAct з fallback.",
+      "summary": "Зібрано 22 постів; ReAct steps=9."
+    },
+    {
+      "timestamp": "2026-08-30T15:30:23.419625+00:00",
+      "event": "replan_decision",
+      "action": "continue",
+      "reasoning": "Результат достатній для наступного кроку."
+    },
+    {
+      "timestamp": "2026-08-30T15:30:23.420622+00:00",
+      "event": "react_started",
+      "operation": "knowledge"
+    },
+    {
+      "timestamp": "2026-08-30T15:30:23.423709+00:00",
+      "event": "agent_decision",
+      "step": 1,
+      "tool_calls": [
+        {
+          "name": "knowledge_search",
+          "args": {
+            "query": "SMM funnel Instagram Facebook Threads Telegram metrics normalization audience inference",
+            "top_k": 8
+          }
+        }
+      ],
+      "final": false
+    },
+    {
+      "timestamp": "2026-08-30T15:30:23.442070+00:00",
+      "event": "tool_observation",
+      "tool": "knowledge_search",
+      "status": "ok",
+      "error_code": null
+    },
+    {
+      "timestamp": "2026-08-30T15:30:23.444077+00:00",
+      "event": "agent_decision",
+      "step": 2,
+      "tool_calls": [],
+      "final": true
+    },
+    {
+      "timestamp": "2026-08-30T15:30:23.473396+00:00",
+      "event": "plan_step_completed",
+      "step": "SEARCH_KNOWLEDGE: отримати правила метрик, funnel і нормалізації через Agentic RAG.",
+      "summary": "Agentic RAG повернув 8 документів."
+    },
+    {
+      "timestamp": "2026-08-30T15:30:23.475615+00:00",
+      "event": "replan_decision",
+      "action": "continue",
+      "reasoning": "Результат достатній для наступного кроку."
+    },
+    {
+      "timestamp": "2026-08-30T15:30:23.477384+00:00",
+      "event": "react_started",
+      "operation": "analyze"
+    },
+    {
+      "timestamp": "2026-08-30T15:30:23.483385+00:00",
+      "event": "agent_decision",
+      "step": 1,
+      "tool_calls": [
+        {
+          "name": "analyze_marketing_patterns",
+          "args": {
+            "posts": [
+              {
+                "platform": "instagram",
+                "post_id": "ig-001",
+                "published_at": "2026-08-28T12:00:00Z",
+                "content_type": "reel",
+                "text": "Розіграш PlayStation 5: залишайте коментар і позначайте друга.",
+                "topic": "contest",
+                "views": 482000,
+                "views_status": "available",
+                "likes": 28400,
+                "comments": 5190,
+                "shares": 3100,
+                "url": "fixture://instagram/ig-001",
+                "source_mode": "fixture",
+                "confidence": 0.72,
+                "platform_metrics": {
+                  "saves": 8400
+                }
+              },
+              {
+                "platform": "instagram",
+                "post_id": "ig-002",
+                "published_at": "2026-08-25T12:00:00Z",
+                "content_type": "reel",
+                "text": "Три гаджети для дому, які заощаджують час.",
+                "topic": "product_guide",
+                "views": 331000,
+                "views_status": "available",
+                "likes": 17200,
+                "comments": 910,
+                "shares": 4700,
+                "url": "fixture://instagram/ig-002",
+                "source_mode": "fixture",
+                "confidence": 0.72,
+                "platform_metrics": {
+                  "saves": 12100
+                }
+              },
+              {
+                "platform": "instagram",
+                "post_id": "ig-003",
+                "published_at": "2026-08-22T12:00:00Z",
+                "content_type": "carousel",
+                "text": "Добірка ноутбуків для навчання та першої роботи.",
+                "topic": "education_tech",
+                "views": null,
+                "views_status": "not_public",
+                "likes": 9400,
+                "comments": 540,
+                "shares": 1800,
+                "url": "fixture://instagram/ig-003",
+                "source_mode": "fixture",
+                "confidence": 0.72,
+                "platform_metrics": {
+                  "saves": 6900
+                }
+              },
+              {
+                "platform": "instagram",
+                "post_id": "ig-004",
+                "published_at": "2026-08-19T12:00:00Z",
+                "content_type": "reel",
+                "text": "Знижки до 40% на товари для кухні лише цього тижня.",
+                "topic": "discount",
+                "views": 274000,
+                "views_status": "available",
+                "likes": 11900,
+                "comments": 680,
+                "shares": 2900,
+                "url": "fixture://instagram/ig-004",
+                "source_mode": "fixture",
+                "confidence": 0.72,
+                "platform_metrics": {
+                  "saves": 3600
+                }
+              },
+              {
+                "platform": "instagram",
+                "post_id": "ig-005",
+                "published_at": "2026-08-15T12:00:00Z",
+                "content_type": "photo",
+                "text": "Відкриття нового магазину ROZETKA у Львові.",
+                "topic": "brand_news",
+                "views": null,
+                "views_status": "not_public",
+                "likes": 7100,
+                "comments": 420,
+                "shares": 620,
+                "url": "fixture://instagram/ig-005",
+                "source_mode": "fixture",
+                "confidence": 0.72,
+                "platform_metrics": {
+                  "saves": 410
+                }
+              },
+              {
+                "platform": "instagram",
+                "post_id": "ig-006",
+                "published_at": "2026-08-11T12:00:00Z",
+                "content_type": "reel",
+                "text": "Мем про доставку, коли замовлення приїхало раніше за тебе.",
+                "topic": "humor",
+                "views": 398000,
+                "views_status": "available",
+                "likes": 30100,
+                "comments": 2300,
+                "shares": 8100,
+                "url": "fixture://instagram/ig-006",
+                "source_mode": "fixture",
+                "confidence": 0.72,
+                "platform_metrics": {
+                  "saves": 2500
+                }
+              },
+              {
+                "platform": "instagram",
+                "post_id": "ig-007",
+                "published_at": "2026-08-07T12:00:00Z",
+                "content_type": "carousel",
+                "text": "Як вибрати павербанк: ємність, потужність і порти.",
+                "topic": "product_guide",
+                "views": null,
+                "views_status": "not_public",
+                "likes": 12800,
+                "comments": 760,
+                "shares": 3500,
+                "url": "fixture://instagram/ig-007",
+                "source_mode": "fixture",
+                "confidence": 0.72,
+                "platform_metrics": {
+                  "saves": 14200
+                }
+              },
+              {
+                "platform": "instagram",
+                "post_id": "ig-008",
+                "published_at": "2026-08-03T12:00:00Z",
+                "content_type": "reel",
+                "text": "Кросівки для міста: п'ять моделей на щодень.",
+                "topic": "fashion",
+                "views": 219000,
+                "views_status": "available",
+                "likes": 10300,
+                "comments": 610,
+                "shares": 2100,
+                "url": "fixture://instagram/ig-008",
+                "source_mode": "fixture",
+                "confidence": 0.72,
+                "platform_metrics": {
+                  "saves": 5100
+                }
+              },
+              {
+                "platform": "facebook",
+                "post_id": "fb-001",
+                "published_at": "2026-08-29T12:00:00Z",
+                "content_type": "video",
+                "text": "Великий розпродаж техніки: умови та категорії пропозицій.",
+                "topic": "discount",
+                "views": 156000,
+                "views_status": "available",
+                "likes": 6100,
+                "comments": 840,
+                "shares": 2400,
+                "url": "fixture://facebook/fb-001",
+                "source_mode": "fixture",
+                "confidence": 0.72,
+                "platform_metrics": {
+                  "reactions": 6900
+                }
+              },
+              {
+                "platform": "facebook",
+                "post_id": "fb-002",
+                "published_at": "2026-08-24T12:00:00Z",
+                "content_type": "photo",
+                "text": "Розіграш набору для дому серед підписників сторінки.",
+                "topic": "contest",
+                "views": null,
+                "views_status": "not_applicable",
+                "likes": 8200,
+                "comments": 3710,
+                "shares": 1900,
+                "url": "fixture://facebook/fb-002",
+                "source_mode": "fixture",
+                "confidence": 0.72,
+                "platform_metrics": {
+                  "reactions": 9100
+                }
+              },
+              {
+                "platform": "facebook",
+                "post_id": "fb-003",
+                "published_at": "2026-08-20T12:00:00Z",
+                "content_type": "video",
+                "text": "Порівнюємо телевізори OLED та QLED перед вибором.",
+                "topic": "product_guide",
+                "views": 97000,
+                "views_status": "available",
+                "likes": 3400,
+                "comments": 530,
+                "shares": 1300,
+                "url": "fixture://facebook/fb-003",
+                "source_mode": "fixture",
+                "confidence": 0.72,
+                "platform_metrics": {
+                  "reactions": 3800
+                }
+              },
+              {
+                "platform": "facebook",
+                "post_id": "fb-004",
+                "published_at": "2026-08-16T12:00:00Z",
+                "content_type": "photo",
+                "text": "ROZETKA відкрила нову точку видачі у Вінниці.",
+                "topic": "brand_news",
+                "views": null,
+                "views_status": "not_applicable",
+                "likes": 2900,
+                "comments": 310,
+                "shares": 480,
+                "url": "fixture://facebook/fb-004",
+                "source_mode": "fixture",
+                "confidence": 0.72,
+                "platform_metrics": {
+                  "reactions": 3300
+                }
+              },
+              {
+                "platform": "facebook",
+                "post_id": "fb-005",
+                "published_at": "2026-08-12T12:00:00Z",
+                "content_type": "video",
+                "text": "П'ять практичних подарунків для батьків.",
+                "topic": "gift_guide",
+                "views": 121000,
+                "views_status": "available",
+                "likes": 4700,
+                "comments": 620,
+                "shares": 2200,
+                "url": "fixture://facebook/fb-005",
+                "source_mode": "fixture",
+                "confidence": 0.72,
+                "platform_metrics": {
+                  "reactions": 5100
+                }
+              },
+              {
+                "platform": "facebook",
+                "post_id": "fb-006",
+                "published_at": "2026-08-08T12:00:00Z",
+                "content_type": "text",
+                "text": "Який домашній гаджет ви вважаєте найкориснішим? Голосуйте в коментарях.",
+                "topic": "community_question",
+                "views": null,
+                "views_status": "not_applicable",
+                "likes": 1900,
+                "comments": 2280,
+                "shares": 190,
+                "url": "fixture://facebook/fb-006",
+                "source_mode": "fixture",
+                "confidence": 0.72,
+                "platform_metrics": {
+                  "reactions": 2400
+                }
+              },
+              {
+                "platform": "facebook",
+                "post_id": "fb-007",
+                "published_at": "2026-08-02T12:00:00Z",
+                "content_type": "photo",
+                "text": "Комплект для дистанційного навчання зі спеціальною ціною.",
+                "topic": "education_tech",
+                "views": null,
+                "views_status": "not_applicable",
+                "likes": 2700,
+                "comments": 260,
+                "shares": 740,
+                "url": "fixture://facebook/fb-007",
+                "source_mode": "fixture",
+                "confidence": 0.72,
+                "platform_metrics": {
+                  "reactions": 3100
+                }
+              },
+              {
+                "platform": "telegram",
+                "post_id": "tg-001",
+                "published_at": "2026-08-29T12:00:00Z",
+                "content_type": "photo",
+                "text": "Знижка до 60% на посуд. Перелік пропозицій за посиланням.",
+                "topic": "discount",
+                "views": 61200,
+                "views_status": "available",
+                "likes": 480,
+                "comments": 120,
+                "shares": 760,
+                "url": "fixture://telegram/tg-001",
+                "source_mode": "fixture",
+                "confidence": 0.72,
+                "platform_metrics": {
+                  "reactions": 620,
+                  "forwards": 760
+                }
+              },
+              {
+                "platform": "telegram",
+                "post_id": "tg-002",
+                "published_at": "2026-08-26T12:00:00Z",
+                "content_type": "video",
+                "text": "Кидайте кубик у коментарях — перші переможці отримають промокод.",
+                "topic": "contest",
+                "views": 73800,
+                "views_status": "available",
+                "likes": 1100,
+                "comments": 2940,
+                "shares": 430,
+                "url": "fixture://telegram/tg-002",
+                "source_mode": "fixture",
+                "confidence": 0.72,
+                "platform_metrics": {
+                  "reactions": 1420,
+                  "forwards": 430
+                }
+              },
+              {
+                "platform": "telegram",
+                "post_id": "tg-003",
+                "published_at": "2026-08-21T12:00:00Z",
+                "content_type": "photo",
+                "text": "Добірка зарядних станцій для дому та подорожей.",
+                "topic": "product_guide",
+                "views": 55900,
+                "views_status": "available",
+                "likes": 690,
+                "comments": 210,
+                "shares": 910,
+                "url": "fixture://telegram/tg-003",
+                "source_mode": "fixture",
+                "confidence": 0.72,
+                "platform_metrics": {
+                  "reactions": 810,
+                  "forwards": 910
+                }
+              },
+              {
+                "platform": "telegram",
+                "post_id": "tg-004",
+                "published_at": "2026-08-17T12:00:00Z",
+                "content_type": "text",
+                "text": "Опитування: яку категорію товарів додати до наступного розпродажу?",
+                "topic": "community_question",
+                "views": 49700,
+                "views_status": "available",
+                "likes": 410,
+                "comments": 1680,
+                "shares": 180,
+                "url": "fixture://telegram/tg-004",
+                "source_mode": "fixture",
+                "confidence": 0.72,
+                "platform_metrics": {
+                  "reactions": 530,
+                  "forwards": 180
+                }
+              },
+              {
+                "platform": "telegram",
+                "post_id": "tg-005",
+                "published_at": "2026-08-13T12:00:00Z",
+                "content_type": "video",
+                "text": "Огляд смартфона: камера, автономність і продуктивність.",
+                "topic": "product_guide",
+                "views": 68400,
+                "views_status": "available",
+                "likes": 920,
+                "comments": 340,
+                "shares": 1200,
+                "url": "fixture://telegram/tg-005",
+                "source_mode": "fixture",
+                "confidence": 0.72,
+                "platform_metrics": {
+                  "reactions": 1080,
+                  "forwards": 1200
+                }
+              },
+              {
+                "platform": "telegram",
+                "post_id": "tg-006",
+                "published_at": "2026-08-09T12:00:00Z",
+                "content_type": "photo",
+                "text": "Товари для школи зі знижкою та бонусами на картку.",
+                "topic": "education_tech",
+                "views": 52100,
+                "views_status": "available",
+                "likes": 570,
+                "comments": 160,
+                "shares": 680,
+                "url": "fixture://telegram/tg-006",
+                "source_mode": "fixture",
+                "confidence": 0.72,
+                "platform_metrics": {
+                  "reactions": 710,
+                  "forwards": 680
+                }
+              },
+              {
+                "platform": "telegram",
+                "post_id": "tg-007",
+                "published_at": "2026-08-04T12:00:00Z",
+                "content_type": "text",
+                "text": "Історія команди нового магазину ROZETKA у Черкасах.",
+                "topic": "brand_news",
+                "views": 42100,
+                "views_status": "available",
+                "likes": 350,
+                "comments": 95,
+                "shares": 140,
+                "url": "fixture://telegram/tg-007",
+                "source_mode": "fixture",
+                "confidence": 0.72,
+                "platform_metrics": {
+                  "reactions": 460,
+                  "forwards": 140
+                }
+              }
+            ],
+            "period_days": 30,
+            "top_k": 5
+          }
+        }
+      ],
+      "final": false
+    },
+    {
+      "timestamp": "2026-08-30T15:30:23.490144+00:00",
+      "event": "tool_observation",
+      "tool": "analyze_marketing_patterns",
+      "status": "ok",
+      "error_code": null
+    },
+    {
+      "timestamp": "2026-08-30T15:30:23.492186+00:00",
+      "event": "agent_decision",
+      "step": 2,
+      "tool_calls": [],
+      "final": true
+    },
+    {
+      "timestamp": "2026-08-30T15:30:23.514828+00:00",
+      "event": "plan_step_completed",
+      "step": "ANALYZE_PATTERNS: побудувати platform-звіти, топи, inferred-аудиторію і 5 патернів.",
+      "summary": "Знайдено 5 основних патернів."
+    },
+    {
+      "timestamp": "2026-08-30T15:30:23.514828+00:00",
+      "event": "replan_decision",
+      "action": "continue",
+      "reasoning": "Результат достатній для наступного кроку."
+    },
+    {
+      "timestamp": "2026-08-30T15:30:23.515830+00:00",
+      "event": "risky_action_prepared",
+      "tool": "export_smm_report",
+      "path": "outputs/rozetka_smm_report.json"
+    },
+    {
+      "timestamp": "2026-08-30T15:30:23.548974+00:00",
+      "event": "export_rejected"
+    },
+    {
+      "timestamp": "2026-08-30T15:30:23.552970+00:00",
+      "event": "replan_decision",
+      "action": "finish",
+      "reasoning": "Експорт завершено рішенням оператора."
+    }
+  ]
+}

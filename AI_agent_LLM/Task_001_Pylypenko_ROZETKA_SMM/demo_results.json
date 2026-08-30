@@ -1,0 +1,4619 @@
+{
+  "single_agent": true,
+  "react_guardrails": {
+    "max_steps": 10,
+    "timeout_seconds": 120,
+    "repeat_detection": true
+  },
+  "approve_flow": {
+    "paused": {
+      "brand": "ROZETKA",
+      "period_days": 30,
+      "posts_collected": 22,
+      "source_status": {
+        "instagram": {
+          "profile_status": "verified_official",
+          "verification_source": "ROZETKA official social hub",
+          "profile_url": "https://www.instagram.com/rozetkaua/",
+          "attempts": [
+            {
+              "tool": "collect_public_posts",
+              "status": "error",
+              "error_code": "LIVE_MODE_DISABLED"
+            },
+            {
+              "tool": "load_fixture_posts",
+              "status": "ok",
+              "error_code": null
+            }
+          ],
+          "final_source_mode": "fixture",
+          "post_count": 8,
+          "zero_posts_reason": null
+        },
+        "facebook": {
+          "profile_status": "verified_official",
+          "verification_source": "ROZETKA official social hub",
+          "profile_url": "https://www.facebook.com/rozetka.ua",
+          "attempts": [
+            {
+              "tool": "collect_public_posts",
+              "status": "error",
+              "error_code": "LIVE_MODE_DISABLED"
+            },
+            {
+              "tool": "load_fixture_posts",
+              "status": "ok",
+              "error_code": null
+            }
+          ],
+          "final_source_mode": "fixture",
+          "post_count": 7,
+          "zero_posts_reason": null
+        },
+        "threads": {
+          "profile_status": "not_verified",
+          "verification_source": "Threads profile is not listed in ROZETKA official social hub",
+          "profile_url": "https://www.threads.net/@rozetkaua",
+          "attempts": [
+            {
+              "tool": "collect_public_posts",
+              "status": "error",
+              "error_code": "LIVE_MODE_DISABLED"
+            },
+            {
+              "tool": "load_fixture_posts",
+              "status": "ok",
+              "error_code": null
+            }
+          ],
+          "final_source_mode": "fixture",
+          "post_count": 0,
+          "zero_posts_reason": "official_profile_not_verified"
+        },
+        "telegram": {
+          "profile_status": "verified_official",
+          "verification_source": "ROZETKA official Telegram channel",
+          "profile_url": "https://t.me/s/rrozetka",
+          "attempts": [
+            {
+              "tool": "collect_public_posts",
+              "status": "error",
+              "error_code": "LIVE_MODE_DISABLED"
+            },
+            {
+              "tool": "load_fixture_posts",
+              "status": "ok",
+              "error_code": null
+            }
+          ],
+          "final_source_mode": "fixture",
+          "post_count": 7,
+          "zero_posts_reason": null
+        }
+      },
+      "knowledge_hits": 8,
+      "analysis": {
+        "brand": "ROZETKA",
+        "period_days": 30,
+        "generated_at": "2026-08-30T12:00:00+00:00",
+        "methodology": "Сирі метрики порівнюються лише всередині платформи; cross-platform top використовує середнє percentile доступних метрик. Аудиторія є inference.",
+        "platform_summaries": {
+          "instagram": {
+            "post_count": 8,
+            "posts_per_week": 1.87,
+            "average_interval_days": 3.57,
+            "views_availability": {
+              "available": 5,
+              "not_public": 3,
+              "not_applicable": 0,
+              "missing_in_source": 0
+            },
+            "views_note": "Video/Reels можуть мати public views; для статичних постів лічильник переглядів часто не публікується. None не означає 0 переглядів.",
+            "formats": {
+              "carousel": 2,
+              "photo": 1,
+              "reel": 5
+            },
+            "top_by_views": [
+              {
+                "post_id": "ig-001",
+                "value": 482000,
+                "content_type": "reel",
+                "topic": "contest",
+                "url": "fixture://instagram/ig-001"
+              },
+              {
+                "post_id": "ig-006",
+                "value": 398000,
+                "content_type": "reel",
+                "topic": "humor",
+                "url": "fixture://instagram/ig-006"
+              },
+              {
+                "post_id": "ig-002",
+                "value": 331000,
+                "content_type": "reel",
+                "topic": "product_guide",
+                "url": "fixture://instagram/ig-002"
+              },
+              {
+                "post_id": "ig-004",
+                "value": 274000,
+                "content_type": "reel",
+                "topic": "discount",
+                "url": "fixture://instagram/ig-004"
+              },
+              {
+                "post_id": "ig-008",
+                "value": 219000,
+                "content_type": "reel",
+                "topic": "fashion",
+                "url": "fixture://instagram/ig-008"
+              }
+            ],
+            "top_by_likes": [
+              {
+                "post_id": "ig-006",
+                "value": 30100,
+                "content_type": "reel",
+                "topic": "humor",
+                "url": "fixture://instagram/ig-006"
+              },
+              {
+                "post_id": "ig-001",
+                "value": 28400,
+                "content_type": "reel",
+                "topic": "contest",
+                "url": "fixture://instagram/ig-001"
+              },
+              {
+                "post_id": "ig-002",
+                "value": 17200,
+                "content_type": "reel",
+                "topic": "product_guide",
+                "url": "fixture://instagram/ig-002"
+              },
+              {
+                "post_id": "ig-007",
+                "value": 12800,
+                "content_type": "carousel",
+                "topic": "product_guide",
+                "url": "fixture://instagram/ig-007"
+              },
+              {
+                "post_id": "ig-004",
+                "value": 11900,
+                "content_type": "reel",
+                "topic": "discount",
+                "url": "fixture://instagram/ig-004"
+              }
+            ],
+            "top_by_comments": [
+              {
+                "post_id": "ig-001",
+                "value": 5190,
+                "content_type": "reel",
+                "topic": "contest",
+                "url": "fixture://instagram/ig-001"
+              },
+              {
+                "post_id": "ig-006",
+                "value": 2300,
+                "content_type": "reel",
+                "topic": "humor",
+                "url": "fixture://instagram/ig-006"
+              },
+              {
+                "post_id": "ig-002",
+                "value": 910,
+                "content_type": "reel",
+                "topic": "product_guide",
+                "url": "fixture://instagram/ig-002"
+              },
+              {
+                "post_id": "ig-007",
+                "value": 760,
+                "content_type": "carousel",
+                "topic": "product_guide",
+                "url": "fixture://instagram/ig-007"
+              },
+              {
+                "post_id": "ig-004",
+                "value": 680,
+                "content_type": "reel",
+                "topic": "discount",
+                "url": "fixture://instagram/ig-004"
+              }
+            ],
+            "top_by_shares": [
+              {
+                "post_id": "ig-006",
+                "value": 8100,
+                "content_type": "reel",
+                "topic": "humor",
+                "url": "fixture://instagram/ig-006"
+              },
+              {
+                "post_id": "ig-002",
+                "value": 4700,
+                "content_type": "reel",
+                "topic": "product_guide",
+                "url": "fixture://instagram/ig-002"
+              },
+              {
+                "post_id": "ig-007",
+                "value": 3500,
+                "content_type": "carousel",
+                "topic": "product_guide",
+                "url": "fixture://instagram/ig-007"
+              },
+              {
+                "post_id": "ig-001",
+                "value": 3100,
+                "content_type": "reel",
+                "topic": "contest",
+                "url": "fixture://instagram/ig-001"
+              },
+              {
+                "post_id": "ig-004",
+                "value": 2900,
+                "content_type": "reel",
+                "topic": "discount",
+                "url": "fixture://instagram/ig-004"
+              }
+            ]
+          },
+          "facebook": {
+            "post_count": 7,
+            "posts_per_week": 1.63,
+            "average_interval_days": 4.5,
+            "views_availability": {
+              "available": 3,
+              "not_public": 0,
+              "not_applicable": 4,
+              "missing_in_source": 0
+            },
+            "views_note": "Video/Reels можуть мати public views; для статичних постів лічильник переглядів часто не публікується. None не означає 0 переглядів.",
+            "formats": {
+              "photo": 3,
+              "text": 1,
+              "video": 3
+            },
+            "top_by_views": [
+              {
+                "post_id": "fb-001",
+                "value": 156000,
+                "content_type": "video",
+                "topic": "discount",
+                "url": "fixture://facebook/fb-001"
+              },
+              {
+                "post_id": "fb-005",
+                "value": 121000,
+                "content_type": "video",
+                "topic": "gift_guide",
+                "url": "fixture://facebook/fb-005"
+              },
+              {
+                "post_id": "fb-003",
+                "value": 97000,
+                "content_type": "video",
+                "topic": "product_guide",
+                "url": "fixture://facebook/fb-003"
+              }
+            ],
+            "top_by_likes": [
+              {
+                "post_id": "fb-002",
+                "value": 8200,
+                "content_type": "photo",
+                "topic": "contest",
+                "url": "fixture://facebook/fb-002"
+              },
+              {
+                "post_id": "fb-001",
+                "value": 6100,
+                "content_type": "video",
+                "topic": "discount",
+                "url": "fixture://facebook/fb-001"
+              },
+              {
+                "post_id": "fb-005",
+                "value": 4700,
+                "content_type": "video",
+                "topic": "gift_guide",
+                "url": "fixture://facebook/fb-005"
+              },
+              {
+                "post_id": "fb-003",
+                "value": 3400,
+                "content_type": "video",
+                "topic": "product_guide",
+                "url": "fixture://facebook/fb-003"
+              },
+              {
+                "post_id": "fb-004",
+                "value": 2900,
+                "content_type": "photo",
+                "topic": "brand_news",
+                "url": "fixture://facebook/fb-004"
+              }
+            ],
+            "top_by_comments": [
+              {
+                "post_id": "fb-002",
+                "value": 3710,
+                "content_type": "photo",
+                "topic": "contest",
+                "url": "fixture://facebook/fb-002"
+              },
+              {
+                "post_id": "fb-006",
+                "value": 2280,
+                "content_type": "text",
+                "topic": "community_question",
+                "url": "fixture://facebook/fb-006"
+              },
+              {
+                "post_id": "fb-001",
+                "value": 840,
+                "content_type": "video",
+                "topic": "discount",
+                "url": "fixture://facebook/fb-001"
+              },
+              {
+                "post_id": "fb-005",
+                "value": 620,
+                "content_type": "video",
+                "topic": "gift_guide",
+                "url": "fixture://facebook/fb-005"
+              },
+              {
+                "post_id": "fb-003",
+                "value": 530,
+                "content_type": "video",
+                "topic": "product_guide",
+                "url": "fixture://facebook/fb-003"
+              }
+            ],
+            "top_by_shares": [
+              {
+                "post_id": "fb-001",
+                "value": 2400,
+                "content_type": "video",
+                "topic": "discount",
+                "url": "fixture://facebook/fb-001"
+              },
+              {
+                "post_id": "fb-005",
+                "value": 2200,
+                "content_type": "video",
+                "topic": "gift_guide",
+                "url": "fixture://facebook/fb-005"
+              },
+              {
+                "post_id": "fb-002",
+                "value": 1900,
+                "content_type": "photo",
+                "topic": "contest",
+                "url": "fixture://facebook/fb-002"
+              },
+              {
+                "post_id": "fb-003",
+                "value": 1300,
+                "content_type": "video",
+                "topic": "product_guide",
+                "url": "fixture://facebook/fb-003"
+              },
+              {
+                "post_id": "fb-007",
+                "value": 740,
+                "content_type": "photo",
+                "topic": "education_tech",
+                "url": "fixture://facebook/fb-007"
+              }
+            ]
+          },
+          "threads": {
+            "post_count": 0,
+            "posts_per_week": 0.0,
+            "average_interval_days": null,
+            "views_availability": {
+              "available": 0,
+              "not_public": 0,
+              "not_applicable": 0,
+              "missing_in_source": 0
+            },
+            "views_note": "Video/Reels можуть мати public views; для статичних постів лічильник переглядів часто не публікується. None не означає 0 переглядів.",
+            "formats": {},
+            "top_by_views": [],
+            "top_by_likes": [],
+            "top_by_comments": [],
+            "top_by_shares": []
+          },
+          "telegram": {
+            "post_count": 7,
+            "posts_per_week": 1.63,
+            "average_interval_days": 4.17,
+            "views_availability": {
+              "available": 7,
+              "not_public": 0,
+              "not_applicable": 0,
+              "missing_in_source": 0
+            },
+            "views_note": "Video/Reels можуть мати public views; для статичних постів лічильник переглядів часто не публікується. None не означає 0 переглядів.",
+            "formats": {
+              "photo": 3,
+              "text": 2,
+              "video": 2
+            },
+            "top_by_views": [
+              {
+                "post_id": "tg-002",
+                "value": 73800,
+                "content_type": "video",
+                "topic": "contest",
+                "url": "fixture://telegram/tg-002"
+              },
+              {
+                "post_id": "tg-005",
+                "value": 68400,
+                "content_type": "video",
+                "topic": "product_guide",
+                "url": "fixture://telegram/tg-005"
+              },
+              {
+                "post_id": "tg-001",
+                "value": 61200,
+                "content_type": "photo",
+                "topic": "discount",
+                "url": "fixture://telegram/tg-001"
+              },
+              {
+                "post_id": "tg-003",
+                "value": 55900,
+                "content_type": "photo",
+                "topic": "product_guide",
+                "url": "fixture://telegram/tg-003"
+              },
+              {
+                "post_id": "tg-006",
+                "value": 52100,
+                "content_type": "photo",
+                "topic": "education_tech",
+                "url": "fixture://telegram/tg-006"
+              }
+            ],
+            "top_by_likes": [
+              {
+                "post_id": "tg-002",
+                "value": 1100,
+                "content_type": "video",
+                "topic": "contest",
+                "url": "fixture://telegram/tg-002"
+              },
+              {
+                "post_id": "tg-005",
+                "value": 920,
+                "content_type": "video",
+                "topic": "product_guide",
+                "url": "fixture://telegram/tg-005"
+              },
+              {
+                "post_id": "tg-003",
+                "value": 690,
+                "content_type": "photo",
+                "topic": "product_guide",
+                "url": "fixture://telegram/tg-003"
+              },
+              {
+                "post_id": "tg-006",
+                "value": 570,
+                "content_type": "photo",
+                "topic": "education_tech",
+                "url": "fixture://telegram/tg-006"
+              },
+              {
+                "post_id": "tg-001",
+                "value": 480,
+                "content_type": "photo",
+                "topic": "discount",
+                "url": "fixture://telegram/tg-001"
+              }
+            ],
+            "top_by_comments": [
+              {
+                "post_id": "tg-002",
+                "value": 2940,
+                "content_type": "video",
+                "topic": "contest",
+                "url": "fixture://telegram/tg-002"
+              },
+              {
+                "post_id": "tg-004",
+                "value": 1680,
+                "content_type": "text",
+                "topic": "community_question",
+                "url": "fixture://telegram/tg-004"
+              },
+              {
+                "post_id": "tg-005",
+                "value": 340,
+                "content_type": "video",
+                "topic": "product_guide",
+                "url": "fixture://telegram/tg-005"
+              },
+              {
+                "post_id": "tg-003",
+                "value": 210,
+                "content_type": "photo",
+                "topic": "product_guide",
+                "url": "fixture://telegram/tg-003"
+              },
+              {
+                "post_id": "tg-006",
+                "value": 160,
+                "content_type": "photo",
+                "topic": "education_tech",
+                "url": "fixture://telegram/tg-006"
+              }
+            ],
+            "top_by_shares": [
+              {
+                "post_id": "tg-005",
+                "value": 1200,
+                "content_type": "video",
+                "topic": "product_guide",
+                "url": "fixture://telegram/tg-005"
+              },
+              {
+                "post_id": "tg-003",
+                "value": 910,
+                "content_type": "photo",
+                "topic": "product_guide",
+                "url": "fixture://telegram/tg-003"
+              },
+              {
+                "post_id": "tg-001",
+                "value": 760,
+                "content_type": "photo",
+                "topic": "discount",
+                "url": "fixture://telegram/tg-001"
+              },
+              {
+                "post_id": "tg-006",
+                "value": 680,
+                "content_type": "photo",
+                "topic": "education_tech",
+                "url": "fixture://telegram/tg-006"
+              },
+              {
+                "post_id": "tg-002",
+                "value": 430,
+                "content_type": "video",
+                "topic": "contest",
+                "url": "fixture://telegram/tg-002"
+              }
+            ]
+          }
+        },
+        "posts": [
+          {
+            "platform": "instagram",
+            "post_id": "ig-001",
+            "published_at": "2026-08-28T12:00:00Z",
+            "content_type": "reel",
+            "text": "Розіграш PlayStation 5: залишайте коментар і позначайте друга.",
+            "topic": "contest",
+            "views": 482000,
+            "views_status": "available",
+            "likes": 28400,
+            "comments": 5190,
+            "shares": 3100,
+            "url": "fixture://instagram/ig-001",
+            "source_mode": "fixture",
+            "confidence": 0.72,
+            "platform_metrics": {
+              "saves": 8400
+            },
+            "funnel_stage": "engagement",
+            "audience_inference": {
+              "segment": "технологічно активна аудиторія",
+              "age_inferred": "16–39",
+              "region_inferred": "Україна",
+              "confidence": 0.62,
+              "basis": "тема, формат і текст публікації; не first-party demographics"
+            },
+            "metric_percentiles": {
+              "views": 1.0,
+              "likes": 0.875,
+              "comments": 1.0,
+              "shares": 0.625
+            },
+            "normalized_score": 0.875
+          },
+          {
+            "platform": "instagram",
+            "post_id": "ig-002",
+            "published_at": "2026-08-25T12:00:00Z",
+            "content_type": "reel",
+            "text": "Три гаджети для дому, які заощаджують час.",
+            "topic": "product_guide",
+            "views": 331000,
+            "views_status": "available",
+            "likes": 17200,
+            "comments": 910,
+            "shares": 4700,
+            "url": "fixture://instagram/ig-002",
+            "source_mode": "fixture",
+            "confidence": 0.72,
+            "platform_metrics": {
+              "saves": 12100
+            },
+            "funnel_stage": "consideration",
+            "audience_inference": {
+              "segment": "технологічно активна аудиторія",
+              "age_inferred": "16–39",
+              "region_inferred": "Україна",
+              "confidence": 0.62,
+              "basis": "тема, формат і текст публікації; не first-party demographics"
+            },
+            "metric_percentiles": {
+              "views": 0.6,
+              "likes": 0.75,
+              "comments": 0.75,
+              "shares": 0.875
+            },
+            "normalized_score": 0.7438
+          },
+          {
+            "platform": "instagram",
+            "post_id": "ig-003",
+            "published_at": "2026-08-22T12:00:00Z",
+            "content_type": "carousel",
+            "text": "Добірка ноутбуків для навчання та першої роботи.",
+            "topic": "education_tech",
+            "views": null,
+            "views_status": "not_public",
+            "likes": 9400,
+            "comments": 540,
+            "shares": 1800,
+            "url": "fixture://instagram/ig-003",
+            "source_mode": "fixture",
+            "confidence": 0.72,
+            "platform_metrics": {
+              "saves": 6900
+            },
+            "funnel_stage": "consideration",
+            "audience_inference": {
+              "segment": "студенти, батьки та молоді спеціалісти",
+              "age_inferred": "18–44",
+              "region_inferred": "Україна",
+              "confidence": 0.62,
+              "basis": "тема, формат і текст публікації; не first-party demographics"
+            },
+            "metric_percentiles": {
+              "views": null,
+              "likes": 0.25,
+              "comments": 0.25,
+              "shares": 0.25
+            },
+            "normalized_score": 0.25
+          },
+          {
+            "platform": "instagram",
+            "post_id": "ig-004",
+            "published_at": "2026-08-19T12:00:00Z",
+            "content_type": "reel",
+            "text": "Знижки до 40% на товари для кухні лише цього тижня.",
+            "topic": "discount",
+            "views": 274000,
+            "views_status": "available",
+            "likes": 11900,
+            "comments": 680,
+            "shares": 2900,
+            "url": "fixture://instagram/ig-004",
+            "source_mode": "fixture",
+            "confidence": 0.72,
+            "platform_metrics": {
+              "saves": 3600
+            },
+            "funnel_stage": "conversion_oriented",
+            "audience_inference": {
+              "segment": "домогосподарства та сімейна аудиторія",
+              "age_inferred": "25–54",
+              "region_inferred": "Україна",
+              "confidence": 0.62,
+              "basis": "тема, формат і текст публікації; не first-party demographics"
+            },
+            "metric_percentiles": {
+              "views": 0.4,
+              "likes": 0.5,
+              "comments": 0.5,
+              "shares": 0.5
+            },
+            "normalized_score": 0.475
+          },
+          {
+            "platform": "instagram",
+            "post_id": "ig-005",
+            "published_at": "2026-08-15T12:00:00Z",
+            "content_type": "photo",
+            "text": "Відкриття нового магазину ROZETKA у Львові.",
+            "topic": "brand_news",
+            "views": null,
+            "views_status": "not_public",
+            "likes": 7100,
+            "comments": 420,
+            "shares": 620,
+            "url": "fixture://instagram/ig-005",
+            "source_mode": "fixture",
+            "confidence": 0.72,
+            "platform_metrics": {
+              "saves": 410
+            },
+            "funnel_stage": "awareness",
+            "audience_inference": {
+              "segment": "широка українська онлайн-аудиторія",
+              "age_inferred": "18–54",
+              "region_inferred": "Україна",
+              "confidence": 0.62,
+              "basis": "тема, формат і текст публікації; не first-party demographics"
+            },
+            "metric_percentiles": {
+              "views": null,
+              "likes": 0.125,
+              "comments": 0.125,
+              "shares": 0.125
+            },
+            "normalized_score": 0.125
+          },
+          {
+            "platform": "instagram",
+            "post_id": "ig-006",
+            "published_at": "2026-08-11T12:00:00Z",
+            "content_type": "reel",
+            "text": "Мем про доставку, коли замовлення приїхало раніше за тебе.",
+            "topic": "humor",
+            "views": 398000,
+            "views_status": "available",
+            "likes": 30100,
+            "comments": 2300,
+            "shares": 8100,
+            "url": "fixture://instagram/ig-006",
+            "source_mode": "fixture",
+            "confidence": 0.72,
+            "platform_metrics": {
+              "saves": 2500
+            },
+            "funnel_stage": "engagement",
+            "audience_inference": {
+              "segment": "широка українська онлайн-аудиторія",
+              "age_inferred": "18–54",
+              "region_inferred": "Україна",
+              "confidence": 0.62,
+              "basis": "тема, формат і текст публікації; не first-party demographics"
+            },
+            "metric_percentiles": {
+              "views": 0.8,
+              "likes": 1.0,
+              "comments": 0.875,
+              "shares": 1.0
+            },
+            "normalized_score": 0.9187
+          },
+          {
+            "platform": "instagram",
+            "post_id": "ig-007",
+            "published_at": "2026-08-07T12:00:00Z",
+            "content_type": "carousel",
+            "text": "Як вибрати павербанк: ємність, потужність і порти.",
+            "topic": "product_guide",
+            "views": null,
+            "views_status": "not_public",
+            "likes": 12800,
+            "comments": 760,
+            "shares": 3500,
+            "url": "fixture://instagram/ig-007",
+            "source_mode": "fixture",
+            "confidence": 0.72,
+            "platform_metrics": {
+              "saves": 14200
+            },
+            "funnel_stage": "consideration",
+            "audience_inference": {
+              "segment": "широка українська онлайн-аудиторія",
+              "age_inferred": "18–54",
+              "region_inferred": "Україна",
+              "confidence": 0.62,
+              "basis": "тема, формат і текст публікації; не first-party demographics"
+            },
+            "metric_percentiles": {
+              "views": null,
+              "likes": 0.625,
+              "comments": 0.625,
+              "shares": 0.75
+            },
+            "normalized_score": 0.6667
+          },
+          {
+            "platform": "instagram",
+            "post_id": "ig-008",
+            "published_at": "2026-08-03T12:00:00Z",
+            "content_type": "reel",
+            "text": "Кросівки для міста: п'ять моделей на щодень.",
+            "topic": "fashion",
+            "views": 219000,
+            "views_status": "available",
+            "likes": 10300,
+            "comments": 610,
+            "shares": 2100,
+            "url": "fixture://instagram/ig-008",
+            "source_mode": "fixture",
+            "confidence": 0.72,
+            "platform_metrics": {
+              "saves": 5100
+            },
+            "funnel_stage": "awareness",
+            "audience_inference": {
+              "segment": "міська fashion-аудиторія",
+              "age_inferred": "18–39",
+              "region_inferred": "Україна",
+              "confidence": 0.62,
+              "basis": "тема, формат і текст публікації; не first-party demographics"
+            },
+            "metric_percentiles": {
+              "views": 0.2,
+              "likes": 0.375,
+              "comments": 0.375,
+              "shares": 0.375
+            },
+            "normalized_score": 0.3312
+          },
+          {
+            "platform": "facebook",
+            "post_id": "fb-001",
+            "published_at": "2026-08-29T12:00:00Z",
+            "content_type": "video",
+            "text": "Великий розпродаж техніки: умови та категорії пропозицій.",
+            "topic": "discount",
+            "views": 156000,
+            "views_status": "available",
+            "likes": 6100,
+            "comments": 840,
+            "shares": 2400,
+            "url": "fixture://facebook/fb-001",
+            "source_mode": "fixture",
+            "confidence": 0.72,
+            "platform_metrics": {
+              "reactions": 6900
+            },
+            "funnel_stage": "conversion_oriented",
+            "audience_inference": {
+              "segment": "широка українська онлайн-аудиторія",
+              "age_inferred": "18–54",
+              "region_inferred": "Україна",
+              "confidence": 0.62,
+              "basis": "тема, формат і текст публікації; не first-party demographics"
+            },
+            "metric_percentiles": {
+              "views": 1.0,
+              "likes": 0.8571428571428571,
+              "comments": 0.7142857142857143,
+              "shares": 1.0
+            },
+            "normalized_score": 0.8929
+          },
+          {
+            "platform": "facebook",
+            "post_id": "fb-002",
+            "published_at": "2026-08-24T12:00:00Z",
+            "content_type": "photo",
+            "text": "Розіграш набору для дому серед підписників сторінки.",
+            "topic": "contest",
+            "views": null,
+            "views_status": "not_applicable",
+            "likes": 8200,
+            "comments": 3710,
+            "shares": 1900,
+            "url": "fixture://facebook/fb-002",
+            "source_mode": "fixture",
+            "confidence": 0.72,
+            "platform_metrics": {
+              "reactions": 9100
+            },
+            "funnel_stage": "engagement",
+            "audience_inference": {
+              "segment": "широка українська онлайн-аудиторія",
+              "age_inferred": "18–54",
+              "region_inferred": "Україна",
+              "confidence": 0.62,
+              "basis": "тема, формат і текст публікації; не first-party demographics"
+            },
+            "metric_percentiles": {
+              "views": null,
+              "likes": 1.0,
+              "comments": 1.0,
+              "shares": 0.7142857142857143
+            },
+            "normalized_score": 0.9048
+          },
+          {
+            "platform": "facebook",
+            "post_id": "fb-003",
+            "published_at": "2026-08-20T12:00:00Z",
+            "content_type": "video",
+            "text": "Порівнюємо телевізори OLED та QLED перед вибором.",
+            "topic": "product_guide",
+            "views": 97000,
+            "views_status": "available",
+            "likes": 3400,
+            "comments": 530,
+            "shares": 1300,
+            "url": "fixture://facebook/fb-003",
+            "source_mode": "fixture",
+            "confidence": 0.72,
+            "platform_metrics": {
+              "reactions": 3800
+            },
+            "funnel_stage": "consideration",
+            "audience_inference": {
+              "segment": "широка українська онлайн-аудиторія",
+              "age_inferred": "18–54",
+              "region_inferred": "Україна",
+              "confidence": 0.62,
+              "basis": "тема, формат і текст публікації; не first-party demographics"
+            },
+            "metric_percentiles": {
+              "views": 0.3333333333333333,
+              "likes": 0.5714285714285714,
+              "comments": 0.42857142857142855,
+              "shares": 0.5714285714285714
+            },
+            "normalized_score": 0.4762
+          },
+          {
+            "platform": "facebook",
+            "post_id": "fb-004",
+            "published_at": "2026-08-16T12:00:00Z",
+            "content_type": "photo",
+            "text": "ROZETKA відкрила нову точку видачі у Вінниці.",
+            "topic": "brand_news",
+            "views": null,
+            "views_status": "not_applicable",
+            "likes": 2900,
+            "comments": 310,
+            "shares": 480,
+            "url": "fixture://facebook/fb-004",
+            "source_mode": "fixture",
+            "confidence": 0.72,
+            "platform_metrics": {
+              "reactions": 3300
+            },
+            "funnel_stage": "awareness",
+            "audience_inference": {
+              "segment": "широка українська онлайн-аудиторія",
+              "age_inferred": "18–54",
+              "region_inferred": "Україна",
+              "confidence": 0.62,
+              "basis": "тема, формат і текст публікації; не first-party demographics"
+            },
+            "metric_percentiles": {
+              "views": null,
+              "likes": 0.42857142857142855,
+              "comments": 0.2857142857142857,
+              "shares": 0.2857142857142857
+            },
+            "normalized_score": 0.3333
+          },
+          {
+            "platform": "facebook",
+            "post_id": "fb-005",
+            "published_at": "2026-08-12T12:00:00Z",
+            "content_type": "video",
+            "text": "П'ять практичних подарунків для батьків.",
+            "topic": "gift_guide",
+            "views": 121000,
+            "views_status": "available",
+            "likes": 4700,
+            "comments": 620,
+            "shares": 2200,
+            "url": "fixture://facebook/fb-005",
+            "source_mode": "fixture",
+            "confidence": 0.72,
+            "platform_metrics": {
+              "reactions": 5100
+            },
+            "funnel_stage": "conversion_oriented",
+            "audience_inference": {
+              "segment": "домогосподарства та сімейна аудиторія",
+              "age_inferred": "25–54",
+              "region_inferred": "Україна",
+              "confidence": 0.62,
+              "basis": "тема, формат і текст публікації; не first-party demographics"
+            },
+            "metric_percentiles": {
+              "views": 0.6666666666666666,
+              "likes": 0.7142857142857143,
+              "comments": 0.5714285714285714,
+              "shares": 0.8571428571428571
+            },
+            "normalized_score": 0.7024
+          },
+          {
+            "platform": "facebook",
+            "post_id": "fb-006",
+            "published_at": "2026-08-08T12:00:00Z",
+            "content_type": "text",
+            "text": "Який домашній гаджет ви вважаєте найкориснішим? Голосуйте в коментарях.",
+            "topic": "community_question",
+            "views": null,
+            "views_status": "not_applicable",
+            "likes": 1900,
+            "comments": 2280,
+            "shares": 190,
+            "url": "fixture://facebook/fb-006",
+            "source_mode": "fixture",
+            "confidence": 0.72,
+            "platform_metrics": {
+              "reactions": 2400
+            },
+            "funnel_stage": "engagement",
+            "audience_inference": {
+              "segment": "технологічно активна аудиторія",
+              "age_inferred": "16–39",
+              "region_inferred": "Україна",
+              "confidence": 0.62,
+              "basis": "тема, формат і текст публікації; не first-party demographics"
+            },
+            "metric_percentiles": {
+              "views": null,
+              "likes": 0.14285714285714285,
+              "comments": 0.8571428571428571,
+              "shares": 0.14285714285714285
+            },
+            "normalized_score": 0.381
+          },
+          {
+            "platform": "facebook",
+            "post_id": "fb-007",
+            "published_at": "2026-08-02T12:00:00Z",
+            "content_type": "photo",
+            "text": "Комплект для дистанційного навчання зі спеціальною ціною.",
+            "topic": "education_tech",
+            "views": null,
+            "views_status": "not_applicable",
+            "likes": 2700,
+            "comments": 260,
+            "shares": 740,
+            "url": "fixture://facebook/fb-007",
+            "source_mode": "fixture",
+            "confidence": 0.72,
+            "platform_metrics": {
+              "reactions": 3100
+            },
+            "funnel_stage": "consideration",
+            "audience_inference": {
+              "segment": "студенти, батьки та молоді спеціалісти",
+              "age_inferred": "18–44",
+              "region_inferred": "Україна",
+              "confidence": 0.62,
+              "basis": "тема, формат і текст публікації; не first-party demographics"
+            },
+            "metric_percentiles": {
+              "views": null,
+              "likes": 0.2857142857142857,
+              "comments": 0.14285714285714285,
+              "shares": 0.42857142857142855
+            },
+            "normalized_score": 0.2857
+          },
+          {
+            "platform": "telegram",
+            "post_id": "tg-001",
+            "published_at": "2026-08-29T12:00:00Z",
+            "content_type": "photo",
+            "text": "Знижка до 60% на посуд. Перелік пропозицій за посиланням.",
+            "topic": "discount",
+            "views": 61200,
+            "views_status": "available",
+            "likes": 480,
+            "comments": 120,
+            "shares": 760,
+            "url": "fixture://telegram/tg-001",
+            "source_mode": "fixture",
+            "confidence": 0.72,
+            "platform_metrics": {
+              "reactions": 620,
+              "forwards": 760
+            },
+            "funnel_stage": "conversion_oriented",
+            "audience_inference": {
+              "segment": "широка українська онлайн-аудиторія",
+              "age_inferred": "18–54",
+              "region_inferred": "Україна",
+              "confidence": 0.62,
+              "basis": "тема, формат і текст публікації; не first-party demographics"
+            },
+            "metric_percentiles": {
+              "views": 0.7142857142857143,
+              "likes": 0.42857142857142855,
+              "comments": 0.2857142857142857,
+              "shares": 0.7142857142857143
+            },
+            "normalized_score": 0.5357
+          },
+          {
+            "platform": "telegram",
+            "post_id": "tg-002",
+            "published_at": "2026-08-26T12:00:00Z",
+            "content_type": "video",
+            "text": "Кидайте кубик у коментарях — перші переможці отримають промокод.",
+            "topic": "contest",
+            "views": 73800,
+            "views_status": "available",
+            "likes": 1100,
+            "comments": 2940,
+            "shares": 430,
+            "url": "fixture://telegram/tg-002",
+            "source_mode": "fixture",
+            "confidence": 0.72,
+            "platform_metrics": {
+              "reactions": 1420,
+              "forwards": 430
+            },
+            "funnel_stage": "conversion_oriented",
+            "audience_inference": {
+              "segment": "широка українська онлайн-аудиторія",
+              "age_inferred": "18–54",
+              "region_inferred": "Україна",
+              "confidence": 0.62,
+              "basis": "тема, формат і текст публікації; не first-party demographics"
+            },
+            "metric_percentiles": {
+              "views": 1.0,
+              "likes": 1.0,
+              "comments": 1.0,
+              "shares": 0.42857142857142855
+            },
+            "normalized_score": 0.8571
+          },
+          {
+            "platform": "telegram",
+            "post_id": "tg-003",
+            "published_at": "2026-08-21T12:00:00Z",
+            "content_type": "photo",
+            "text": "Добірка зарядних станцій для дому та подорожей.",
+            "topic": "product_guide",
+            "views": 55900,
+            "views_status": "available",
+            "likes": 690,
+            "comments": 210,
+            "shares": 910,
+            "url": "fixture://telegram/tg-003",
+            "source_mode": "fixture",
+            "confidence": 0.72,
+            "platform_metrics": {
+              "reactions": 810,
+              "forwards": 910
+            },
+            "funnel_stage": "consideration",
+            "audience_inference": {
+              "segment": "широка українська онлайн-аудиторія",
+              "age_inferred": "18–54",
+              "region_inferred": "Україна",
+              "confidence": 0.62,
+              "basis": "тема, формат і текст публікації; не first-party demographics"
+            },
+            "metric_percentiles": {
+              "views": 0.5714285714285714,
+              "likes": 0.7142857142857143,
+              "comments": 0.5714285714285714,
+              "shares": 0.8571428571428571
+            },
+            "normalized_score": 0.6786
+          },
+          {
+            "platform": "telegram",
+            "post_id": "tg-004",
+            "published_at": "2026-08-17T12:00:00Z",
+            "content_type": "text",
+            "text": "Опитування: яку категорію товарів додати до наступного розпродажу?",
+            "topic": "community_question",
+            "views": 49700,
+            "views_status": "available",
+            "likes": 410,
+            "comments": 1680,
+            "shares": 180,
+            "url": "fixture://telegram/tg-004",
+            "source_mode": "fixture",
+            "confidence": 0.72,
+            "platform_metrics": {
+              "reactions": 530,
+              "forwards": 180
+            },
+            "funnel_stage": "engagement",
+            "audience_inference": {
+              "segment": "широка українська онлайн-аудиторія",
+              "age_inferred": "18–54",
+              "region_inferred": "Україна",
+              "confidence": 0.62,
+              "basis": "тема, формат і текст публікації; не first-party demographics"
+            },
+            "metric_percentiles": {
+              "views": 0.2857142857142857,
+              "likes": 0.2857142857142857,
+              "comments": 0.8571428571428571,
+              "shares": 0.2857142857142857
+            },
+            "normalized_score": 0.4286
+          },
+          {
+            "platform": "telegram",
+            "post_id": "tg-005",
+            "published_at": "2026-08-13T12:00:00Z",
+            "content_type": "video",
+            "text": "Огляд смартфона: камера, автономність і продуктивність.",
+            "topic": "product_guide",
+            "views": 68400,
+            "views_status": "available",
+            "likes": 920,
+            "comments": 340,
+            "shares": 1200,
+            "url": "fixture://telegram/tg-005",
+            "source_mode": "fixture",
+            "confidence": 0.72,
+            "platform_metrics": {
+              "reactions": 1080,
+              "forwards": 1200
+            },
+            "funnel_stage": "consideration",
+            "audience_inference": {
+              "segment": "технологічно активна аудиторія",
+              "age_inferred": "16–39",
+              "region_inferred": "Україна",
+              "confidence": 0.62,
+              "basis": "тема, формат і текст публікації; не first-party demographics"
+            },
+            "metric_percentiles": {
+              "views": 0.8571428571428571,
+              "likes": 0.8571428571428571,
+              "comments": 0.7142857142857143,
+              "shares": 1.0
+            },
+            "normalized_score": 0.8571
+          },
+          {
+            "platform": "telegram",
+            "post_id": "tg-006",
+            "published_at": "2026-08-09T12:00:00Z",
+            "content_type": "photo",
+            "text": "Товари для школи зі знижкою та бонусами на картку.",
+            "topic": "education_tech",
+            "views": 52100,
+            "views_status": "available",
+            "likes": 570,
+            "comments": 160,
+            "shares": 680,
+            "url": "fixture://telegram/tg-006",
+            "source_mode": "fixture",
+            "confidence": 0.72,
+            "platform_metrics": {
+              "reactions": 710,
+              "forwards": 680
+            },
+            "funnel_stage": "conversion_oriented",
+            "audience_inference": {
+              "segment": "студенти, батьки та молоді спеціалісти",
+              "age_inferred": "18–44",
+              "region_inferred": "Україна",
+              "confidence": 0.62,
+              "basis": "тема, формат і текст публікації; не first-party demographics"
+            },
+            "metric_percentiles": {
+              "views": 0.42857142857142855,
+              "likes": 0.5714285714285714,
+              "comments": 0.42857142857142855,
+              "shares": 0.5714285714285714
+            },
+            "normalized_score": 0.5
+          },
+          {
+            "platform": "telegram",
+            "post_id": "tg-007",
+            "published_at": "2026-08-04T12:00:00Z",
+            "content_type": "text",
+            "text": "Історія команди нового магазину ROZETKA у Черкасах.",
+            "topic": "brand_news",
+            "views": 42100,
+            "views_status": "available",
+            "likes": 350,
+            "comments": 95,
+            "shares": 140,
+            "url": "fixture://telegram/tg-007",
+            "source_mode": "fixture",
+            "confidence": 0.72,
+            "platform_metrics": {
+              "reactions": 460,
+              "forwards": 140
+            },
+            "funnel_stage": "awareness",
+            "audience_inference": {
+              "segment": "широка українська онлайн-аудиторія",
+              "age_inferred": "18–54",
+              "region_inferred": "Україна",
+              "confidence": 0.62,
+              "basis": "тема, формат і текст публікації; не first-party demographics"
+            },
+            "metric_percentiles": {
+              "views": 0.14285714285714285,
+              "likes": 0.14285714285714285,
+              "comments": 0.14285714285714285,
+              "shares": 0.14285714285714285
+            },
+            "normalized_score": 0.1429
+          }
+        ],
+        "top_5_patterns": [
+          {
+            "pattern": "contest",
+            "posts": 3,
+            "average_normalized_score": 0.879,
+            "pattern_score": 0.879,
+            "evidence_level": "strong",
+            "platforms": [
+              "facebook",
+              "instagram",
+              "telegram"
+            ],
+            "formats": [
+              "photo",
+              "reel",
+              "video"
+            ],
+            "dominant_funnel": "engagement",
+            "example_urls": [
+              "fixture://facebook/fb-002",
+              "fixture://instagram/ig-001"
+            ]
+          },
+          {
+            "pattern": "humor",
+            "posts": 1,
+            "average_normalized_score": 0.9187,
+            "pattern_score": 0.7043,
+            "evidence_level": "weak_single_post",
+            "platforms": [
+              "instagram"
+            ],
+            "formats": [
+              "reel"
+            ],
+            "dominant_funnel": "engagement",
+            "example_urls": [
+              "fixture://instagram/ig-006"
+            ]
+          },
+          {
+            "pattern": "product_guide",
+            "posts": 5,
+            "average_normalized_score": 0.6845,
+            "pattern_score": 0.6845,
+            "evidence_level": "strong",
+            "platforms": [
+              "facebook",
+              "instagram",
+              "telegram"
+            ],
+            "formats": [
+              "carousel",
+              "photo",
+              "reel",
+              "video"
+            ],
+            "dominant_funnel": "consideration",
+            "example_urls": [
+              "fixture://telegram/tg-005",
+              "fixture://instagram/ig-002"
+            ]
+          },
+          {
+            "pattern": "discount",
+            "posts": 3,
+            "average_normalized_score": 0.6345,
+            "pattern_score": 0.6345,
+            "evidence_level": "strong",
+            "platforms": [
+              "facebook",
+              "instagram",
+              "telegram"
+            ],
+            "formats": [
+              "photo",
+              "reel",
+              "video"
+            ],
+            "dominant_funnel": "conversion_oriented",
+            "example_urls": [
+              "fixture://facebook/fb-001",
+              "fixture://telegram/tg-001"
+            ]
+          },
+          {
+            "pattern": "gift_guide",
+            "posts": 1,
+            "average_normalized_score": 0.7024,
+            "pattern_score": 0.5385,
+            "evidence_level": "weak_single_post",
+            "platforms": [
+              "facebook"
+            ],
+            "formats": [
+              "video"
+            ],
+            "dominant_funnel": "conversion_oriented",
+            "example_urls": [
+              "fixture://facebook/fb-005"
+            ]
+          }
+        ],
+        "cross_platform_top": [
+          {
+            "platform": "instagram",
+            "post_id": "ig-006",
+            "topic": "humor",
+            "content_type": "reel",
+            "normalized_score": 0.9187,
+            "url": "fixture://instagram/ig-006"
+          },
+          {
+            "platform": "facebook",
+            "post_id": "fb-002",
+            "topic": "contest",
+            "content_type": "photo",
+            "normalized_score": 0.9048,
+            "url": "fixture://facebook/fb-002"
+          },
+          {
+            "platform": "facebook",
+            "post_id": "fb-001",
+            "topic": "discount",
+            "content_type": "video",
+            "normalized_score": 0.8929,
+            "url": "fixture://facebook/fb-001"
+          },
+          {
+            "platform": "instagram",
+            "post_id": "ig-001",
+            "topic": "contest",
+            "content_type": "reel",
+            "normalized_score": 0.875,
+            "url": "fixture://instagram/ig-001"
+          },
+          {
+            "platform": "telegram",
+            "post_id": "tg-002",
+            "topic": "contest",
+            "content_type": "video",
+            "normalized_score": 0.8571,
+            "url": "fixture://telegram/tg-002"
+          }
+        ],
+        "executive_summary": [
+          "За 30 днів проаналізовано 22 публікації на 3 платформах.",
+          "Найсильніший повторюваний патерн — contest (score=0.879, posts=3).",
+          "Instagram, Facebook і Telegram мають дані snapshot; офіційний Threads-профіль потребує окремого підтвердження.",
+          "Аудиторні сегменти є inference за темою та форматом, а не фактичною демографією платформи."
+        ],
+        "recommendations": [
+          "Масштабувати contest-механіки, але оцінювати якість коментарів окремо перед production-рішенням.",
+          "Підтримувати product guides у Reels/video/carousel: патерн повторюється на кількох платформах.",
+          "Для discount-контенту тестувати різні формати й CTA, не порівнюючи сирі views між платформами.",
+          "Humor розглядати як перспективний експеримент, а не доведений патерн, доки є лише один сильний пост.",
+          "Перед стратегією для Threads вручну підтвердити офіційний профіль ROZETKA та доступність публічних метрик."
+        ],
+        "coverage_gaps": [
+          "threads"
+        ],
+        "limitations": [
+          "Fixture metrics є навчальним snapshot, а не поточною статистикою ROZETKA.",
+          "Reach, saves та реальні demographics недоступні без first-party API.",
+          "Тексти коментарів не збираються; використовується лише їх кількість."
+        ]
+      },
+      "workflow": {
+        "goal": "Проаналізуй контент-маркетинг ROZETKA в Instagram, Facebook, Threads і Telegram за 30 днів: частоту, формати, перегляди, лайки, коментарі, funnel, inferred-аудиторію та 5 найсильніших патернів.",
+        "plan": [
+          "COLLECT_PLATFORMS: зібрати Instagram, Facebook, Threads і Telegram через ReAct з fallback.",
+          "SEARCH_KNOWLEDGE: отримати правила метрик, funnel і нормалізації через Agentic RAG.",
+          "ANALYZE_PATTERNS: побудувати platform-звіти, топи, inferred-аудиторію і 5 патернів.",
+          "EXPORT_REPORT: підготувати ризиковий файловий експорт після HITL."
+        ],
+        "current_step": 3,
+        "report_status": "awaiting_approval",
+        "report_path": null,
+        "completed": false
+      },
+      "next": [
+        "risky_export"
+      ]
+    },
+    "gate": {
+      "gate": "report_export",
+      "interrupt_mode": "interrupt_before",
+      "action": {
+        "tool": "export_smm_report",
+        "path": "outputs/rozetka_smm_report.json"
+      },
+      "allowed_decisions": [
+        "approve",
+        "edit",
+        "reject"
+      ]
+    },
+    "restored_same_state": true,
+    "final": {
+      "brand": "ROZETKA",
+      "period_days": 30,
+      "posts_collected": 22,
+      "source_status": {
+        "instagram": {
+          "profile_status": "verified_official",
+          "verification_source": "ROZETKA official social hub",
+          "profile_url": "https://www.instagram.com/rozetkaua/",
+          "attempts": [
+            {
+              "tool": "collect_public_posts",
+              "status": "error",
+              "error_code": "LIVE_MODE_DISABLED"
+            },
+            {
+              "tool": "load_fixture_posts",
+              "status": "ok",
+              "error_code": null
+            }
+          ],
+          "final_source_mode": "fixture",
+          "post_count": 8,
+          "zero_posts_reason": null
+        },
+        "facebook": {
+          "profile_status": "verified_official",
+          "verification_source": "ROZETKA official social hub",
+          "profile_url": "https://www.facebook.com/rozetka.ua",
+          "attempts": [
+            {
+              "tool": "collect_public_posts",
+              "status": "error",
+              "error_code": "LIVE_MODE_DISABLED"
+            },
+            {
+              "tool": "load_fixture_posts",
+              "status": "ok",
+              "error_code": null
+            }
+          ],
+          "final_source_mode": "fixture",
+          "post_count": 7,
+          "zero_posts_reason": null
+        },
+        "threads": {
+          "profile_status": "not_verified",
+          "verification_source": "Threads profile is not listed in ROZETKA official social hub",
+          "profile_url": "https://www.threads.net/@rozetkaua",
+          "attempts": [
+            {
+              "tool": "collect_public_posts",
+              "status": "error",
+              "error_code": "LIVE_MODE_DISABLED"
+            },
+            {
+              "tool": "load_fixture_posts",
+              "status": "ok",
+              "error_code": null
+            }
+          ],
+          "final_source_mode": "fixture",
+          "post_count": 0,
+          "zero_posts_reason": "official_profile_not_verified"
+        },
+        "telegram": {
+          "profile_status": "verified_official",
+          "verification_source": "ROZETKA official Telegram channel",
+          "profile_url": "https://t.me/s/rrozetka",
+          "attempts": [
+            {
+              "tool": "collect_public_posts",
+              "status": "error",
+              "error_code": "LIVE_MODE_DISABLED"
+            },
+            {
+              "tool": "load_fixture_posts",
+              "status": "ok",
+              "error_code": null
+            }
+          ],
+          "final_source_mode": "fixture",
+          "post_count": 7,
+          "zero_posts_reason": null
+        }
+      },
+      "knowledge_hits": 8,
+      "analysis": {
+        "brand": "ROZETKA",
+        "period_days": 30,
+        "generated_at": "2026-08-30T12:00:00+00:00",
+        "methodology": "Сирі метрики порівнюються лише всередині платформи; cross-platform top використовує середнє percentile доступних метрик. Аудиторія є inference.",
+        "platform_summaries": {
+          "instagram": {
+            "post_count": 8,
+            "posts_per_week": 1.87,
+            "average_interval_days": 3.57,
+            "views_availability": {
+              "available": 5,
+              "not_public": 3,
+              "not_applicable": 0,
+              "missing_in_source": 0
+            },
+            "views_note": "Video/Reels можуть мати public views; для статичних постів лічильник переглядів часто не публікується. None не означає 0 переглядів.",
+            "formats": {
+              "carousel": 2,
+              "photo": 1,
+              "reel": 5
+            },
+            "top_by_views": [
+              {
+                "post_id": "ig-001",
+                "value": 482000,
+                "content_type": "reel",
+                "topic": "contest",
+                "url": "fixture://instagram/ig-001"
+              },
+              {
+                "post_id": "ig-006",
+                "value": 398000,
+                "content_type": "reel",
+                "topic": "humor",
+                "url": "fixture://instagram/ig-006"
+              },
+              {
+                "post_id": "ig-002",
+                "value": 331000,
+                "content_type": "reel",
+                "topic": "product_guide",
+                "url": "fixture://instagram/ig-002"
+              },
+              {
+                "post_id": "ig-004",
+                "value": 274000,
+                "content_type": "reel",
+                "topic": "discount",
+                "url": "fixture://instagram/ig-004"
+              },
+              {
+                "post_id": "ig-008",
+                "value": 219000,
+                "content_type": "reel",
+                "topic": "fashion",
+                "url": "fixture://instagram/ig-008"
+              }
+            ],
+            "top_by_likes": [
+              {
+                "post_id": "ig-006",
+                "value": 30100,
+                "content_type": "reel",
+                "topic": "humor",
+                "url": "fixture://instagram/ig-006"
+              },
+              {
+                "post_id": "ig-001",
+                "value": 28400,
+                "content_type": "reel",
+                "topic": "contest",
+                "url": "fixture://instagram/ig-001"
+              },
+              {
+                "post_id": "ig-002",
+                "value": 17200,
+                "content_type": "reel",
+                "topic": "product_guide",
+                "url": "fixture://instagram/ig-002"
+              },
+              {
+                "post_id": "ig-007",
+                "value": 12800,
+                "content_type": "carousel",
+                "topic": "product_guide",
+                "url": "fixture://instagram/ig-007"
+              },
+              {
+                "post_id": "ig-004",
+                "value": 11900,
+                "content_type": "reel",
+                "topic": "discount",
+                "url": "fixture://instagram/ig-004"
+              }
+            ],
+            "top_by_comments": [
+              {
+                "post_id": "ig-001",
+                "value": 5190,
+                "content_type": "reel",
+                "topic": "contest",
+                "url": "fixture://instagram/ig-001"
+              },
+              {
+                "post_id": "ig-006",
+                "value": 2300,
+                "content_type": "reel",
+                "topic": "humor",
+                "url": "fixture://instagram/ig-006"
+              },
+              {
+                "post_id": "ig-002",
+                "value": 910,
+                "content_type": "reel",
+                "topic": "product_guide",
+                "url": "fixture://instagram/ig-002"
+              },
+              {
+                "post_id": "ig-007",
+                "value": 760,
+                "content_type": "carousel",
+                "topic": "product_guide",
+                "url": "fixture://instagram/ig-007"
+              },
+              {
+                "post_id": "ig-004",
+                "value": 680,
+                "content_type": "reel",
+                "topic": "discount",
+                "url": "fixture://instagram/ig-004"
+              }
+            ],
+            "top_by_shares": [
+              {
+                "post_id": "ig-006",
+                "value": 8100,
+                "content_type": "reel",
+                "topic": "humor",
+                "url": "fixture://instagram/ig-006"
+              },
+              {
+                "post_id": "ig-002",
+                "value": 4700,
+                "content_type": "reel",
+                "topic": "product_guide",
+                "url": "fixture://instagram/ig-002"
+              },
+              {
+                "post_id": "ig-007",
+                "value": 3500,
+                "content_type": "carousel",
+                "topic": "product_guide",
+                "url": "fixture://instagram/ig-007"
+              },
+              {
+                "post_id": "ig-001",
+                "value": 3100,
+                "content_type": "reel",
+                "topic": "contest",
+                "url": "fixture://instagram/ig-001"
+              },
+              {
+                "post_id": "ig-004",
+                "value": 2900,
+                "content_type": "reel",
+                "topic": "discount",
+                "url": "fixture://instagram/ig-004"
+              }
+            ]
+          },
+          "facebook": {
+            "post_count": 7,
+            "posts_per_week": 1.63,
+            "average_interval_days": 4.5,
+            "views_availability": {
+              "available": 3,
+              "not_public": 0,
+              "not_applicable": 4,
+              "missing_in_source": 0
+            },
+            "views_note": "Video/Reels можуть мати public views; для статичних постів лічильник переглядів часто не публікується. None не означає 0 переглядів.",
+            "formats": {
+              "photo": 3,
+              "text": 1,
+              "video": 3
+            },
+            "top_by_views": [
+              {
+                "post_id": "fb-001",
+                "value": 156000,
+                "content_type": "video",
+                "topic": "discount",
+                "url": "fixture://facebook/fb-001"
+              },
+              {
+                "post_id": "fb-005",
+                "value": 121000,
+                "content_type": "video",
+                "topic": "gift_guide",
+                "url": "fixture://facebook/fb-005"
+              },
+              {
+                "post_id": "fb-003",
+                "value": 97000,
+                "content_type": "video",
+                "topic": "product_guide",
+                "url": "fixture://facebook/fb-003"
+              }
+            ],
+            "top_by_likes": [
+              {
+                "post_id": "fb-002",
+                "value": 8200,
+                "content_type": "photo",
+                "topic": "contest",
+                "url": "fixture://facebook/fb-002"
+              },
+              {
+                "post_id": "fb-001",
+                "value": 6100,
+                "content_type": "video",
+                "topic": "discount",
+                "url": "fixture://facebook/fb-001"
+              },
+              {
+                "post_id": "fb-005",
+                "value": 4700,
+                "content_type": "video",
+                "topic": "gift_guide",
+                "url": "fixture://facebook/fb-005"
+              },
+              {
+                "post_id": "fb-003",
+                "value": 3400,
+                "content_type": "video",
+                "topic": "product_guide",
+                "url": "fixture://facebook/fb-003"
+              },
+              {
+                "post_id": "fb-004",
+                "value": 2900,
+                "content_type": "photo",
+                "topic": "brand_news",
+                "url": "fixture://facebook/fb-004"
+              }
+            ],
+            "top_by_comments": [
+              {
+                "post_id": "fb-002",
+                "value": 3710,
+                "content_type": "photo",
+                "topic": "contest",
+                "url": "fixture://facebook/fb-002"
+              },
+              {
+                "post_id": "fb-006",
+                "value": 2280,
+                "content_type": "text",
+                "topic": "community_question",
+                "url": "fixture://facebook/fb-006"
+              },
+              {
+                "post_id": "fb-001",
+                "value": 840,
+                "content_type": "video",
+                "topic": "discount",
+                "url": "fixture://facebook/fb-001"
+              },
+              {
+                "post_id": "fb-005",
+                "value": 620,
+                "content_type": "video",
+                "topic": "gift_guide",
+                "url": "fixture://facebook/fb-005"
+              },
+              {
+                "post_id": "fb-003",
+                "value": 530,
+                "content_type": "video",
+                "topic": "product_guide",
+                "url": "fixture://facebook/fb-003"
+              }
+            ],
+            "top_by_shares": [
+              {
+                "post_id": "fb-001",
+                "value": 2400,
+                "content_type": "video",
+                "topic": "discount",
+                "url": "fixture://facebook/fb-001"
+              },
+              {
+                "post_id": "fb-005",
+                "value": 2200,
+                "content_type": "video",
+                "topic": "gift_guide",
+                "url": "fixture://facebook/fb-005"
+              },
+              {
+                "post_id": "fb-002",
+                "value": 1900,
+                "content_type": "photo",
+                "topic": "contest",
+                "url": "fixture://facebook/fb-002"
+              },
+              {
+                "post_id": "fb-003",
+                "value": 1300,
+                "content_type": "video",
+                "topic": "product_guide",
+                "url": "fixture://facebook/fb-003"
+              },
+              {
+                "post_id": "fb-007",
+                "value": 740,
+                "content_type": "photo",
+                "topic": "education_tech",
+                "url": "fixture://facebook/fb-007"
+              }
+            ]
+          },
+          "threads": {
+            "post_count": 0,
+            "posts_per_week": 0.0,
+            "average_interval_days": null,
+            "views_availability": {
+              "available": 0,
+              "not_public": 0,
+              "not_applicable": 0,
+              "missing_in_source": 0
+            },
+            "views_note": "Video/Reels можуть мати public views; для статичних постів лічильник переглядів часто не публікується. None не означає 0 переглядів.",
+            "formats": {},
+            "top_by_views": [],
+            "top_by_likes": [],
+            "top_by_comments": [],
+            "top_by_shares": []
+          },
+          "telegram": {
+            "post_count": 7,
+            "posts_per_week": 1.63,
+            "average_interval_days": 4.17,
+            "views_availability": {
+              "available": 7,
+              "not_public": 0,
+              "not_applicable": 0,
+              "missing_in_source": 0
+            },
+            "views_note": "Video/Reels можуть мати public views; для статичних постів лічильник переглядів часто не публікується. None не означає 0 переглядів.",
+            "formats": {
+              "photo": 3,
+              "text": 2,
+              "video": 2
+            },
+            "top_by_views": [
+              {
+                "post_id": "tg-002",
+                "value": 73800,
+                "content_type": "video",
+                "topic": "contest",
+                "url": "fixture://telegram/tg-002"
+              },
+              {
+                "post_id": "tg-005",
+                "value": 68400,
+                "content_type": "video",
+                "topic": "product_guide",
+                "url": "fixture://telegram/tg-005"
+              },
+              {
+                "post_id": "tg-001",
+                "value": 61200,
+                "content_type": "photo",
+                "topic": "discount",
+                "url": "fixture://telegram/tg-001"
+              },
+              {
+                "post_id": "tg-003",
+                "value": 55900,
+                "content_type": "photo",
+                "topic": "product_guide",
+                "url": "fixture://telegram/tg-003"
+              },
+              {
+                "post_id": "tg-006",
+                "value": 52100,
+                "content_type": "photo",
+                "topic": "education_tech",
+                "url": "fixture://telegram/tg-006"
+              }
+            ],
+            "top_by_likes": [
+              {
+                "post_id": "tg-002",
+                "value": 1100,
+                "content_type": "video",
+                "topic": "contest",
+                "url": "fixture://telegram/tg-002"
+              },
+              {
+                "post_id": "tg-005",
+                "value": 920,
+                "content_type": "video",
+                "topic": "product_guide",
+                "url": "fixture://telegram/tg-005"
+              },
+              {
+                "post_id": "tg-003",
+                "value": 690,
+                "content_type": "photo",
+                "topic": "product_guide",
+                "url": "fixture://telegram/tg-003"
+              },
+              {
+                "post_id": "tg-006",
+                "value": 570,
+                "content_type": "photo",
+                "topic": "education_tech",
+                "url": "fixture://telegram/tg-006"
+              },
+              {
+                "post_id": "tg-001",
+                "value": 480,
+                "content_type": "photo",
+                "topic": "discount",
+                "url": "fixture://telegram/tg-001"
+              }
+            ],
+            "top_by_comments": [
+              {
+                "post_id": "tg-002",
+                "value": 2940,
+                "content_type": "video",
+                "topic": "contest",
+                "url": "fixture://telegram/tg-002"
+              },
+              {
+                "post_id": "tg-004",
+                "value": 1680,
+                "content_type": "text",
+                "topic": "community_question",
+                "url": "fixture://telegram/tg-004"
+              },
+              {
+                "post_id": "tg-005",
+                "value": 340,
+                "content_type": "video",
+                "topic": "product_guide",
+                "url": "fixture://telegram/tg-005"
+              },
+              {
+                "post_id": "tg-003",
+                "value": 210,
+                "content_type": "photo",
+                "topic": "product_guide",
+                "url": "fixture://telegram/tg-003"
+              },
+              {
+                "post_id": "tg-006",
+                "value": 160,
+                "content_type": "photo",
+                "topic": "education_tech",
+                "url": "fixture://telegram/tg-006"
+              }
+            ],
+            "top_by_shares": [
+              {
+                "post_id": "tg-005",
+                "value": 1200,
+                "content_type": "video",
+                "topic": "product_guide",
+                "url": "fixture://telegram/tg-005"
+              },
+              {
+                "post_id": "tg-003",
+                "value": 910,
+                "content_type": "photo",
+                "topic": "product_guide",
+                "url": "fixture://telegram/tg-003"
+              },
+              {
+                "post_id": "tg-001",
+                "value": 760,
+                "content_type": "photo",
+                "topic": "discount",
+                "url": "fixture://telegram/tg-001"
+              },
+              {
+                "post_id": "tg-006",
+                "value": 680,
+                "content_type": "photo",
+                "topic": "education_tech",
+                "url": "fixture://telegram/tg-006"
+              },
+              {
+                "post_id": "tg-002",
+                "value": 430,
+                "content_type": "video",
+                "topic": "contest",
+                "url": "fixture://telegram/tg-002"
+              }
+            ]
+          }
+        },
+        "posts": [
+          {
+            "platform": "instagram",
+            "post_id": "ig-001",
+            "published_at": "2026-08-28T12:00:00Z",
+            "content_type": "reel",
+            "text": "Розіграш PlayStation 5: залишайте коментар і позначайте друга.",
+            "topic": "contest",
+            "views": 482000,
+            "views_status": "available",
+            "likes": 28400,
+            "comments": 5190,
+            "shares": 3100,
+            "url": "fixture://instagram/ig-001",
+            "source_mode": "fixture",
+            "confidence": 0.72,
+            "platform_metrics": {
+              "saves": 8400
+            },
+            "funnel_stage": "engagement",
+            "audience_inference": {
+              "segment": "технологічно активна аудиторія",
+              "age_inferred": "16–39",
+              "region_inferred": "Україна",
+              "confidence": 0.62,
+              "basis": "тема, формат і текст публікації; не first-party demographics"
+            },
+            "metric_percentiles": {
+              "views": 1.0,
+              "likes": 0.875,
+              "comments": 1.0,
+              "shares": 0.625
+            },
+            "normalized_score": 0.875
+          },
+          {
+            "platform": "instagram",
+            "post_id": "ig-002",
+            "published_at": "2026-08-25T12:00:00Z",
+            "content_type": "reel",
+            "text": "Три гаджети для дому, які заощаджують час.",
+            "topic": "product_guide",
+            "views": 331000,
+            "views_status": "available",
+            "likes": 17200,
+            "comments": 910,
+            "shares": 4700,
+            "url": "fixture://instagram/ig-002",
+            "source_mode": "fixture",
+            "confidence": 0.72,
+            "platform_metrics": {
+              "saves": 12100
+            },
+            "funnel_stage": "consideration",
+            "audience_inference": {
+              "segment": "технологічно активна аудиторія",
+              "age_inferred": "16–39",
+              "region_inferred": "Україна",
+              "confidence": 0.62,
+              "basis": "тема, формат і текст публікації; не first-party demographics"
+            },
+            "metric_percentiles": {
+              "views": 0.6,
+              "likes": 0.75,
+              "comments": 0.75,
+              "shares": 0.875
+            },
+            "normalized_score": 0.7438
+          },
+          {
+            "platform": "instagram",
+            "post_id": "ig-003",
+            "published_at": "2026-08-22T12:00:00Z",
+            "content_type": "carousel",
+            "text": "Добірка ноутбуків для навчання та першої роботи.",
+            "topic": "education_tech",
+            "views": null,
+            "views_status": "not_public",
+            "likes": 9400,
+            "comments": 540,
+            "shares": 1800,
+            "url": "fixture://instagram/ig-003",
+            "source_mode": "fixture",
+            "confidence": 0.72,
+            "platform_metrics": {
+              "saves": 6900
+            },
+            "funnel_stage": "consideration",
+            "audience_inference": {
+              "segment": "студенти, батьки та молоді спеціалісти",
+              "age_inferred": "18–44",
+              "region_inferred": "Україна",
+              "confidence": 0.62,
+              "basis": "тема, формат і текст публікації; не first-party demographics"
+            },
+            "metric_percentiles": {
+              "views": null,
+              "likes": 0.25,
+              "comments": 0.25,
+              "shares": 0.25
+            },
+            "normalized_score": 0.25
+          },
+          {
+            "platform": "instagram",
+            "post_id": "ig-004",
+            "published_at": "2026-08-19T12:00:00Z",
+            "content_type": "reel",
+            "text": "Знижки до 40% на товари для кухні лише цього тижня.",
+            "topic": "discount",
+            "views": 274000,
+            "views_status": "available",
+            "likes": 11900,
+            "comments": 680,
+            "shares": 2900,
+            "url": "fixture://instagram/ig-004",
+            "source_mode": "fixture",
+            "confidence": 0.72,
+            "platform_metrics": {
+              "saves": 3600
+            },
+            "funnel_stage": "conversion_oriented",
+            "audience_inference": {
+              "segment": "домогосподарства та сімейна аудиторія",
+              "age_inferred": "25–54",
+              "region_inferred": "Україна",
+              "confidence": 0.62,
+              "basis": "тема, формат і текст публікації; не first-party demographics"
+            },
+            "metric_percentiles": {
+              "views": 0.4,
+              "likes": 0.5,
+              "comments": 0.5,
+              "shares": 0.5
+            },
+            "normalized_score": 0.475
+          },
+          {
+            "platform": "instagram",
+            "post_id": "ig-005",
+            "published_at": "2026-08-15T12:00:00Z",
+            "content_type": "photo",
+            "text": "Відкриття нового магазину ROZETKA у Львові.",
+            "topic": "brand_news",
+            "views": null,
+            "views_status": "not_public",
+            "likes": 7100,
+            "comments": 420,
+            "shares": 620,
+            "url": "fixture://instagram/ig-005",
+            "source_mode": "fixture",
+            "confidence": 0.72,
+            "platform_metrics": {
+              "saves": 410
+            },
+            "funnel_stage": "awareness",
+            "audience_inference": {
+              "segment": "широка українська онлайн-аудиторія",
+              "age_inferred": "18–54",
+              "region_inferred": "Україна",
+              "confidence": 0.62,
+              "basis": "тема, формат і текст публікації; не first-party demographics"
+            },
+            "metric_percentiles": {
+              "views": null,
+              "likes": 0.125,
+              "comments": 0.125,
+              "shares": 0.125
+            },
+            "normalized_score": 0.125
+          },
+          {
+            "platform": "instagram",
+            "post_id": "ig-006",
+            "published_at": "2026-08-11T12:00:00Z",
+            "content_type": "reel",
+            "text": "Мем про доставку, коли замовлення приїхало раніше за тебе.",
+            "topic": "humor",
+            "views": 398000,
+            "views_status": "available",
+            "likes": 30100,
+            "comments": 2300,
+            "shares": 8100,
+            "url": "fixture://instagram/ig-006",
+            "source_mode": "fixture",
+            "confidence": 0.72,
+            "platform_metrics": {
+              "saves": 2500
+            },
+            "funnel_stage": "engagement",
+            "audience_inference": {
+              "segment": "широка українська онлайн-аудиторія",
+              "age_inferred": "18–54",
+              "region_inferred": "Україна",
+              "confidence": 0.62,
+              "basis": "тема, формат і текст публікації; не first-party demographics"
+            },
+            "metric_percentiles": {
+              "views": 0.8,
+              "likes": 1.0,
+              "comments": 0.875,
+              "shares": 1.0
+            },
+            "normalized_score": 0.9187
+          },
+          {
+            "platform": "instagram",
+            "post_id": "ig-007",
+            "published_at": "2026-08-07T12:00:00Z",
+            "content_type": "carousel",
+            "text": "Як вибрати павербанк: ємність, потужність і порти.",
+            "topic": "product_guide",
+            "views": null,
+            "views_status": "not_public",
+            "likes": 12800,
+            "comments": 760,
+            "shares": 3500,
+            "url": "fixture://instagram/ig-007",
+            "source_mode": "fixture",
+            "confidence": 0.72,
+            "platform_metrics": {
+              "saves": 14200
+            },
+            "funnel_stage": "consideration",
+            "audience_inference": {
+              "segment": "широка українська онлайн-аудиторія",
+              "age_inferred": "18–54",
+              "region_inferred": "Україна",
+              "confidence": 0.62,
+              "basis": "тема, формат і текст публікації; не first-party demographics"
+            },
+            "metric_percentiles": {
+              "views": null,
+              "likes": 0.625,
+              "comments": 0.625,
+              "shares": 0.75
+            },
+            "normalized_score": 0.6667
+          },
+          {
+            "platform": "instagram",
+            "post_id": "ig-008",
+            "published_at": "2026-08-03T12:00:00Z",
+            "content_type": "reel",
+            "text": "Кросівки для міста: п'ять моделей на щодень.",
+            "topic": "fashion",
+            "views": 219000,
+            "views_status": "available",
+            "likes": 10300,
+            "comments": 610,
+            "shares": 2100,
+            "url": "fixture://instagram/ig-008",
+            "source_mode": "fixture",
+            "confidence": 0.72,
+            "platform_metrics": {
+              "saves": 5100
+            },
+            "funnel_stage": "awareness",
+            "audience_inference": {
+              "segment": "міська fashion-аудиторія",
+              "age_inferred": "18–39",
+              "region_inferred": "Україна",
+              "confidence": 0.62,
+              "basis": "тема, формат і текст публікації; не first-party demographics"
+            },
+            "metric_percentiles": {
+              "views": 0.2,
+              "likes": 0.375,
+              "comments": 0.375,
+              "shares": 0.375
+            },
+            "normalized_score": 0.3312
+          },
+          {
+            "platform": "facebook",
+            "post_id": "fb-001",
+            "published_at": "2026-08-29T12:00:00Z",
+            "content_type": "video",
+            "text": "Великий розпродаж техніки: умови та категорії пропозицій.",
+            "topic": "discount",
+            "views": 156000,
+            "views_status": "available",
+            "likes": 6100,
+            "comments": 840,
+            "shares": 2400,
+            "url": "fixture://facebook/fb-001",
+            "source_mode": "fixture",
+            "confidence": 0.72,
+            "platform_metrics": {
+              "reactions": 6900
+            },
+            "funnel_stage": "conversion_oriented",
+            "audience_inference": {
+              "segment": "широка українська онлайн-аудиторія",
+              "age_inferred": "18–54",
+              "region_inferred": "Україна",
+              "confidence": 0.62,
+              "basis": "тема, формат і текст публікації; не first-party demographics"
+            },
+            "metric_percentiles": {
+              "views": 1.0,
+              "likes": 0.8571428571428571,
+              "comments": 0.7142857142857143,
+              "shares": 1.0
+            },
+            "normalized_score": 0.8929
+          },
+          {
+            "platform": "facebook",
+            "post_id": "fb-002",
+            "published_at": "2026-08-24T12:00:00Z",
+            "content_type": "photo",
+            "text": "Розіграш набору для дому серед підписників сторінки.",
+            "topic": "contest",
+            "views": null,
+            "views_status": "not_applicable",
+            "likes": 8200,
+            "comments": 3710,
+            "shares": 1900,
+            "url": "fixture://facebook/fb-002",
+            "source_mode": "fixture",
+            "confidence": 0.72,
+            "platform_metrics": {
+              "reactions": 9100
+            },
+            "funnel_stage": "engagement",
+            "audience_inference": {
+              "segment": "широка українська онлайн-аудиторія",
+              "age_inferred": "18–54",
+              "region_inferred": "Україна",
+              "confidence": 0.62,
+              "basis": "тема, формат і текст публікації; не first-party demographics"
+            },
+            "metric_percentiles": {
+              "views": null,
+              "likes": 1.0,
+              "comments": 1.0,
+              "shares": 0.7142857142857143
+            },
+            "normalized_score": 0.9048
+          },
+          {
+            "platform": "facebook",
+            "post_id": "fb-003",
+            "published_at": "2026-08-20T12:00:00Z",
+            "content_type": "video",
+            "text": "Порівнюємо телевізори OLED та QLED перед вибором.",
+            "topic": "product_guide",
+            "views": 97000,
+            "views_status": "available",
+            "likes": 3400,
+            "comments": 530,
+            "shares": 1300,
+            "url": "fixture://facebook/fb-003",
+            "source_mode": "fixture",
+            "confidence": 0.72,
+            "platform_metrics": {
+              "reactions": 3800
+            },
+            "funnel_stage": "consideration",
+            "audience_inference": {
+              "segment": "широка українська онлайн-аудиторія",
+              "age_inferred": "18–54",
+              "region_inferred": "Україна",
+              "confidence": 0.62,
+              "basis": "тема, формат і текст публікації; не first-party demographics"
+            },
+            "metric_percentiles": {
+              "views": 0.3333333333333333,
+              "likes": 0.5714285714285714,
+              "comments": 0.42857142857142855,
+              "shares": 0.5714285714285714
+            },
+            "normalized_score": 0.4762
+          },
+          {
+            "platform": "facebook",
+            "post_id": "fb-004",
+            "published_at": "2026-08-16T12:00:00Z",
+            "content_type": "photo",
+            "text": "ROZETKA відкрила нову точку видачі у Вінниці.",
+            "topic": "brand_news",
+            "views": null,
+            "views_status": "not_applicable",
+            "likes": 2900,
+            "comments": 310,
+            "shares": 480,
+            "url": "fixture://facebook/fb-004",
+            "source_mode": "fixture",
+            "confidence": 0.72,
+            "platform_metrics": {
+              "reactions": 3300
+            },
+            "funnel_stage": "awareness",
+            "audience_inference": {
+              "segment": "широка українська онлайн-аудиторія",
+              "age_inferred": "18–54",
+              "region_inferred": "Україна",
+              "confidence": 0.62,
+              "basis": "тема, формат і текст публікації; не first-party demographics"
+            },
+            "metric_percentiles": {
+              "views": null,
+              "likes": 0.42857142857142855,
+              "comments": 0.2857142857142857,
+              "shares": 0.2857142857142857
+            },
+            "normalized_score": 0.3333
+          },
+          {
+            "platform": "facebook",
+            "post_id": "fb-005",
+            "published_at": "2026-08-12T12:00:00Z",
+            "content_type": "video",
+            "text": "П'ять практичних подарунків для батьків.",
+            "topic": "gift_guide",
+            "views": 121000,
+            "views_status": "available",
+            "likes": 4700,
+            "comments": 620,
+            "shares": 2200,
+            "url": "fixture://facebook/fb-005",
+            "source_mode": "fixture",
+            "confidence": 0.72,
+            "platform_metrics": {
+              "reactions": 5100
+            },
+            "funnel_stage": "conversion_oriented",
+            "audience_inference": {
+              "segment": "домогосподарства та сімейна аудиторія",
+              "age_inferred": "25–54",
+              "region_inferred": "Україна",
+              "confidence": 0.62,
+              "basis": "тема, формат і текст публікації; не first-party demographics"
+            },
+            "metric_percentiles": {
+              "views": 0.6666666666666666,
+              "likes": 0.7142857142857143,
+              "comments": 0.5714285714285714,
+              "shares": 0.8571428571428571
+            },
+            "normalized_score": 0.7024
+          },
+          {
+            "platform": "facebook",
+            "post_id": "fb-006",
+            "published_at": "2026-08-08T12:00:00Z",
+            "content_type": "text",
+            "text": "Який домашній гаджет ви вважаєте найкориснішим? Голосуйте в коментарях.",
+            "topic": "community_question",
+            "views": null,
+            "views_status": "not_applicable",
+            "likes": 1900,
+            "comments": 2280,
+            "shares": 190,
+            "url": "fixture://facebook/fb-006",
+            "source_mode": "fixture",
+            "confidence": 0.72,
+            "platform_metrics": {
+              "reactions": 2400
+            },
+            "funnel_stage": "engagement",
+            "audience_inference": {
+              "segment": "технологічно активна аудиторія",
+              "age_inferred": "16–39",
+              "region_inferred": "Україна",
+              "confidence": 0.62,
+              "basis": "тема, формат і текст публікації; не first-party demographics"
+            },
+            "metric_percentiles": {
+              "views": null,
+              "likes": 0.14285714285714285,
+              "comments": 0.8571428571428571,
+              "shares": 0.14285714285714285
+            },
+            "normalized_score": 0.381
+          },
+          {
+            "platform": "facebook",
+            "post_id": "fb-007",
+            "published_at": "2026-08-02T12:00:00Z",
+            "content_type": "photo",
+            "text": "Комплект для дистанційного навчання зі спеціальною ціною.",
+            "topic": "education_tech",
+            "views": null,
+            "views_status": "not_applicable",
+            "likes": 2700,
+            "comments": 260,
+            "shares": 740,
+            "url": "fixture://facebook/fb-007",
+            "source_mode": "fixture",
+            "confidence": 0.72,
+            "platform_metrics": {
+              "reactions": 3100
+            },
+            "funnel_stage": "consideration",
+            "audience_inference": {
+              "segment": "студенти, батьки та молоді спеціалісти",
+              "age_inferred": "18–44",
+              "region_inferred": "Україна",
+              "confidence": 0.62,
+              "basis": "тема, формат і текст публікації; не first-party demographics"
+            },
+            "metric_percentiles": {
+              "views": null,
+              "likes": 0.2857142857142857,
+              "comments": 0.14285714285714285,
+              "shares": 0.42857142857142855
+            },
+            "normalized_score": 0.2857
+          },
+          {
+            "platform": "telegram",
+            "post_id": "tg-001",
+            "published_at": "2026-08-29T12:00:00Z",
+            "content_type": "photo",
+            "text": "Знижка до 60% на посуд. Перелік пропозицій за посиланням.",
+            "topic": "discount",
+            "views": 61200,
+            "views_status": "available",
+            "likes": 480,
+            "comments": 120,
+            "shares": 760,
+            "url": "fixture://telegram/tg-001",
+            "source_mode": "fixture",
+            "confidence": 0.72,
+            "platform_metrics": {
+              "reactions": 620,
+              "forwards": 760
+            },
+            "funnel_stage": "conversion_oriented",
+            "audience_inference": {
+              "segment": "широка українська онлайн-аудиторія",
+              "age_inferred": "18–54",
+              "region_inferred": "Україна",
+              "confidence": 0.62,
+              "basis": "тема, формат і текст публікації; не first-party demographics"
+            },
+            "metric_percentiles": {
+              "views": 0.7142857142857143,
+              "likes": 0.42857142857142855,
+              "comments": 0.2857142857142857,
+              "shares": 0.7142857142857143
+            },
+            "normalized_score": 0.5357
+          },
+          {
+            "platform": "telegram",
+            "post_id": "tg-002",
+            "published_at": "2026-08-26T12:00:00Z",
+            "content_type": "video",
+            "text": "Кидайте кубик у коментарях — перші переможці отримають промокод.",
+            "topic": "contest",
+            "views": 73800,
+            "views_status": "available",
+            "likes": 1100,
+            "comments": 2940,
+            "shares": 430,
+            "url": "fixture://telegram/tg-002",
+            "source_mode": "fixture",
+            "confidence": 0.72,
+            "platform_metrics": {
+              "reactions": 1420,
+              "forwards": 430
+            },
+            "funnel_stage": "conversion_oriented",
+            "audience_inference": {
+              "segment": "широка українська онлайн-аудиторія",
+              "age_inferred": "18–54",
+              "region_inferred": "Україна",
+              "confidence": 0.62,
+              "basis": "тема, формат і текст публікації; не first-party demographics"
+            },
+            "metric_percentiles": {
+              "views": 1.0,
+              "likes": 1.0,
+              "comments": 1.0,
+              "shares": 0.42857142857142855
+            },
+            "normalized_score": 0.8571
+          },
+          {
+            "platform": "telegram",
+            "post_id": "tg-003",
+            "published_at": "2026-08-21T12:00:00Z",
+            "content_type": "photo",
+            "text": "Добірка зарядних станцій для дому та подорожей.",
+            "topic": "product_guide",
+            "views": 55900,
+            "views_status": "available",
+            "likes": 690,
+            "comments": 210,
+            "shares": 910,
+            "url": "fixture://telegram/tg-003",
+            "source_mode": "fixture",
+            "confidence": 0.72,
+            "platform_metrics": {
+              "reactions": 810,
+              "forwards": 910
+            },
+            "funnel_stage": "consideration",
+            "audience_inference": {
+              "segment": "широка українська онлайн-аудиторія",
+              "age_inferred": "18–54",
+              "region_inferred": "Україна",
+              "confidence": 0.62,
+              "basis": "тема, формат і текст публікації; не first-party demographics"
+            },
+            "metric_percentiles": {
+              "views": 0.5714285714285714,
+              "likes": 0.7142857142857143,
+              "comments": 0.5714285714285714,
+              "shares": 0.8571428571428571
+            },
+            "normalized_score": 0.6786
+          },
+          {
+            "platform": "telegram",
+            "post_id": "tg-004",
+            "published_at": "2026-08-17T12:00:00Z",
+            "content_type": "text",
+            "text": "Опитування: яку категорію товарів додати до наступного розпродажу?",
+            "topic": "community_question",
+            "views": 49700,
+            "views_status": "available",
+            "likes": 410,
+            "comments": 1680,
+            "shares": 180,
+            "url": "fixture://telegram/tg-004",
+            "source_mode": "fixture",
+            "confidence": 0.72,
+            "platform_metrics": {
+              "reactions": 530,
+              "forwards": 180
+            },
+            "funnel_stage": "engagement",
+            "audience_inference": {
+              "segment": "широка українська онлайн-аудиторія",
+              "age_inferred": "18–54",
+              "region_inferred": "Україна",
+              "confidence": 0.62,
+              "basis": "тема, формат і текст публікації; не first-party demographics"
+            },
+            "metric_percentiles": {
+              "views": 0.2857142857142857,
+              "likes": 0.2857142857142857,
+              "comments": 0.8571428571428571,
+              "shares": 0.2857142857142857
+            },
+            "normalized_score": 0.4286
+          },
+          {
+            "platform": "telegram",
+            "post_id": "tg-005",
+            "published_at": "2026-08-13T12:00:00Z",
+            "content_type": "video",
+            "text": "Огляд смартфона: камера, автономність і продуктивність.",
+            "topic": "product_guide",
+            "views": 68400,
+            "views_status": "available",
+            "likes": 920,
+            "comments": 340,
+            "shares": 1200,
+            "url": "fixture://telegram/tg-005",
+            "source_mode": "fixture",
+            "confidence": 0.72,
+            "platform_metrics": {
+              "reactions": 1080,
+              "forwards": 1200
+            },
+            "funnel_stage": "consideration",
+            "audience_inference": {
+              "segment": "технологічно активна аудиторія",
+              "age_inferred": "16–39",
+              "region_inferred": "Україна",
+              "confidence": 0.62,
+              "basis": "тема, формат і текст публікації; не first-party demographics"
+            },
+            "metric_percentiles": {
+              "views": 0.8571428571428571,
+              "likes": 0.8571428571428571,
+              "comments": 0.7142857142857143,
+              "shares": 1.0
+            },
+            "normalized_score": 0.8571
+          },
+          {
+            "platform": "telegram",
+            "post_id": "tg-006",
+            "published_at": "2026-08-09T12:00:00Z",
+            "content_type": "photo",
+            "text": "Товари для школи зі знижкою та бонусами на картку.",
+            "topic": "education_tech",
+            "views": 52100,
+            "views_status": "available",
+            "likes": 570,
+            "comments": 160,
+            "shares": 680,
+            "url": "fixture://telegram/tg-006",
+            "source_mode": "fixture",
+            "confidence": 0.72,
+            "platform_metrics": {
+              "reactions": 710,
+              "forwards": 680
+            },
+            "funnel_stage": "conversion_oriented",
+            "audience_inference": {
+              "segment": "студенти, батьки та молоді спеціалісти",
+              "age_inferred": "18–44",
+              "region_inferred": "Україна",
+              "confidence": 0.62,
+              "basis": "тема, формат і текст публікації; не first-party demographics"
+            },
+            "metric_percentiles": {
+              "views": 0.42857142857142855,
+              "likes": 0.5714285714285714,
+              "comments": 0.42857142857142855,
+              "shares": 0.5714285714285714
+            },
+            "normalized_score": 0.5
+          },
+          {
+            "platform": "telegram",
+            "post_id": "tg-007",
+            "published_at": "2026-08-04T12:00:00Z",
+            "content_type": "text",
+            "text": "Історія команди нового магазину ROZETKA у Черкасах.",
+            "topic": "brand_news",
+            "views": 42100,
+            "views_status": "available",
+            "likes": 350,
+            "comments": 95,
+            "shares": 140,
+            "url": "fixture://telegram/tg-007",
+            "source_mode": "fixture",
+            "confidence": 0.72,
+            "platform_metrics": {
+              "reactions": 460,
+              "forwards": 140
+            },
+            "funnel_stage": "awareness",
+            "audience_inference": {
+              "segment": "широка українська онлайн-аудиторія",
+              "age_inferred": "18–54",
+              "region_inferred": "Україна",
+              "confidence": 0.62,
+              "basis": "тема, формат і текст публікації; не first-party demographics"
+            },
+            "metric_percentiles": {
+              "views": 0.14285714285714285,
+              "likes": 0.14285714285714285,
+              "comments": 0.14285714285714285,
+              "shares": 0.14285714285714285
+            },
+            "normalized_score": 0.1429
+          }
+        ],
+        "top_5_patterns": [
+          {
+            "pattern": "contest",
+            "posts": 3,
+            "average_normalized_score": 0.879,
+            "pattern_score": 0.879,
+            "evidence_level": "strong",
+            "platforms": [
+              "facebook",
+              "instagram",
+              "telegram"
+            ],
+            "formats": [
+              "photo",
+              "reel",
+              "video"
+            ],
+            "dominant_funnel": "engagement",
+            "example_urls": [
+              "fixture://facebook/fb-002",
+              "fixture://instagram/ig-001"
+            ]
+          },
+          {
+            "pattern": "humor",
+            "posts": 1,
+            "average_normalized_score": 0.9187,
+            "pattern_score": 0.7043,
+            "evidence_level": "weak_single_post",
+            "platforms": [
+              "instagram"
+            ],
+            "formats": [
+              "reel"
+            ],
+            "dominant_funnel": "engagement",
+            "example_urls": [
+              "fixture://instagram/ig-006"
+            ]
+          },
+          {
+            "pattern": "product_guide",
+            "posts": 5,
+            "average_normalized_score": 0.6845,
+            "pattern_score": 0.6845,
+            "evidence_level": "strong",
+            "platforms": [
+              "facebook",
+              "instagram",
+              "telegram"
+            ],
+            "formats": [
+              "carousel",
+              "photo",
+              "reel",
+              "video"
+            ],
+            "dominant_funnel": "consideration",
+            "example_urls": [
+              "fixture://telegram/tg-005",
+              "fixture://instagram/ig-002"
+            ]
+          },
+          {
+            "pattern": "discount",
+            "posts": 3,
+            "average_normalized_score": 0.6345,
+            "pattern_score": 0.6345,
+            "evidence_level": "strong",
+            "platforms": [
+              "facebook",
+              "instagram",
+              "telegram"
+            ],
+            "formats": [
+              "photo",
+              "reel",
+              "video"
+            ],
+            "dominant_funnel": "conversion_oriented",
+            "example_urls": [
+              "fixture://facebook/fb-001",
+              "fixture://telegram/tg-001"
+            ]
+          },
+          {
+            "pattern": "gift_guide",
+            "posts": 1,
+            "average_normalized_score": 0.7024,
+            "pattern_score": 0.5385,
+            "evidence_level": "weak_single_post",
+            "platforms": [
+              "facebook"
+            ],
+            "formats": [
+              "video"
+            ],
+            "dominant_funnel": "conversion_oriented",
+            "example_urls": [
+              "fixture://facebook/fb-005"
+            ]
+          }
+        ],
+        "cross_platform_top": [
+          {
+            "platform": "instagram",
+            "post_id": "ig-006",
+            "topic": "humor",
+            "content_type": "reel",
+            "normalized_score": 0.9187,
+            "url": "fixture://instagram/ig-006"
+          },
+          {
+            "platform": "facebook",
+            "post_id": "fb-002",
+            "topic": "contest",
+            "content_type": "photo",
+            "normalized_score": 0.9048,
+            "url": "fixture://facebook/fb-002"
+          },
+          {
+            "platform": "facebook",
+            "post_id": "fb-001",
+            "topic": "discount",
+            "content_type": "video",
+            "normalized_score": 0.8929,
+            "url": "fixture://facebook/fb-001"
+          },
+          {
+            "platform": "instagram",
+            "post_id": "ig-001",
+            "topic": "contest",
+            "content_type": "reel",
+            "normalized_score": 0.875,
+            "url": "fixture://instagram/ig-001"
+          },
+          {
+            "platform": "telegram",
+            "post_id": "tg-002",
+            "topic": "contest",
+            "content_type": "video",
+            "normalized_score": 0.8571,
+            "url": "fixture://telegram/tg-002"
+          }
+        ],
+        "executive_summary": [
+          "За 30 днів проаналізовано 22 публікації на 3 платформах.",
+          "Найсильніший повторюваний патерн — contest (score=0.879, posts=3).",
+          "Instagram, Facebook і Telegram мають дані snapshot; офіційний Threads-профіль потребує окремого підтвердження.",
+          "Аудиторні сегменти є inference за темою та форматом, а не фактичною демографією платформи."
+        ],
+        "recommendations": [
+          "Масштабувати contest-механіки, але оцінювати якість коментарів окремо перед production-рішенням.",
+          "Підтримувати product guides у Reels/video/carousel: патерн повторюється на кількох платформах.",
+          "Для discount-контенту тестувати різні формати й CTA, не порівнюючи сирі views між платформами.",
+          "Humor розглядати як перспективний експеримент, а не доведений патерн, доки є лише один сильний пост.",
+          "Перед стратегією для Threads вручну підтвердити офіційний профіль ROZETKA та доступність публічних метрик."
+        ],
+        "coverage_gaps": [
+          "threads"
+        ],
+        "limitations": [
+          "Fixture metrics є навчальним snapshot, а не поточною статистикою ROZETKA.",
+          "Reach, saves та реальні demographics недоступні без first-party API.",
+          "Тексти коментарів не збираються; використовується лише їх кількість."
+        ]
+      },
+      "workflow": {
+        "goal": "Проаналізуй контент-маркетинг ROZETKA в Instagram, Facebook, Threads і Telegram за 30 днів: частоту, формати, перегляди, лайки, коментарі, funnel, inferred-аудиторію та 5 найсильніших патернів.",
+        "plan": [
+          "COLLECT_PLATFORMS: зібрати Instagram, Facebook, Threads і Telegram через ReAct з fallback.",
+          "SEARCH_KNOWLEDGE: отримати правила метрик, funnel і нормалізації через Agentic RAG.",
+          "ANALYZE_PATTERNS: побудувати platform-звіти, топи, inferred-аудиторію і 5 патернів.",
+          "EXPORT_REPORT: підготувати ризиковий файловий експорт після HITL."
+        ],
+        "current_step": 4,
+        "report_status": "exported",
+        "report_path": "C:\\Study\\AI_agent_LLM\\Task_001_Pylypenko_ROZETKA_SMM\\outputs\\rozetka_smm_report.json",
+        "completed": true
+      },
+      "next": []
+    }
+  },
+  "reject_flow": {
+    "brand": "ROZETKA",
+    "period_days": 30,
+    "posts_collected": 22,
+    "source_status": {
+      "instagram": {
+        "profile_status": "verified_official",
+        "verification_source": "ROZETKA official social hub",
+        "profile_url": "https://www.instagram.com/rozetkaua/",
+        "attempts": [
+          {
+            "tool": "collect_public_posts",
+            "status": "error",
+            "error_code": "LIVE_MODE_DISABLED"
+          },
+          {
+            "tool": "load_fixture_posts",
+            "status": "ok",
+            "error_code": null
+          }
+        ],
+        "final_source_mode": "fixture",
+        "post_count": 8,
+        "zero_posts_reason": null
+      },
+      "facebook": {
+        "profile_status": "verified_official",
+        "verification_source": "ROZETKA official social hub",
+        "profile_url": "https://www.facebook.com/rozetka.ua",
+        "attempts": [
+          {
+            "tool": "collect_public_posts",
+            "status": "error",
+            "error_code": "LIVE_MODE_DISABLED"
+          },
+          {
+            "tool": "load_fixture_posts",
+            "status": "ok",
+            "error_code": null
+          }
+        ],
+        "final_source_mode": "fixture",
+        "post_count": 7,
+        "zero_posts_reason": null
+      },
+      "threads": {
+        "profile_status": "not_verified",
+        "verification_source": "Threads profile is not listed in ROZETKA official social hub",
+        "profile_url": "https://www.threads.net/@rozetkaua",
+        "attempts": [
+          {
+            "tool": "collect_public_posts",
+            "status": "error",
+            "error_code": "LIVE_MODE_DISABLED"
+          },
+          {
+            "tool": "load_fixture_posts",
+            "status": "ok",
+            "error_code": null
+          }
+        ],
+        "final_source_mode": "fixture",
+        "post_count": 0,
+        "zero_posts_reason": "official_profile_not_verified"
+      },
+      "telegram": {
+        "profile_status": "verified_official",
+        "verification_source": "ROZETKA official Telegram channel",
+        "profile_url": "https://t.me/s/rrozetka",
+        "attempts": [
+          {
+            "tool": "collect_public_posts",
+            "status": "error",
+            "error_code": "LIVE_MODE_DISABLED"
+          },
+          {
+            "tool": "load_fixture_posts",
+            "status": "ok",
+            "error_code": null
+          }
+        ],
+        "final_source_mode": "fixture",
+        "post_count": 7,
+        "zero_posts_reason": null
+      }
+    },
+    "knowledge_hits": 8,
+    "analysis": {
+      "brand": "ROZETKA",
+      "period_days": 30,
+      "generated_at": "2026-08-30T12:00:00+00:00",
+      "methodology": "Сирі метрики порівнюються лише всередині платформи; cross-platform top використовує середнє percentile доступних метрик. Аудиторія є inference.",
+      "platform_summaries": {
+        "instagram": {
+          "post_count": 8,
+          "posts_per_week": 1.87,
+          "average_interval_days": 3.57,
+          "views_availability": {
+            "available": 5,
+            "not_public": 3,
+            "not_applicable": 0,
+            "missing_in_source": 0
+          },
+          "views_note": "Video/Reels можуть мати public views; для статичних постів лічильник переглядів часто не публікується. None не означає 0 переглядів.",
+          "formats": {
+            "carousel": 2,
+            "photo": 1,
+            "reel": 5
+          },
+          "top_by_views": [
+            {
+              "post_id": "ig-001",
+              "value": 482000,
+              "content_type": "reel",
+              "topic": "contest",
+              "url": "fixture://instagram/ig-001"
+            },
+            {
+              "post_id": "ig-006",
+              "value": 398000,
+              "content_type": "reel",
+              "topic": "humor",
+              "url": "fixture://instagram/ig-006"
+            },
+            {
+              "post_id": "ig-002",
+              "value": 331000,
+              "content_type": "reel",
+              "topic": "product_guide",
+              "url": "fixture://instagram/ig-002"
+            },
+            {
+              "post_id": "ig-004",
+              "value": 274000,
+              "content_type": "reel",
+              "topic": "discount",
+              "url": "fixture://instagram/ig-004"
+            },
+            {
+              "post_id": "ig-008",
+              "value": 219000,
+              "content_type": "reel",
+              "topic": "fashion",
+              "url": "fixture://instagram/ig-008"
+            }
+          ],
+          "top_by_likes": [
+            {
+              "post_id": "ig-006",
+              "value": 30100,
+              "content_type": "reel",
+              "topic": "humor",
+              "url": "fixture://instagram/ig-006"
+            },
+            {
+              "post_id": "ig-001",
+              "value": 28400,
+              "content_type": "reel",
+              "topic": "contest",
+              "url": "fixture://instagram/ig-001"
+            },
+            {
+              "post_id": "ig-002",
+              "value": 17200,
+              "content_type": "reel",
+              "topic": "product_guide",
+              "url": "fixture://instagram/ig-002"
+            },
+            {
+              "post_id": "ig-007",
+              "value": 12800,
+              "content_type": "carousel",
+              "topic": "product_guide",
+              "url": "fixture://instagram/ig-007"
+            },
+            {
+              "post_id": "ig-004",
+              "value": 11900,
+              "content_type": "reel",
+              "topic": "discount",
+              "url": "fixture://instagram/ig-004"
+            }
+          ],
+          "top_by_comments": [
+            {
+              "post_id": "ig-001",
+              "value": 5190,
+              "content_type": "reel",
+              "topic": "contest",
+              "url": "fixture://instagram/ig-001"
+            },
+            {
+              "post_id": "ig-006",
+              "value": 2300,
+              "content_type": "reel",
+              "topic": "humor",
+              "url": "fixture://instagram/ig-006"
+            },
+            {
+              "post_id": "ig-002",
+              "value": 910,
+              "content_type": "reel",
+              "topic": "product_guide",
+              "url": "fixture://instagram/ig-002"
+            },
+            {
+              "post_id": "ig-007",
+              "value": 760,
+              "content_type": "carousel",
+              "topic": "product_guide",
+              "url": "fixture://instagram/ig-007"
+            },
+            {
+              "post_id": "ig-004",
+              "value": 680,
+              "content_type": "reel",
+              "topic": "discount",
+              "url": "fixture://instagram/ig-004"
+            }
+          ],
+          "top_by_shares": [
+            {
+              "post_id": "ig-006",
+              "value": 8100,
+              "content_type": "reel",
+              "topic": "humor",
+              "url": "fixture://instagram/ig-006"
+            },
+            {
+              "post_id": "ig-002",
+              "value": 4700,
+              "content_type": "reel",
+              "topic": "product_guide",
+              "url": "fixture://instagram/ig-002"
+            },
+            {
+              "post_id": "ig-007",
+              "value": 3500,
+              "content_type": "carousel",
+              "topic": "product_guide",
+              "url": "fixture://instagram/ig-007"
+            },
+            {
+              "post_id": "ig-001",
+              "value": 3100,
+              "content_type": "reel",
+              "topic": "contest",
+              "url": "fixture://instagram/ig-001"
+            },
+            {
+              "post_id": "ig-004",
+              "value": 2900,
+              "content_type": "reel",
+              "topic": "discount",
+              "url": "fixture://instagram/ig-004"
+            }
+          ]
+        },
+        "facebook": {
+          "post_count": 7,
+          "posts_per_week": 1.63,
+          "average_interval_days": 4.5,
+          "views_availability": {
+            "available": 3,
+            "not_public": 0,
+            "not_applicable": 4,
+            "missing_in_source": 0
+          },
+          "views_note": "Video/Reels можуть мати public views; для статичних постів лічильник переглядів часто не публікується. None не означає 0 переглядів.",
+          "formats": {
+            "photo": 3,
+            "text": 1,
+            "video": 3
+          },
+          "top_by_views": [
+            {
+              "post_id": "fb-001",
+              "value": 156000,
+              "content_type": "video",
+              "topic": "discount",
+              "url": "fixture://facebook/fb-001"
+            },
+            {
+              "post_id": "fb-005",
+              "value": 121000,
+              "content_type": "video",
+              "topic": "gift_guide",
+              "url": "fixture://facebook/fb-005"
+            },
+            {
+              "post_id": "fb-003",
+              "value": 97000,
+              "content_type": "video",
+              "topic": "product_guide",
+              "url": "fixture://facebook/fb-003"
+            }
+          ],
+          "top_by_likes": [
+            {
+              "post_id": "fb-002",
+              "value": 8200,
+              "content_type": "photo",
+              "topic": "contest",
+              "url": "fixture://facebook/fb-002"
+            },
+            {
+              "post_id": "fb-001",
+              "value": 6100,
+              "content_type": "video",
+              "topic": "discount",
+              "url": "fixture://facebook/fb-001"
+            },
+            {
+              "post_id": "fb-005",
+              "value": 4700,
+              "content_type": "video",
+              "topic": "gift_guide",
+              "url": "fixture://facebook/fb-005"
+            },
+            {
+              "post_id": "fb-003",
+              "value": 3400,
+              "content_type": "video",
+              "topic": "product_guide",
+              "url": "fixture://facebook/fb-003"
+            },
+            {
+              "post_id": "fb-004",
+              "value": 2900,
+              "content_type": "photo",
+              "topic": "brand_news",
+              "url": "fixture://facebook/fb-004"
+            }
+          ],
+          "top_by_comments": [
+            {
+              "post_id": "fb-002",
+              "value": 3710,
+              "content_type": "photo",
+              "topic": "contest",
+              "url": "fixture://facebook/fb-002"
+            },
+            {
+              "post_id": "fb-006",
+              "value": 2280,
+              "content_type": "text",
+              "topic": "community_question",
+              "url": "fixture://facebook/fb-006"
+            },
+            {
+              "post_id": "fb-001",
+              "value": 840,
+              "content_type": "video",
+              "topic": "discount",
+              "url": "fixture://facebook/fb-001"
+            },
+            {
+              "post_id": "fb-005",
+              "value": 620,
+              "content_type": "video",
+              "topic": "gift_guide",
+              "url": "fixture://facebook/fb-005"
+            },
+            {
+              "post_id": "fb-003",
+              "value": 530,
+              "content_type": "video",
+              "topic": "product_guide",
+              "url": "fixture://facebook/fb-003"
+            }
+          ],
+          "top_by_shares": [
+            {
+              "post_id": "fb-001",
+              "value": 2400,
+              "content_type": "video",
+              "topic": "discount",
+              "url": "fixture://facebook/fb-001"
+            },
+            {
+              "post_id": "fb-005",
+              "value": 2200,
+              "content_type": "video",
+              "topic": "gift_guide",
+              "url": "fixture://facebook/fb-005"
+            },
+            {
+              "post_id": "fb-002",
+              "value": 1900,
+              "content_type": "photo",
+              "topic": "contest",
+              "url": "fixture://facebook/fb-002"
+            },
+            {
+              "post_id": "fb-003",
+              "value": 1300,
+              "content_type": "video",
+              "topic": "product_guide",
+              "url": "fixture://facebook/fb-003"
+            },
+            {
+              "post_id": "fb-007",
+              "value": 740,
+              "content_type": "photo",
+              "topic": "education_tech",
+              "url": "fixture://facebook/fb-007"
+            }
+          ]
+        },
+        "threads": {
+          "post_count": 0,
+          "posts_per_week": 0.0,
+          "average_interval_days": null,
+          "views_availability": {
+            "available": 0,
+            "not_public": 0,
+            "not_applicable": 0,
+            "missing_in_source": 0
+          },
+          "views_note": "Video/Reels можуть мати public views; для статичних постів лічильник переглядів часто не публікується. None не означає 0 переглядів.",
+          "formats": {},
+          "top_by_views": [],
+          "top_by_likes": [],
+          "top_by_comments": [],
+          "top_by_shares": []
+        },
+        "telegram": {
+          "post_count": 7,
+          "posts_per_week": 1.63,
+          "average_interval_days": 4.17,
+          "views_availability": {
+            "available": 7,
+            "not_public": 0,
+            "not_applicable": 0,
+            "missing_in_source": 0
+          },
+          "views_note": "Video/Reels можуть мати public views; для статичних постів лічильник переглядів часто не публікується. None не означає 0 переглядів.",
+          "formats": {
+            "photo": 3,
+            "text": 2,
+            "video": 2
+          },
+          "top_by_views": [
+            {
+              "post_id": "tg-002",
+              "value": 73800,
+              "content_type": "video",
+              "topic": "contest",
+              "url": "fixture://telegram/tg-002"
+            },
+            {
+              "post_id": "tg-005",
+              "value": 68400,
+              "content_type": "video",
+              "topic": "product_guide",
+              "url": "fixture://telegram/tg-005"
+            },
+            {
+              "post_id": "tg-001",
+              "value": 61200,
+              "content_type": "photo",
+              "topic": "discount",
+              "url": "fixture://telegram/tg-001"
+            },
+            {
+              "post_id": "tg-003",
+              "value": 55900,
+              "content_type": "photo",
+              "topic": "product_guide",
+              "url": "fixture://telegram/tg-003"
+            },
+            {
+              "post_id": "tg-006",
+              "value": 52100,
+              "content_type": "photo",
+              "topic": "education_tech",
+              "url": "fixture://telegram/tg-006"
+            }
+          ],
+          "top_by_likes": [
+            {
+              "post_id": "tg-002",
+              "value": 1100,
+              "content_type": "video",
+              "topic": "contest",
+              "url": "fixture://telegram/tg-002"
+            },
+            {
+              "post_id": "tg-005",
+              "value": 920,
+              "content_type": "video",
+              "topic": "product_guide",
+              "url": "fixture://telegram/tg-005"
+            },
+            {
+              "post_id": "tg-003",
+              "value": 690,
+              "content_type": "photo",
+              "topic": "product_guide",
+              "url": "fixture://telegram/tg-003"
+            },
+            {
+              "post_id": "tg-006",
+              "value": 570,
+              "content_type": "photo",
+              "topic": "education_tech",
+              "url": "fixture://telegram/tg-006"
+            },
+            {
+              "post_id": "tg-001",
+              "value": 480,
+              "content_type": "photo",
+              "topic": "discount",
+              "url": "fixture://telegram/tg-001"
+            }
+          ],
+          "top_by_comments": [
+            {
+              "post_id": "tg-002",
+              "value": 2940,
+              "content_type": "video",
+              "topic": "contest",
+              "url": "fixture://telegram/tg-002"
+            },
+            {
+              "post_id": "tg-004",
+              "value": 1680,
+              "content_type": "text",
+              "topic": "community_question",
+              "url": "fixture://telegram/tg-004"
+            },
+            {
+              "post_id": "tg-005",
+              "value": 340,
+              "content_type": "video",
+              "topic": "product_guide",
+              "url": "fixture://telegram/tg-005"
+            },
+            {
+              "post_id": "tg-003",
+              "value": 210,
+              "content_type": "photo",
+              "topic": "product_guide",
+              "url": "fixture://telegram/tg-003"
+            },
+            {
+              "post_id": "tg-006",
+              "value": 160,
+              "content_type": "photo",
+              "topic": "education_tech",
+              "url": "fixture://telegram/tg-006"
+            }
+          ],
+          "top_by_shares": [
+            {
+              "post_id": "tg-005",
+              "value": 1200,
+              "content_type": "video",
+              "topic": "product_guide",
+              "url": "fixture://telegram/tg-005"
+            },
+            {
+              "post_id": "tg-003",
+              "value": 910,
+              "content_type": "photo",
+              "topic": "product_guide",
+              "url": "fixture://telegram/tg-003"
+            },
+            {
+              "post_id": "tg-001",
+              "value": 760,
+              "content_type": "photo",
+              "topic": "discount",
+              "url": "fixture://telegram/tg-001"
+            },
+            {
+              "post_id": "tg-006",
+              "value": 680,
+              "content_type": "photo",
+              "topic": "education_tech",
+              "url": "fixture://telegram/tg-006"
+            },
+            {
+              "post_id": "tg-002",
+              "value": 430,
+              "content_type": "video",
+              "topic": "contest",
+              "url": "fixture://telegram/tg-002"
+            }
+          ]
+        }
+      },
+      "posts": [
+        {
+          "platform": "instagram",
+          "post_id": "ig-001",
+          "published_at": "2026-08-28T12:00:00Z",
+          "content_type": "reel",
+          "text": "Розіграш PlayStation 5: залишайте коментар і позначайте друга.",
+          "topic": "contest",
+          "views": 482000,
+          "views_status": "available",
+          "likes": 28400,
+          "comments": 5190,
+          "shares": 3100,
+          "url": "fixture://instagram/ig-001",
+          "source_mode": "fixture",
+          "confidence": 0.72,
+          "platform_metrics": {
+            "saves": 8400
+          },
+          "funnel_stage": "engagement",
+          "audience_inference": {
+            "segment": "технологічно активна аудиторія",
+            "age_inferred": "16–39",
+            "region_inferred": "Україна",
+            "confidence": 0.62,
+            "basis": "тема, формат і текст публікації; не first-party demographics"
+          },
+          "metric_percentiles": {
+            "views": 1.0,
+            "likes": 0.875,
+            "comments": 1.0,
+            "shares": 0.625
+          },
+          "normalized_score": 0.875
+        },
+        {
+          "platform": "instagram",
+          "post_id": "ig-002",
+          "published_at": "2026-08-25T12:00:00Z",
+          "content_type": "reel",
+          "text": "Три гаджети для дому, які заощаджують час.",
+          "topic": "product_guide",
+          "views": 331000,
+          "views_status": "available",
+          "likes": 17200,
+          "comments": 910,
+          "shares": 4700,
+          "url": "fixture://instagram/ig-002",
+          "source_mode": "fixture",
+          "confidence": 0.72,
+          "platform_metrics": {
+            "saves": 12100
+          },
+          "funnel_stage": "consideration",
+          "audience_inference": {
+            "segment": "технологічно активна аудиторія",
+            "age_inferred": "16–39",
+            "region_inferred": "Україна",
+            "confidence": 0.62,
+            "basis": "тема, формат і текст публікації; не first-party demographics"
+          },
+          "metric_percentiles": {
+            "views": 0.6,
+            "likes": 0.75,
+            "comments": 0.75,
+            "shares": 0.875
+          },
+          "normalized_score": 0.7438
+        },
+        {
+          "platform": "instagram",
+          "post_id": "ig-003",
+          "published_at": "2026-08-22T12:00:00Z",
+          "content_type": "carousel",
+          "text": "Добірка ноутбуків для навчання та першої роботи.",
+          "topic": "education_tech",
+          "views": null,
+          "views_status": "not_public",
+          "likes": 9400,
+          "comments": 540,
+          "shares": 1800,
+          "url": "fixture://instagram/ig-003",
+          "source_mode": "fixture",
+          "confidence": 0.72,
+          "platform_metrics": {
+            "saves": 6900
+          },
+          "funnel_stage": "consideration",
+          "audience_inference": {
+            "segment": "студенти, батьки та молоді спеціалісти",
+            "age_inferred": "18–44",
+            "region_inferred": "Україна",
+            "confidence": 0.62,
+            "basis": "тема, формат і текст публікації; не first-party demographics"
+          },
+          "metric_percentiles": {
+            "views": null,
+            "likes": 0.25,
+            "comments": 0.25,
+            "shares": 0.25
+          },
+          "normalized_score": 0.25
+        },
+        {
+          "platform": "instagram",
+          "post_id": "ig-004",
+          "published_at": "2026-08-19T12:00:00Z",
+          "content_type": "reel",
+          "text": "Знижки до 40% на товари для кухні лише цього тижня.",
+          "topic": "discount",
+          "views": 274000,
+          "views_status": "available",
+          "likes": 11900,
+          "comments": 680,
+          "shares": 2900,
+          "url": "fixture://instagram/ig-004",
+          "source_mode": "fixture",
+          "confidence": 0.72,
+          "platform_metrics": {
+            "saves": 3600
+          },
+          "funnel_stage": "conversion_oriented",
+          "audience_inference": {
+            "segment": "домогосподарства та сімейна аудиторія",
+            "age_inferred": "25–54",
+            "region_inferred": "Україна",
+            "confidence": 0.62,
+            "basis": "тема, формат і текст публікації; не first-party demographics"
+          },
+          "metric_percentiles": {
+            "views": 0.4,
+            "likes": 0.5,
+            "comments": 0.5,
+            "shares": 0.5
+          },
+          "normalized_score": 0.475
+        },
+        {
+          "platform": "instagram",
+          "post_id": "ig-005",
+          "published_at": "2026-08-15T12:00:00Z",
+          "content_type": "photo",
+          "text": "Відкриття нового магазину ROZETKA у Львові.",
+          "topic": "brand_news",
+          "views": null,
+          "views_status": "not_public",
+          "likes": 7100,
+          "comments": 420,
+          "shares": 620,
+          "url": "fixture://instagram/ig-005",
+          "source_mode": "fixture",
+          "confidence": 0.72,
+          "platform_metrics": {
+            "saves": 410
+          },
+          "funnel_stage": "awareness",
+          "audience_inference": {
+            "segment": "широка українська онлайн-аудиторія",
+            "age_inferred": "18–54",
+            "region_inferred": "Україна",
+            "confidence": 0.62,
+            "basis": "тема, формат і текст публікації; не first-party demographics"
+          },
+          "metric_percentiles": {
+            "views": null,
+            "likes": 0.125,
+            "comments": 0.125,
+            "shares": 0.125
+          },
+          "normalized_score": 0.125
+        },
+        {
+          "platform": "instagram",
+          "post_id": "ig-006",
+          "published_at": "2026-08-11T12:00:00Z",
+          "content_type": "reel",
+          "text": "Мем про доставку, коли замовлення приїхало раніше за тебе.",
+          "topic": "humor",
+          "views": 398000,
+          "views_status": "available",
+          "likes": 30100,
+          "comments": 2300,
+          "shares": 8100,
+          "url": "fixture://instagram/ig-006",
+          "source_mode": "fixture",
+          "confidence": 0.72,
+          "platform_metrics": {
+            "saves": 2500
+          },
+          "funnel_stage": "engagement",
+          "audience_inference": {
+            "segment": "широка українська онлайн-аудиторія",
+            "age_inferred": "18–54",
+            "region_inferred": "Україна",
+            "confidence": 0.62,
+            "basis": "тема, формат і текст публікації; не first-party demographics"
+          },
+          "metric_percentiles": {
+            "views": 0.8,
+            "likes": 1.0,
+            "comments": 0.875,
+            "shares": 1.0
+          },
+          "normalized_score": 0.9187
+        },
+        {
+          "platform": "instagram",
+          "post_id": "ig-007",
+          "published_at": "2026-08-07T12:00:00Z",
+          "content_type": "carousel",
+          "text": "Як вибрати павербанк: ємність, потужність і порти.",
+          "topic": "product_guide",
+          "views": null,
+          "views_status": "not_public",
+          "likes": 12800,
+          "comments": 760,
+          "shares": 3500,
+          "url": "fixture://instagram/ig-007",
+          "source_mode": "fixture",
+          "confidence": 0.72,
+          "platform_metrics": {
+            "saves": 14200
+          },
+          "funnel_stage": "consideration",
+          "audience_inference": {
+            "segment": "широка українська онлайн-аудиторія",
+            "age_inferred": "18–54",
+            "region_inferred": "Україна",
+            "confidence": 0.62,
+            "basis": "тема, формат і текст публікації; не first-party demographics"
+          },
+          "metric_percentiles": {
+            "views": null,
+            "likes": 0.625,
+            "comments": 0.625,
+            "shares": 0.75
+          },
+          "normalized_score": 0.6667
+        },
+        {
+          "platform": "instagram",
+          "post_id": "ig-008",
+          "published_at": "2026-08-03T12:00:00Z",
+          "content_type": "reel",
+          "text": "Кросівки для міста: п'ять моделей на щодень.",
+          "topic": "fashion",
+          "views": 219000,
+          "views_status": "available",
+          "likes": 10300,
+          "comments": 610,
+          "shares": 2100,
+          "url": "fixture://instagram/ig-008",
+          "source_mode": "fixture",
+          "confidence": 0.72,
+          "platform_metrics": {
+            "saves": 5100
+          },
+          "funnel_stage": "awareness",
+          "audience_inference": {
+            "segment": "міська fashion-аудиторія",
+            "age_inferred": "18–39",
+            "region_inferred": "Україна",
+            "confidence": 0.62,
+            "basis": "тема, формат і текст публікації; не first-party demographics"
+          },
+          "metric_percentiles": {
+            "views": 0.2,
+            "likes": 0.375,
+            "comments": 0.375,
+            "shares": 0.375
+          },
+          "normalized_score": 0.3312
+        },
+        {
+          "platform": "facebook",
+          "post_id": "fb-001",
+          "published_at": "2026-08-29T12:00:00Z",
+          "content_type": "video",
+          "text": "Великий розпродаж техніки: умови та категорії пропозицій.",
+          "topic": "discount",
+          "views": 156000,
+          "views_status": "available",
+          "likes": 6100,
+          "comments": 840,
+          "shares": 2400,
+          "url": "fixture://facebook/fb-001",
+          "source_mode": "fixture",
+          "confidence": 0.72,
+          "platform_metrics": {
+            "reactions": 6900
+          },
+          "funnel_stage": "conversion_oriented",
+          "audience_inference": {
+            "segment": "широка українська онлайн-аудиторія",
+            "age_inferred": "18–54",
+            "region_inferred": "Україна",
+            "confidence": 0.62,
+            "basis": "тема, формат і текст публікації; не first-party demographics"
+          },
+          "metric_percentiles": {
+            "views": 1.0,
+            "likes": 0.8571428571428571,
+            "comments": 0.7142857142857143,
+            "shares": 1.0
+          },
+          "normalized_score": 0.8929
+        },
+        {
+          "platform": "facebook",
+          "post_id": "fb-002",
+          "published_at": "2026-08-24T12:00:00Z",
+          "content_type": "photo",
+          "text": "Розіграш набору для дому серед підписників сторінки.",
+          "topic": "contest",
+          "views": null,
+          "views_status": "not_applicable",
+          "likes": 8200,
+          "comments": 3710,
+          "shares": 1900,
+          "url": "fixture://facebook/fb-002",
+          "source_mode": "fixture",
+          "confidence": 0.72,
+          "platform_metrics": {
+            "reactions": 9100
+          },
+          "funnel_stage": "engagement",
+          "audience_inference": {
+            "segment": "широка українська онлайн-аудиторія",
+            "age_inferred": "18–54",
+            "region_inferred": "Україна",
+            "confidence": 0.62,
+            "basis": "тема, формат і текст публікації; не first-party demographics"
+          },
+          "metric_percentiles": {
+            "views": null,
+            "likes": 1.0,
+            "comments": 1.0,
+            "shares": 0.7142857142857143
+          },
+          "normalized_score": 0.9048
+        },
+        {
+          "platform": "facebook",
+          "post_id": "fb-003",
+          "published_at": "2026-08-20T12:00:00Z",
+          "content_type": "video",
+          "text": "Порівнюємо телевізори OLED та QLED перед вибором.",
+          "topic": "product_guide",
+          "views": 97000,
+          "views_status": "available",
+          "likes": 3400,
+          "comments": 530,
+          "shares": 1300,
+          "url": "fixture://facebook/fb-003",
+          "source_mode": "fixture",
+          "confidence": 0.72,
+          "platform_metrics": {
+            "reactions": 3800
+          },
+          "funnel_stage": "consideration",
+          "audience_inference": {
+            "segment": "широка українська онлайн-аудиторія",
+            "age_inferred": "18–54",
+            "region_inferred": "Україна",
+            "confidence": 0.62,
+            "basis": "тема, формат і текст публікації; не first-party demographics"
+          },
+          "metric_percentiles": {
+            "views": 0.3333333333333333,
+            "likes": 0.5714285714285714,
+            "comments": 0.42857142857142855,
+            "shares": 0.5714285714285714
+          },
+          "normalized_score": 0.4762
+        },
+        {
+          "platform": "facebook",
+          "post_id": "fb-004",
+          "published_at": "2026-08-16T12:00:00Z",
+          "content_type": "photo",
+          "text": "ROZETKA відкрила нову точку видачі у Вінниці.",
+          "topic": "brand_news",
+          "views": null,
+          "views_status": "not_applicable",
+          "likes": 2900,
+          "comments": 310,
+          "shares": 480,
+          "url": "fixture://facebook/fb-004",
+          "source_mode": "fixture",
+          "confidence": 0.72,
+          "platform_metrics": {
+            "reactions": 3300
+          },
+          "funnel_stage": "awareness",
+          "audience_inference": {
+            "segment": "широка українська онлайн-аудиторія",
+            "age_inferred": "18–54",
+            "region_inferred": "Україна",
+            "confidence": 0.62,
+            "basis": "тема, формат і текст публікації; не first-party demographics"
+          },
+          "metric_percentiles": {
+            "views": null,
+            "likes": 0.42857142857142855,
+            "comments": 0.2857142857142857,
+            "shares": 0.2857142857142857
+          },
+          "normalized_score": 0.3333
+        },
+        {
+          "platform": "facebook",
+          "post_id": "fb-005",
+          "published_at": "2026-08-12T12:00:00Z",
+          "content_type": "video",
+          "text": "П'ять практичних подарунків для батьків.",
+          "topic": "gift_guide",
+          "views": 121000,
+          "views_status": "available",
+          "likes": 4700,
+          "comments": 620,
+          "shares": 2200,
+          "url": "fixture://facebook/fb-005",
+          "source_mode": "fixture",
+          "confidence": 0.72,
+          "platform_metrics": {
+            "reactions": 5100
+          },
+          "funnel_stage": "conversion_oriented",
+          "audience_inference": {
+            "segment": "домогосподарства та сімейна аудиторія",
+            "age_inferred": "25–54",
+            "region_inferred": "Україна",
+            "confidence": 0.62,
+            "basis": "тема, формат і текст публікації; не first-party demographics"
+          },
+          "metric_percentiles": {
+            "views": 0.6666666666666666,
+            "likes": 0.7142857142857143,
+            "comments": 0.5714285714285714,
+            "shares": 0.8571428571428571
+          },
+          "normalized_score": 0.7024
+        },
+        {
+          "platform": "facebook",
+          "post_id": "fb-006",
+          "published_at": "2026-08-08T12:00:00Z",
+          "content_type": "text",
+          "text": "Який домашній гаджет ви вважаєте найкориснішим? Голосуйте в коментарях.",
+          "topic": "community_question",
+          "views": null,
+          "views_status": "not_applicable",
+          "likes": 1900,
+          "comments": 2280,
+          "shares": 190,
+          "url": "fixture://facebook/fb-006",
+          "source_mode": "fixture",
+          "confidence": 0.72,
+          "platform_metrics": {
+            "reactions": 2400
+          },
+          "funnel_stage": "engagement",
+          "audience_inference": {
+            "segment": "технологічно активна аудиторія",
+            "age_inferred": "16–39",
+            "region_inferred": "Україна",
+            "confidence": 0.62,
+            "basis": "тема, формат і текст публікації; не first-party demographics"
+          },
+          "metric_percentiles": {
+            "views": null,
+            "likes": 0.14285714285714285,
+            "comments": 0.8571428571428571,
+            "shares": 0.14285714285714285
+          },
+          "normalized_score": 0.381
+        },
+        {
+          "platform": "facebook",
+          "post_id": "fb-007",
+          "published_at": "2026-08-02T12:00:00Z",
+          "content_type": "photo",
+          "text": "Комплект для дистанційного навчання зі спеціальною ціною.",
+          "topic": "education_tech",
+          "views": null,
+          "views_status": "not_applicable",
+          "likes": 2700,
+          "comments": 260,
+          "shares": 740,
+          "url": "fixture://facebook/fb-007",
+          "source_mode": "fixture",
+          "confidence": 0.72,
+          "platform_metrics": {
+            "reactions": 3100
+          },
+          "funnel_stage": "consideration",
+          "audience_inference": {
+            "segment": "студенти, батьки та молоді спеціалісти",
+            "age_inferred": "18–44",
+            "region_inferred": "Україна",
+            "confidence": 0.62,
+            "basis": "тема, формат і текст публікації; не first-party demographics"
+          },
+          "metric_percentiles": {
+            "views": null,
+            "likes": 0.2857142857142857,
+            "comments": 0.14285714285714285,
+            "shares": 0.42857142857142855
+          },
+          "normalized_score": 0.2857
+        },
+        {
+          "platform": "telegram",
+          "post_id": "tg-001",
+          "published_at": "2026-08-29T12:00:00Z",
+          "content_type": "photo",
+          "text": "Знижка до 60% на посуд. Перелік пропозицій за посиланням.",
+          "topic": "discount",
+          "views": 61200,
+          "views_status": "available",
+          "likes": 480,
+          "comments": 120,
+          "shares": 760,
+          "url": "fixture://telegram/tg-001",
+          "source_mode": "fixture",
+          "confidence": 0.72,
+          "platform_metrics": {
+            "reactions": 620,
+            "forwards": 760
+          },
+          "funnel_stage": "conversion_oriented",
+          "audience_inference": {
+            "segment": "широка українська онлайн-аудиторія",
+            "age_inferred": "18–54",
+            "region_inferred": "Україна",
+            "confidence": 0.62,
+            "basis": "тема, формат і текст публікації; не first-party demographics"
+          },
+          "metric_percentiles": {
+            "views": 0.7142857142857143,
+            "likes": 0.42857142857142855,
+            "comments": 0.2857142857142857,
+            "shares": 0.7142857142857143
+          },
+          "normalized_score": 0.5357
+        },
+        {
+          "platform": "telegram",
+          "post_id": "tg-002",
+          "published_at": "2026-08-26T12:00:00Z",
+          "content_type": "video",
+          "text": "Кидайте кубик у коментарях — перші переможці отримають промокод.",
+          "topic": "contest",
+          "views": 73800,
+          "views_status": "available",
+          "likes": 1100,
+          "comments": 2940,
+          "shares": 430,
+          "url": "fixture://telegram/tg-002",
+          "source_mode": "fixture",
+          "confidence": 0.72,
+          "platform_metrics": {
+            "reactions": 1420,
+            "forwards": 430
+          },
+          "funnel_stage": "conversion_oriented",
+          "audience_inference": {
+            "segment": "широка українська онлайн-аудиторія",
+            "age_inferred": "18–54",
+            "region_inferred": "Україна",
+            "confidence": 0.62,
+            "basis": "тема, формат і текст публікації; не first-party demographics"
+          },
+          "metric_percentiles": {
+            "views": 1.0,
+            "likes": 1.0,
+            "comments": 1.0,
+            "shares": 0.42857142857142855
+          },
+          "normalized_score": 0.8571
+        },
+        {
+          "platform": "telegram",
+          "post_id": "tg-003",
+          "published_at": "2026-08-21T12:00:00Z",
+          "content_type": "photo",
+          "text": "Добірка зарядних станцій для дому та подорожей.",
+          "topic": "product_guide",
+          "views": 55900,
+          "views_status": "available",
+          "likes": 690,
+          "comments": 210,
+          "shares": 910,
+          "url": "fixture://telegram/tg-003",
+          "source_mode": "fixture",
+          "confidence": 0.72,
+          "platform_metrics": {
+            "reactions": 810,
+            "forwards": 910
+          },
+          "funnel_stage": "consideration",
+          "audience_inference": {
+            "segment": "широка українська онлайн-аудиторія",
+            "age_inferred": "18–54",
+            "region_inferred": "Україна",
+            "confidence": 0.62,
+            "basis": "тема, формат і текст публікації; не first-party demographics"
+          },
+          "metric_percentiles": {
+            "views": 0.5714285714285714,
+            "likes": 0.7142857142857143,
+            "comments": 0.5714285714285714,
+            "shares": 0.8571428571428571
+          },
+          "normalized_score": 0.6786
+        },
+        {
+          "platform": "telegram",
+          "post_id": "tg-004",
+          "published_at": "2026-08-17T12:00:00Z",
+          "content_type": "text",
+          "text": "Опитування: яку категорію товарів додати до наступного розпродажу?",
+          "topic": "community_question",
+          "views": 49700,
+          "views_status": "available",
+          "likes": 410,
+          "comments": 1680,
+          "shares": 180,
+          "url": "fixture://telegram/tg-004",
+          "source_mode": "fixture",
+          "confidence": 0.72,
+          "platform_metrics": {
+            "reactions": 530,
+            "forwards": 180
+          },
+          "funnel_stage": "engagement",
+          "audience_inference": {
+            "segment": "широка українська онлайн-аудиторія",
+            "age_inferred": "18–54",
+            "region_inferred": "Україна",
+            "confidence": 0.62,
+            "basis": "тема, формат і текст публікації; не first-party demographics"
+          },
+          "metric_percentiles": {
+            "views": 0.2857142857142857,
+            "likes": 0.2857142857142857,
+            "comments": 0.8571428571428571,
+            "shares": 0.2857142857142857
+          },
+          "normalized_score": 0.4286
+        },
+        {
+          "platform": "telegram",
+          "post_id": "tg-005",
+          "published_at": "2026-08-13T12:00:00Z",
+          "content_type": "video",
+          "text": "Огляд смартфона: камера, автономність і продуктивність.",
+          "topic": "product_guide",
+          "views": 68400,
+          "views_status": "available",
+          "likes": 920,
+          "comments": 340,
+          "shares": 1200,
+          "url": "fixture://telegram/tg-005",
+          "source_mode": "fixture",
+          "confidence": 0.72,
+          "platform_metrics": {
+            "reactions": 1080,
+            "forwards": 1200
+          },
+          "funnel_stage": "consideration",
+          "audience_inference": {
+            "segment": "технологічно активна аудиторія",
+            "age_inferred": "16–39",
+            "region_inferred": "Україна",
+            "confidence": 0.62,
+            "basis": "тема, формат і текст публікації; не first-party demographics"
+          },
+          "metric_percentiles": {
+            "views": 0.8571428571428571,
+            "likes": 0.8571428571428571,
+            "comments": 0.7142857142857143,
+            "shares": 1.0
+          },
+          "normalized_score": 0.8571
+        },
+        {
+          "platform": "telegram",
+          "post_id": "tg-006",
+          "published_at": "2026-08-09T12:00:00Z",
+          "content_type": "photo",
+          "text": "Товари для школи зі знижкою та бонусами на картку.",
+          "topic": "education_tech",
+          "views": 52100,
+          "views_status": "available",
+          "likes": 570,
+          "comments": 160,
+          "shares": 680,
+          "url": "fixture://telegram/tg-006",
+          "source_mode": "fixture",
+          "confidence": 0.72,
+          "platform_metrics": {
+            "reactions": 710,
+            "forwards": 680
+          },
+          "funnel_stage": "conversion_oriented",
+          "audience_inference": {
+            "segment": "студенти, батьки та молоді спеціалісти",
+            "age_inferred": "18–44",
+            "region_inferred": "Україна",
+            "confidence": 0.62,
+            "basis": "тема, формат і текст публікації; не first-party demographics"
+          },
+          "metric_percentiles": {
+            "views": 0.42857142857142855,
+            "likes": 0.5714285714285714,
+            "comments": 0.42857142857142855,
+            "shares": 0.5714285714285714
+          },
+          "normalized_score": 0.5
+        },
+        {
+          "platform": "telegram",
+          "post_id": "tg-007",
+          "published_at": "2026-08-04T12:00:00Z",
+          "content_type": "text",
+          "text": "Історія команди нового магазину ROZETKA у Черкасах.",
+          "topic": "brand_news",
+          "views": 42100,
+          "views_status": "available",
+          "likes": 350,
+          "comments": 95,
+          "shares": 140,
+          "url": "fixture://telegram/tg-007",
+          "source_mode": "fixture",
+          "confidence": 0.72,
+          "platform_metrics": {
+            "reactions": 460,
+            "forwards": 140
+          },
+          "funnel_stage": "awareness",
+          "audience_inference": {
+            "segment": "широка українська онлайн-аудиторія",
+            "age_inferred": "18–54",
+            "region_inferred": "Україна",
+            "confidence": 0.62,
+            "basis": "тема, формат і текст публікації; не first-party demographics"
+          },
+          "metric_percentiles": {
+            "views": 0.14285714285714285,
+            "likes": 0.14285714285714285,
+            "comments": 0.14285714285714285,
+            "shares": 0.14285714285714285
+          },
+          "normalized_score": 0.1429
+        }
+      ],
+      "top_5_patterns": [
+        {
+          "pattern": "contest",
+          "posts": 3,
+          "average_normalized_score": 0.879,
+          "pattern_score": 0.879,
+          "evidence_level": "strong",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "telegram"
+          ],
+          "formats": [
+            "photo",
+            "reel",
+            "video"
+          ],
+          "dominant_funnel": "engagement",
+          "example_urls": [
+            "fixture://facebook/fb-002",
+            "fixture://instagram/ig-001"
+          ]
+        },
+        {
+          "pattern": "humor",
+          "posts": 1,
+          "average_normalized_score": 0.9187,
+          "pattern_score": 0.7043,
+          "evidence_level": "weak_single_post",
+          "platforms": [
+            "instagram"
+          ],
+          "formats": [
+            "reel"
+          ],
+          "dominant_funnel": "engagement",
+          "example_urls": [
+            "fixture://instagram/ig-006"
+          ]
+        },
+        {
+          "pattern": "product_guide",
+          "posts": 5,
+          "average_normalized_score": 0.6845,
+          "pattern_score": 0.6845,
+          "evidence_level": "strong",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "telegram"
+          ],
+          "formats": [
+            "carousel",
+            "photo",
+            "reel",
+            "video"
+          ],
+          "dominant_funnel": "consideration",
+          "example_urls": [
+            "fixture://telegram/tg-005",
+            "fixture://instagram/ig-002"
+          ]
+        },
+        {
+          "pattern": "discount",
+          "posts": 3,
+          "average_normalized_score": 0.6345,
+          "pattern_score": 0.6345,
+          "evidence_level": "strong",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "telegram"
+          ],
+          "formats": [
+            "photo",
+            "reel",
+            "video"
+          ],
+          "dominant_funnel": "conversion_oriented",
+          "example_urls": [
+            "fixture://facebook/fb-001",
+            "fixture://telegram/tg-001"
+          ]
+        },
+        {
+          "pattern": "gift_guide",
+          "posts": 1,
+          "average_normalized_score": 0.7024,
+          "pattern_score": 0.5385,
+          "evidence_level": "weak_single_post",
+          "platforms": [
+            "facebook"
+          ],
+          "formats": [
+            "video"
+          ],
+          "dominant_funnel": "conversion_oriented",
+          "example_urls": [
+            "fixture://facebook/fb-005"
+          ]
+        }
+      ],
+      "cross_platform_top": [
+        {
+          "platform": "instagram",
+          "post_id": "ig-006",
+          "topic": "humor",
+          "content_type": "reel",
+          "normalized_score": 0.9187,
+          "url": "fixture://instagram/ig-006"
+        },
+        {
+          "platform": "facebook",
+          "post_id": "fb-002",
+          "topic": "contest",
+          "content_type": "photo",
+          "normalized_score": 0.9048,
+          "url": "fixture://facebook/fb-002"
+        },
+        {
+          "platform": "facebook",
+          "post_id": "fb-001",
+          "topic": "discount",
+          "content_type": "video",
+          "normalized_score": 0.8929,
+          "url": "fixture://facebook/fb-001"
+        },
+        {
+          "platform": "instagram",
+          "post_id": "ig-001",
+          "topic": "contest",
+          "content_type": "reel",
+          "normalized_score": 0.875,
+          "url": "fixture://instagram/ig-001"
+        },
+        {
+          "platform": "telegram",
+          "post_id": "tg-002",
+          "topic": "contest",
+          "content_type": "video",
+          "normalized_score": 0.8571,
+          "url": "fixture://telegram/tg-002"
+        }
+      ],
+      "executive_summary": [
+        "За 30 днів проаналізовано 22 публікації на 3 платформах.",
+        "Найсильніший повторюваний патерн — contest (score=0.879, posts=3).",
+        "Instagram, Facebook і Telegram мають дані snapshot; офіційний Threads-профіль потребує окремого підтвердження.",
+        "Аудиторні сегменти є inference за темою та форматом, а не фактичною демографією платформи."
+      ],
+      "recommendations": [
+        "Масштабувати contest-механіки, але оцінювати якість коментарів окремо перед production-рішенням.",
+        "Підтримувати product guides у Reels/video/carousel: патерн повторюється на кількох платформах.",
+        "Для discount-контенту тестувати різні формати й CTA, не порівнюючи сирі views між платформами.",
+        "Humor розглядати як перспективний експеримент, а не доведений патерн, доки є лише один сильний пост.",
+        "Перед стратегією для Threads вручну підтвердити офіційний профіль ROZETKA та доступність публічних метрик."
+      ],
+      "coverage_gaps": [
+        "threads"
+      ],
+      "limitations": [
+        "Fixture metrics є навчальним snapshot, а не поточною статистикою ROZETKA.",
+        "Reach, saves та реальні demographics недоступні без first-party API.",
+        "Тексти коментарів не збираються; використовується лише їх кількість."
+      ]
+    },
+    "workflow": {
+      "goal": "Проаналізуй контент-маркетинг ROZETKA в Instagram, Facebook, Threads і Telegram за 30 днів: частоту, формати, перегляди, лайки, коментарі, funnel, inferred-аудиторію та 5 найсильніших патернів.",
+      "plan": [
+        "COLLECT_PLATFORMS: зібрати Instagram, Facebook, Threads і Telegram через ReAct з fallback.",
+        "SEARCH_KNOWLEDGE: отримати правила метрик, funnel і нормалізації через Agentic RAG.",
+        "ANALYZE_PATTERNS: побудувати platform-звіти, топи, inferred-аудиторію і 5 патернів.",
+        "EXPORT_REPORT: підготувати ризиковий файловий експорт після HITL."
+      ],
+      "current_step": 4,
+      "report_status": "rejected",
+      "report_path": null,
+      "completed": true
+    },
+    "next": []
+  }
+}
