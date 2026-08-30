@@ -1,0 +1,239 @@
+{
+  "plan_and_execute": {
+    "planner_steps": [
+      "Знайти свіжі YouTube-відео за темою через search_recent_videos.",
+      "Отримати brand-safety правила через search_knowledge.",
+      "Оцінити тренди та сформувати approved і needs_review через evaluate_trends.",
+      "Запланувати кампанію з фінального топу через schedule_campaign."
+    ],
+    "current_step_at_first_pause": 3
+  },
+  "persistence": {
+    "same_state_after_reopen": true,
+    "thread_id": "submission-demo",
+    "independent_thread_id": "submission-independent-thread",
+    "independent_thread_gate": "content_moderation"
+  },
+  "agentic_rag_and_moderation": {
+    "blocked": [
+      "adultbad01",
+      "violent001"
+    ],
+    "needs_review": [
+      "warnewsai1",
+      "boxingai01"
+    ],
+    "accepted_from_review": true,
+    "rejected_from_review": true
+  },
+  "hitl": {
+    "first_gate": "content_moderation",
+    "second_gate": "campaign_approval",
+    "campaign_status": "scheduled",
+    "completed": true,
+    "final_has_interrupt": false
+  },
+  "snapshots": {
+    "first_pause": {
+      "current_step": 3,
+      "plan": [
+        "Знайти свіжі YouTube-відео за темою через search_recent_videos.",
+        "Отримати brand-safety правила через search_knowledge.",
+        "Оцінити тренди та сформувати approved і needs_review через evaluate_trends.",
+        "Запланувати кампанію з фінального топу через schedule_campaign."
+      ],
+      "approved": [
+        "aiagent001",
+        "shortsai001",
+        "aicode0001",
+        "robot000001",
+        "agentnews1",
+        "multimodal1",
+        "aitools0001",
+        "pythonag001",
+        "localai0001",
+        "ragagent001"
+      ],
+      "needs_review": [
+        "warnewsai1",
+        "boxingai01"
+      ],
+      "blocked": [
+        "adultbad01",
+        "violent001"
+      ],
+      "final_top": [
+        "aiagent001",
+        "shortsai001",
+        "aicode0001",
+        "robot000001",
+        "agentnews1",
+        "multimodal1",
+        "aitools0001",
+        "pythonag001",
+        "localai0001",
+        "ragagent001"
+      ],
+      "campaign_status": "not_requested",
+      "completed": false,
+      "replan_count": 0,
+      "tool_history": [
+        "search_recent_videos",
+        "search_knowledge",
+        "evaluate_trends"
+      ]
+    },
+    "after_moderation": {
+      "current_step": 3,
+      "plan": [
+        "Знайти свіжі YouTube-відео за темою через search_recent_videos.",
+        "Отримати brand-safety правила через search_knowledge.",
+        "Оцінити тренди та сформувати approved і needs_review через evaluate_trends.",
+        "Запланувати кампанію з фінального топу через schedule_campaign."
+      ],
+      "approved": [
+        "aiagent001",
+        "shortsai001",
+        "aicode0001",
+        "robot000001",
+        "agentnews1",
+        "multimodal1",
+        "aitools0001",
+        "pythonag001",
+        "localai0001",
+        "ragagent001",
+        "boxingai01"
+      ],
+      "needs_review": [
+        "warnewsai1",
+        "boxingai01"
+      ],
+      "blocked": [
+        "adultbad01",
+        "violent001"
+      ],
+      "final_top": [
+        "aiagent001",
+        "shortsai001",
+        "boxingai01",
+        "aicode0001",
+        "robot000001",
+        "agentnews1",
+        "multimodal1",
+        "aitools0001",
+        "pythonag001",
+        "localai0001"
+      ],
+      "campaign_status": "awaiting_approval",
+      "completed": false,
+      "replan_count": 0,
+      "tool_history": [
+        "search_recent_videos",
+        "search_knowledge",
+        "evaluate_trends",
+        "schedule_campaign"
+      ]
+    },
+    "final": {
+      "current_step": 4,
+      "plan": [
+        "Знайти свіжі YouTube-відео за темою через search_recent_videos.",
+        "Отримати brand-safety правила через search_knowledge.",
+        "Оцінити тренди та сформувати approved і needs_review через evaluate_trends.",
+        "Запланувати кампанію з фінального топу через schedule_campaign."
+      ],
+      "approved": [
+        "aiagent001",
+        "shortsai001",
+        "aicode0001",
+        "robot000001",
+        "agentnews1",
+        "multimodal1",
+        "aitools0001",
+        "pythonag001",
+        "localai0001",
+        "ragagent001",
+        "boxingai01"
+      ],
+      "needs_review": [
+        "warnewsai1",
+        "boxingai01"
+      ],
+      "blocked": [
+        "adultbad01",
+        "violent001"
+      ],
+      "final_top": [
+        "aiagent001",
+        "shortsai001",
+        "boxingai01",
+        "aicode0001",
+        "robot000001",
+        "agentnews1",
+        "multimodal1",
+        "aitools0001",
+        "pythonag001",
+        "localai0001"
+      ],
+      "campaign_status": "scheduled",
+      "completed": true,
+      "replan_count": 0,
+      "tool_history": [
+        "search_recent_videos",
+        "search_knowledge",
+        "evaluate_trends",
+        "schedule_campaign",
+        "schedule_campaign:executed"
+      ]
+    },
+    "independent_thread": {
+      "current_step": 3,
+      "plan": [
+        "Знайти свіжі YouTube-відео за темою через search_recent_videos.",
+        "Отримати brand-safety правила через search_knowledge.",
+        "Оцінити тренди та сформувати approved і needs_review через evaluate_trends.",
+        "Запланувати кампанію з фінального топу через schedule_campaign."
+      ],
+      "approved": [
+        "aiagent001",
+        "shortsai001",
+        "aicode0001",
+        "robot000001",
+        "agentnews1",
+        "multimodal1",
+        "aitools0001",
+        "pythonag001",
+        "localai0001",
+        "ragagent001"
+      ],
+      "needs_review": [
+        "warnewsai1",
+        "boxingai01"
+      ],
+      "blocked": [
+        "adultbad01",
+        "violent001"
+      ],
+      "final_top": [
+        "aiagent001",
+        "shortsai001",
+        "aicode0001",
+        "robot000001",
+        "agentnews1",
+        "multimodal1",
+        "aitools0001",
+        "pythonag001",
+        "localai0001",
+        "ragagent001"
+      ],
+      "campaign_status": "not_requested",
+      "completed": false,
+      "replan_count": 0,
+      "tool_history": [
+        "search_recent_videos",
+        "search_knowledge",
+        "evaluate_trends"
+      ]
+    }
+  }
+}

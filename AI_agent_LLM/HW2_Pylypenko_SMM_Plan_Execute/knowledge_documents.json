@@ -1,0 +1,98 @@
+[
+  {
+    "id": "POL-01",
+    "title": "Sexual and pornographic content",
+    "category": "sexual_content",
+    "decision": "block",
+    "keywords": ["porn", "pornographic", "explicit adult", "sexual content", "nudity", "порнограф", "відвертий сексуальний"],
+    "content": "Порнографічний, відверто сексуальний контент і сексуалізовані thumbnails не допускаються до маркетингового топу. Позиція автоматично отримує block і не може бути повернена через звичайний human review."
+  },
+  {
+    "id": "POL-02",
+    "title": "Graphic violence and cruelty",
+    "category": "graphic_violence",
+    "decision": "block",
+    "keywords": ["graphic violence", "graphic attack", "gore", "blood scene", "torture", "графічне насильство", "жорстокість"],
+    "content": "Відео з графічним насильством, катуванням, кривавими сценами або прославленням жорстокості виключаються з маркетингового аналізу. Рішення: block."
+  },
+  {
+    "id": "POL-03",
+    "title": "Child safety",
+    "category": "child_safety",
+    "decision": "block",
+    "keywords": ["child exploitation", "sexualized minor", "неповнолітн", "експлуатація дітей"],
+    "content": "Експлуатація, сексуалізація або небезпечне використання образів неповнолітніх є безумовною забороною. Рішення: block та ескалація."
+  },
+  {
+    "id": "POL-04",
+    "title": "Hate and extremist propaganda",
+    "category": "hate_extremism",
+    "decision": "block",
+    "keywords": ["hate speech", "extremist propaganda", "racial superiority", "мова ворожнечі", "екстремістська пропаганда"],
+    "content": "Мова ворожнечі, дегуманізація захищених груп і пропаганда екстремізму не можуть потрапляти до маркетингового топу. Рішення: block."
+  },
+  {
+    "id": "POL-05",
+    "title": "Self-harm and dangerous challenges",
+    "category": "self_harm",
+    "decision": "block",
+    "keywords": ["self-harm tutorial", "suicide challenge", "dangerous challenge", "самоушкодження", "небезпечний челендж"],
+    "content": "Інструкції із самоушкодження, суїцидальні челенджі та небезпечні наслідувані дії блокуються. Освітнє превентивне висвітлення оцінюється окремо людиною."
+  },
+  {
+    "id": "POL-06",
+    "title": "Sensitive news, war and non-graphic violence",
+    "category": "sensitive_context",
+    "decision": "review",
+    "keywords": ["war news", "war explained", "boxing knockout", "fight highlights", "weapon review", "війна", "бойові дії", "бокс"],
+    "content": "Новини про війну, документальний контекст, спортивні бої та неграфічне насильство не блокуються автоматично. Вони потрапляють у needs_review, де людина оцінює контекст і brand suitability."
+  },
+  {
+    "id": "POL-07",
+    "title": "Scams and misleading claims",
+    "category": "scams",
+    "decision": "block",
+    "keywords": ["guaranteed profit", "get rich quick", "crypto scam", "гарантований прибуток", "фінансова піраміда"],
+    "content": "Шахрайські схеми, гарантований прибуток і маніпулятивні фінансові обіцянки неприйнятні для кампанії. Рішення: block."
+  },
+  {
+    "id": "POL-08",
+    "title": "Privacy and doxxing",
+    "category": "privacy",
+    "decision": "block",
+    "keywords": ["doxxing", "leaked address", "private phone number", "злита адреса", "персональні дані"],
+    "content": "Розкриття домашніх адрес, номерів телефонів та інших приватних даних без згоди заборонено. Рішення: block."
+  },
+  {
+    "id": "POL-09",
+    "title": "Medical and financial advice",
+    "category": "regulated_claims",
+    "decision": "review",
+    "keywords": ["medical advice", "investment advice", "drug dosage", "лікування", "інвестиційна порада"],
+    "content": "Медичні та фінансові рекомендації потребують перевірки джерел і human review. Без підтверджень вони не використовуються у кампанії."
+  },
+  {
+    "id": "POL-10",
+    "title": "Copyright and reused content",
+    "category": "copyright",
+    "decision": "review",
+    "keywords": ["full movie upload", "copyright reupload", "stolen compilation", "повний фільм", "перезалив"],
+    "content": "Підозра на порушення авторських прав або масовий reused content потребує ручної перевірки перед використанням у маркетинговій кампанії."
+  },
+  {
+    "id": "POL-11",
+    "title": "Brand tone and competitor mentions",
+    "category": "brand_tone",
+    "decision": "review",
+    "keywords": ["competitor exposed", "destroy competitor", "toxic rant", "конкурент викритий", "токсична атака"],
+    "content": "Токсичні атаки на конкурентів і принизливий тон не відповідають brand voice. Неоднозначні згадки конкурентів передаються на human review."
+  },
+  {
+    "id": "POL-12",
+    "title": "Human review and campaign approval",
+    "category": "approval_policy",
+    "decision": "review",
+    "keywords": ["needs_review", "human review", "campaign approval", "сумнівний контент", "підтвердження кампанії"],
+    "content": "Сумнівні позиції зберігаються окремо від approved top. Людина може прийняти всі, відхилити всі або назвати прийнятні video_id. schedule_campaign є write-дією і виконується тільки після approve або контрольованого edit."
+  }
+]
