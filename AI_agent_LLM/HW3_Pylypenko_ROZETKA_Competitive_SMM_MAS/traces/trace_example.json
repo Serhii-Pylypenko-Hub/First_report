@@ -1,0 +1,16 @@
+{
+  "status": "local_example_only",
+  "notice": "Це не підміна LangSmith trace. Реальний URL/скріншот додається після запуску з LANGSMITH_API_KEY.",
+  "expected_hierarchy": [
+    "input_guardrail",
+    "supervisor",
+    "collector_react",
+    "agentic_rag",
+    "competitive_analysis",
+    "plan_execute_subgraph",
+    "language_mas",
+    "verifier",
+    "approval_gate",
+    "risky_export"
+  ]
+}

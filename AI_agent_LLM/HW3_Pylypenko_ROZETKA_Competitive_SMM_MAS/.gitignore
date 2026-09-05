@@ -1,0 +1,11 @@
+.env
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+notebook_state.db
+*.db-shm
+*.db-wal
+outputs/*.json
+outputs/*.db
+!outputs/.gitkeep

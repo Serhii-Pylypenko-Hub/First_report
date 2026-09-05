@@ -1,0 +1,100 @@
+[
+  {
+    "scenario_id": "EVAL-01",
+    "query": "Порівняй конкурентів і запропонуй рекламні пости",
+    "expected_behavior": "Повний workflow зупиняється на HITL",
+    "actual": {
+      "route": "collect",
+      "status": "running",
+      "next": [
+        "approval_gate"
+      ]
+    },
+    "pass": true,
+    "latency_ms": 1500.0,
+    "agents_used": [
+      "collector",
+      "researcher",
+      "analyst",
+      "strategist",
+      "language",
+      "verifier"
+    ],
+    "tools_called": [
+      "collect_brand_posts",
+      "search_smm_knowledge",
+      "calculate_competitive_metrics",
+      "generate_content_brief"
+    ]
+  },
+  {
+    "scenario_id": "EVAL-02",
+    "query": "Знайди правила нормалізації метрик у RAG",
+    "expected_behavior": "Supervisor маршрутизує до researcher",
+    "actual": {
+      "route": "research",
+      "status": "running",
+      "next": []
+    },
+    "pass": true,
+    "latency_ms": 407.0,
+    "agents_used": [
+      "researcher"
+    ],
+    "tools_called": [
+      "search_smm_knowledge"
+    ]
+  },
+  {
+    "scenario_id": "EVAL-03",
+    "query": "Лише аналіз метрик конкурентної реклами",
+    "expected_behavior": "Supervisor маршрутизує до analyst",
+    "actual": {
+      "route": "analyze",
+      "status": "running",
+      "next": []
+    },
+    "pass": true,
+    "latency_ms": 515.0,
+    "agents_used": [
+      "analyst"
+    ],
+    "tools_called": [
+      "calculate_competitive_metrics"
+    ]
+  },
+  {
+    "scenario_id": "EVAL-04",
+    "query": "Створи п'ять варіантів рекламних постів",
+    "expected_behavior": "Plan-and-Execute створює 4–5 чернеток",
+    "actual": {
+      "route": "create",
+      "status": "running",
+      "next": []
+    },
+    "pass": true,
+    "latency_ms": 453.0,
+    "agents_used": [
+      "strategist"
+    ],
+    "tools_called": [
+      "generate_content_brief"
+    ]
+  },
+  {
+    "scenario_id": "EVAL-05",
+    "query": "Перевір мову та орфографію рекламних постів",
+    "expected_behavior": "Мовна MAS повертає findings",
+    "actual": {
+      "route": "language",
+      "status": "running",
+      "next": []
+    },
+    "pass": true,
+    "latency_ms": 407.0,
+    "agents_used": [
+      "language"
+    ],
+    "tools_called": []
+  }
+]

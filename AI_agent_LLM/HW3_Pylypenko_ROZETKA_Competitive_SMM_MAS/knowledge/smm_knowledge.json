@@ -1,0 +1,14 @@
+[
+  {"id":"SMM-01","title":"Маркетингова воронка","topic":"funnel","content":"Awareness охоплює знайомство з брендом; engagement стимулює взаємодію; consideration допомагає вибору; conversion-oriented контент містить конкретну пропозицію; retention підтримує повторну взаємодію."},
+  {"id":"SMM-02","title":"Метрики Instagram Reels","topic":"instagram","content":"Для Reels публічно доступні перегляди, лайки й коментарі. Збереження та охоплення можуть бути недоступні без власної аналітики. Порівнювати потрібно всередині акаунта та періоду."},
+  {"id":"SMM-03","title":"Метрики Facebook","topic":"facebook","content":"Facebook використовує reactions, comments, shares та video views. Shares часто сигналізують корисність або суспільну значущість, а comments — дискусійність."},
+  {"id":"SMM-04","title":"Метрики Threads","topic":"threads","content":"Для Threads релевантні likes, replies, reposts і quotes. Відсутність офіційного профілю потрібно позначати як coverage gap, а не вигадувати публікації."},
+  {"id":"SMM-05","title":"Метрики Telegram","topic":"telegram","content":"Для публічних Telegram-каналів можна аналізувати views, reactions, comments і forwards. Forwards є важливим сигналом поширюваності."},
+  {"id":"SMM-06","title":"Нормалізація між платформами","topic":"normalization","content":"Сирі метрики різних платформ не можна прямо порівнювати. Використовуйте percentile або min-max score всередині кожної платформи, а потім агрегуйте normalized score."},
+  {"id":"SMM-07","title":"Контентні патерни","topic":"patterns","content":"Патерн визначається комбінацією теми, формату, етапу воронки та стабільної відносної ефективності. Висновок потребує кількох постів, а не одного вірусного випадку."},
+  {"id":"SMM-08","title":"Приблизна аудиторія","topic":"audience","content":"Без first-party analytics вік, регіон і сегмент аудиторії є inference. Потрібно показувати основу висновку, confidence і не видавати припущення за демографічний факт."},
+  {"id":"SMM-09","title":"Частота публікацій","topic":"frequency","content":"Частоту оцінюють як posts per week і середній інтервал між постами. Висока частота не є успіхом без стабільної взаємодії."},
+  {"id":"SMM-10","title":"Якість джерела","topic":"provenance","content":"Кожен пост повинен мати source_mode, URL, дату збору та confidence. Fixture є відтворюваним навчальним snapshot, а не поточними production-даними."},
+  {"id":"SMM-11","title":"Fallback без API","topic":"fallback","content":"Якщо public HTML повертає login-wall, rate limit або неповні метрики, агент може перейти до перевіреного snapshot. Причину fallback слід логувати."},
+  {"id":"SMM-12","title":"Безпечний звіт","topic":"hitl","content":"Експорт або публікація звіту є write-операцією. Перед виконанням потрібно показати raw path і параметри та отримати approve, edit або reject."}
+]

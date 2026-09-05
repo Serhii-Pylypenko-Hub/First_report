@@ -1,0 +1,40 @@
+{
+  "measurement_mode": "fixture_scripted_no_external_llm",
+  "langgraph": {
+    "loc": 374,
+    "latency_ms": 1360.0,
+    "llm_tokens": 0,
+    "coordination_llm_calls": 0,
+    "agents_used": [
+      "collector",
+      "researcher",
+      "analyst",
+      "strategist",
+      "language",
+      "verifier"
+    ],
+    "control_score_1_5": 5,
+    "debugging_score_1_5": 5
+  },
+  "crewai": {
+    "loc": 78,
+    "latency_ms": 94.0,
+    "llm_tokens": 0,
+    "coordination_llm_calls": 0,
+    "agents_used": [
+      "collector",
+      "researcher",
+      "analyst",
+      "strategist",
+      "language",
+      "verifier"
+    ],
+    "control_score_1_5": 3,
+    "debugging_score_1_5": 4
+  },
+  "development_minutes": {
+    "langgraph": null,
+    "crewai": null,
+    "notice": "Заповнити власним фактично виміряним часом; значення не вигадуються ретроспективно."
+  }
+}
