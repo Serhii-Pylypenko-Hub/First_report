@@ -1,0 +1,38 @@
+{
+  "request_id": "demo-001",
+  "document": {
+    "document_id": "official-letter-001",
+    "language": "uk",
+    "register": "official",
+    "nodes": [
+      {
+        "node_id": "p-001",
+        "node_type": "paragraph",
+        "section_ref": "Вступ",
+        "text": "Виходячи з вищесказаного, даний документ являється самим важливим для відділу."
+      },
+      {
+        "node_id": "p-002",
+        "node_type": "paragraph",
+        "section_ref": "Основна частина",
+        "text": "Працівники повинні приймати участь у відповідності до вимог та завершити роботу на протязі тижня."
+      },
+      {
+        "node_id": "p-003",
+        "node_type": "paragraph",
+        "section_ref": "Умови",
+        "text": "Згідно наказу дедлайн погодження договору визначено на п'ятницю. Цей контракт має місце у звіті."
+      },
+      {
+        "node_id": "p-004",
+        "node_type": "paragraph",
+        "section_ref": "Контакти",
+        "text": "Дякую Вас. Відповідальна особа: editor@example.com."
+      }
+    ]
+  },
+  "options": {
+    "include_structure": true,
+    "include_editor_note": true
+  }
+}

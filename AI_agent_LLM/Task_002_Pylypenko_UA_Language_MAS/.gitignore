@@ -1,0 +1,11 @@
+__pycache__/
+.pytest_cache/
+.venv*/
+.env
+*.db
+outputs/*.json
+outputs/*.txt
+traces/*.jsonl
+crewai_storage/
+!outputs/.gitkeep
+!traces/.gitkeep

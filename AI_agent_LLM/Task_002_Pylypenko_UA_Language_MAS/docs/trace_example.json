@@ -1,0 +1,48 @@
+{
+  "description": "Санітизований локальний trace демонстраційного LangGraph-запуску без тексту документа та PII",
+  "thread_id": "trace-example",
+  "events": [
+    {
+      "event": "workflow_started",
+      "agent_name": "supervisor",
+      "node_name": "input_guard",
+      "status": "ok"
+    },
+    {
+      "event": "agent_completed",
+      "agent_name": "grammar_agent",
+      "node_name": "grammar",
+      "status": "ok"
+    },
+    {
+      "event": "agent_completed",
+      "agent_name": "style_agent",
+      "node_name": "style",
+      "status": "ok"
+    },
+    {
+      "event": "agent_completed",
+      "agent_name": "terminology_agent",
+      "node_name": "terminology",
+      "status": "ok"
+    },
+    {
+      "event": "agent_completed",
+      "agent_name": "structure_agent",
+      "node_name": "structure",
+      "status": "ok"
+    },
+    {
+      "event": "review_requested",
+      "agent_name": "supervisor",
+      "node_name": "approval_gate",
+      "status": "awaiting_review"
+    },
+    {
+      "event": "workflow_completed",
+      "agent_name": "supervisor",
+      "node_name": "apply_approved",
+      "status": "completed"
+    }
+  ]
+}
